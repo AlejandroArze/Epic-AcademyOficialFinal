@@ -1,89 +1,124 @@
-<div class="flex flex-col items-center justify-center w-full h-full">
-    <div class="w-full max-w-3xl">
-        <div class="max-w-none mx-auto prose prose-sm">
-            <img
-                class="w-20"
-                src="assets/images/logo/logo.svg"
-                alt="Logo image">
-            <h1>Landing Module</h1>
-            <p>
-                This can be the landing or the welcome page of your application. If you have an SSR (Server Side Rendering) setup, or if you don't need to have Search engine
-                visibility and optimizations, you can even use this page as your primary landing page.
-            </p>
-            <p>
-                This is a separate "module", it has its own directory and routing setup and also it's completely separated from the actual application. This is also a simple example of
-                a multiple applications setup that uses the same codebase. You can have different entry points and essentially have different applications within the same codebase.
-            </p>
+<!-- Barra de navegación -->
+<div class="fixed top-0 left-0 right-0 z-50 bg-white border-b shadow-sm">
+    <div class="flex h-16 items-center px-4 md:px-6 lg:px-8 max-w-7xl mx-auto">
+        <!-- Logo -->
+        <div class="flex items-center mr-8">
+            <img class="w-8 h-8" src="assets/images/logo/logo.svg" alt="Logo EPIC">
+            <span class="ml-2 text-2xl font-bold text-blue-900">EPIC</span>
         </div>
-        <div>
-            <a
-                class="mt-8"
-                mat-flat-button
-                [color]="'primary'"
-                [routerLink]="'/dashboards/project'">
-                <span>Launch the App</span>
-                <mat-icon
-                    class="ml-2 icon-size-5"
-                    [svgIcon]="'heroicons_mini:arrow-long-right'"></mat-icon>
-            </a>
-        </div>
-    </div>
-</div>
 
-<!-- Banner principal -->
-<div class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
-    <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row items-center justify-between">
-            <div class="md:w-1/2 mb-8 md:mb-0">
-                <h1 class="text-4xl md:text-6xl font-bold mb-4">
-                    En español, nadie explica mejor que EPIC
-                </h1>
-                <p class="text-xl mb-8">
-                    Si piensas que la tecnología es difícil es porque no conoces EPIC,
-                    9 años siendo la plataforma más obsesionada con la calidad de los cursos.
-                </p>
-                <button mat-flat-button color="accent" class="text-lg px-8 py-3 rounded-full bg-white text-blue-900 hover:bg-blue-50">
-                    Comienza a estudiar gratis
+        <!-- Menú principal -->
+        <div class="hidden md:flex items-center space-x-1 flex-1">
+            <ng-container *ngFor="let item of menuItems">
+                <button 
+                    mat-button 
+                    [matMenuTriggerFor]="item.hasSubmenu ? menu : null"
+                    class="h-16 px-3 menu-item"
+                    [ngClass]="{'text-blue-600 font-medium': item.highlight}">
+                    <mat-icon 
+                        class="icon-size-5 mr-2"
+                        [svgIcon]="'heroicons_outline:' + item.icon">
+                    </mat-icon>
+                    <span>{{item.title}}</span>
+                    <span *ngIf="item.badge" 
+                          class="ml-2 badge badge-new">
+                        {{item.badge}}
+                    </span>
+                    <mat-icon 
+                        *ngIf="item.hasSubmenu" 
+                        class="icon-size-5 ml-1 opacity-50"
+                        [svgIcon]="'heroicons_mini:chevron-down'">
+                    </mat-icon>
                 </button>
-                <p class="text-sm mt-4 opacity-75">*No necesitas tarjeta de crédito</p>
-            </div>
-            <div class="md:w-1/2">
-                <img src="assets/images/hero-image.png" alt="Estudiantes" class="rounded-lg shadow-xl">
-            </div>
+                <mat-menu #menu="matMenu" class="w-64">
+                    <!-- Aquí irá el contenido del menú desplegable -->
+                </mat-menu>
+            </ng-container>
+        </div>
+
+        <!-- Botones de acción -->
+        <div class="flex items-center space-x-2">
+            <button 
+                mat-button 
+                class="text-gray-700 hover:text-blue-600">
+                Inicia sesión
+            </button>
+            <button 
+                mat-flat-button 
+                color="primary" 
+                class="rounded-full px-6">
+                ¡Comienza gratis!
+            </button>
         </div>
     </div>
 </div>
 
-<!-- Sección de escuelas -->
-<div class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Escuelas destacadas de EPIC</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div *ngFor="let escuela of escuelas" 
-                 class="bg-white p-6 rounded-xl shadow-lg border border-blue-100 hover:shadow-xl transition-shadow">
-                <mat-icon class="text-blue-600 text-4xl mb-4">{{escuela.icono}}</mat-icon>
-                <h3 class="text-xl font-bold text-blue-900 mb-2">{{escuela.titulo}}</h3>
-                <p class="text-gray-600">{{escuela.descripcion}}</p>
-            </div>
-        </div>
-    </div>
-</div>
+<!-- Espaciador para compensar la barra fija -->
+<div class="h-16"></div>
 
-<!-- Sección de testimonios -->
-<div class="bg-blue-50 py-16">
-    <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Tu puedes ser la próxima historia de éxito</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-xl shadow-lg">
-                <p class="text-gray-600 mb-4">"El curso superó todas mis expectativas. La calidad del contenido y la metodología de enseñanza son excepcionales."</p>
-                <div class="flex items-center">
-                    <div class="ml-3">
-                        <h4 class="font-semibold text-blue-900">Ana García</h4>
-                        <p class="text-sm text-gray-500">Desarrolladora Frontend</p>
-                    </div>
+<div class="flex flex-col flex-auto min-w-0">
+    <!-- Banner principal -->
+    <div class="relative flex flex-col sm:flex-row flex-0 sm:items-center sm:justify-between py-8 px-6 md:px-8 border-b">
+        <div class="flex flex-1 items-center sm:justify-center">
+            <div class="flex flex-col">
+                <div class="mt-2">
+                    <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight leading-7 sm:leading-10 truncate">
+                        EPIC - Plataforma de Aprendizaje
+                    </h1>
                 </div>
             </div>
-            <!-- Agregar más testimonios aquí -->
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="flex-auto p-6 sm:p-8">
+        <!-- Sección Hero -->
+        <div class="bg-gradient-to-r from-blue-900 to-blue-700 rounded-3xl text-white p-8 mb-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                        En español, nadie explica mejor que EPIC
+                    </h2>
+                    <p class="text-xl mb-8">
+                        Si piensas que la tecnología es difícil es porque no conoces EPIC,
+                        9 años siendo la plataforma más obsesionada con la calidad de los cursos.
+                    </p>
+                    <button mat-flat-button color="accent" class="text-lg px-8 py-3 rounded-full bg-white text-blue-900 hover:bg-blue-50">
+                        Comienza a estudiar gratis
+                    </button>
+                    <p class="text-sm mt-4 opacity-75">*No necesitas tarjeta de crédito</p>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="assets/images/hero-image.png" alt="Estudiantes" class="rounded-lg shadow-xl max-w-md">
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de escuelas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <div *ngFor="let escuela of escuelas" 
+                 class="bg-card rounded-2xl shadow p-6 hover:shadow-lg transition-shadow">
+                <mat-icon class="text-primary text-4xl mb-4">{{escuela.icono}}</mat-icon>
+                <h3 class="text-xl font-bold text-primary mb-2">{{escuela.titulo}}</h3>
+                <p class="text-secondary">{{escuela.descripcion}}</p>
+            </div>
+        </div>
+
+        <!-- Sección de testimonios -->
+        <div class="bg-card rounded-2xl p-8 mb-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Tu puedes ser la próxima historia de éxito</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-default rounded-xl p-6 shadow">
+                    <p class="text-secondary mb-4">"El curso superó todas mis expectativas. La calidad del contenido y la metodología de enseñanza son excepcionales."</p>
+                    <div class="flex items-center">
+                        <div>
+                            <h4 class="font-semibold text-primary">Ana García</h4>
+                            <p class="text-sm text-secondary">Desarrolladora Frontend</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Puedes agregar más testimonios aquí -->
+            </div>
         </div>
     </div>
 </div>
