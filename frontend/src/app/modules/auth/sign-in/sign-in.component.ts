@@ -129,4 +129,8 @@ export class AuthSignInComponent implements OnInit
                 },
             );
     }
+
+    goToLanding(): void {
+        this._router.navigate(['/landing']);
+    }
 }

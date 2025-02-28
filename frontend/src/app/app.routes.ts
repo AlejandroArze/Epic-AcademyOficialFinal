@@ -23,8 +23,8 @@ export const appRoutes: Route[] = [
     {path: 'signed-in-redirect', pathMatch : 'full', redirectTo: 'apps/help-center'},
     */
     
-        // Redirect empty path to '/example'
-        {path: '', pathMatch : 'full', redirectTo: 'example'},
+        // Redirect empty path to '/landing'
+        {path: '', pathMatch : 'full', redirectTo: 'landing'},
 
         // Redirect signed-in user to the '/example'
         //
@@ -68,14 +68,8 @@ export const appRoutes: Route[] = [
 
     // Landing routes
     {
-        path: '',
-        component: LayoutComponent,
-        data: {
-            layout: 'empty'
-        },
-        children: [
-            {path: 'home', loadChildren: () => import('app/modules/landing/home/home.routes')},
-        ]
+        path: 'landing',
+        loadChildren: () => import('app/modules/landing/landing.routes')
     },
 
     // Admin routes
