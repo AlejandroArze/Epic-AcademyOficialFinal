@@ -225,4 +225,205 @@ footer {
     &:hover {
         background-color: rgba(255, 255, 255, 0.15);
     }
+}
+
+// Estilos para la sección CTA
+.bg-gradient-to-r {
+    &.from-blue-900.to-blue-700 {
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.2;
+        }
+
+        button {
+            &:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            }
+        }
+    }
+}
+
+// Animación de entrada para el texto
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.text-4xl, .text-xl {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.text-xl {
+    animation-delay: 0.2s;
+}
+
+// Estilos para las tarjetas de planes
+.plan-card {
+    background-color: #011F3B;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2),
+                   0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    }
+}
+
+// Estilos para el carrusel de testimonios
+.testimonial-carousel {
+    position: relative;
+    
+    .navigation-button {
+        @apply absolute top-1/2 -translate-y-1/2 z-10;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #3B82F6;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            background-color: #2563EB;
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        &.left {
+            left: -20px;
+        }
+        
+        &.right {
+            right: -20px;
+        }
+    }
+}
+
+// Estilo para la tarjeta de testimonio
+.testimonio-card {
+    background-color: #011F3B;
+    border-left: 4px solid #3B82F6;
+    border-radius: 8px;
+    padding: 2rem;
+    
+    .avatar {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        border: 2px solid #3B82F6;
+        object-fit: cover;
+    }
+    
+    .nombre {
+        font-size: 1.25rem;
+        color: white;
+        font-weight: 500;
+        
+        .pais {
+            margin-left: 0.5rem;
+            font-size: 1.5rem;
+        }
+    }
+    
+    .texto {
+        color: #94A3B8;
+        font-size: 1.125rem;
+        line-height: 1.75;
+        margin: 1.5rem 0;
+    }
+}
+
+// Animación del enlace "Lee la historia completa"
+.read-more-link {
+    display: inline-flex;
+    align-items: center;
+    color: #60A5FA;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+    
+    .mat-icon {
+        margin-left: 0.25rem;
+        transition: transform 0.3s ease;
+    }
+    
+    &:hover {
+        color: #93C5FD;
+        
+        .mat-icon {
+            transform: translateX(4px);
+        }
+    }
+}
+
+// Animación para los iconos de los planes
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.1);
+    }
+    80% {
+        opacity: 1;
+        transform: scale(0.89);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.plan-icon {
+    animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+// Estilos para los botones de los planes
+.mat-flat-button {
+    &.bg-green-400:hover {
+        background-color: #34d399 !important;
+    }
+    &.bg-yellow-400:hover {
+        background-color: #fbbf24 !important;
+    }
+    &.bg-red-400:hover {
+        background-color: #f87171 !important;
+    }
+    &.bg-blue-400:hover {
+        background-color: #60a5fa !important;
+    }
+}
+
+// Para el fondo oscuro
+.dark-bg {
+    background-color: #011627;
+}
+
+// Para el botón de moneda
+.currency-btn {
+    background-color: #011F3B;
+}
+
+// Para los íconos sociales
+.social-icon {
+    background-color: #011F3B;
+    &:hover {
+        background-color: #1e40af;
+    }
 } 

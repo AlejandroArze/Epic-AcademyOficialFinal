@@ -5,6 +5,7 @@ import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
+import { animate, style, transition, trigger } from '@angular/animations';
 
 @Component({
     selector     : 'landing-home',
@@ -20,6 +21,18 @@ import { MatMenuModule } from '@angular/material/menu';
         MatToolbarModule,
         MatMenuModule
     ],
+    animations: [
+        trigger('slideAnimation', [
+            transition(':increment', [
+                style({ transform: 'translateX(100%)', opacity: 0 }),
+                animate('300ms ease-out', style({ transform: 'translateX(0)', opacity: 1 }))
+            ]),
+            transition(':decrement', [
+                style({ transform: 'translateX(-100%)', opacity: 0 }),
+                animate('300ms ease-out', style({ transform: 'translateX(0)', opacity: 1 }))
+            ])
+        ])
+    ]
 })
 export class LandingHomeComponent
 {
@@ -75,6 +88,37 @@ export class LandingHomeComponent
             badge: 'Nuevo'
         }
     ];
+
+    testimonios = [
+        {
+            nombre: 'Catalina Navarrete',
+            pais: '🇲🇽',
+            imagen: 'assets/images/avatars/catalina.jpg',
+            texto: 'Voy a la mitad de la carrera de "Ingeniería en Informática" en México. En todos esos años jamás aprendí todo lo que se aprendió en este curso. Si fue muy teórico pero realmente es algo que se necesita saber, es la base para cualquier programador.',
+        },
+        {
+            nombre: 'Juan Pérez',
+            pais: '🇨🇴',
+            imagen: 'assets/images/avatars/juan.jpg',
+            texto: 'Gracias a los cursos de EPIC pude conseguir mi primer trabajo como desarrollador. La metodología y la calidad del contenido son excepcionales. Ahora trabajo en una startup y sigo aprendiendo cada día.',
+        },
+        {
+            nombre: 'María González',
+            pais: '🇵🇪',
+            imagen: 'assets/images/avatars/maria.jpg',
+            texto: 'Cambié mi carrera completamente gracias a EPIC. Venía del área de marketing y ahora soy desarrolladora frontend. Los profesores son excelentes y la comunidad es muy activa y colaborativa.',
+        }
+    ];
+
+    testimonioActual = 0;
+
+    siguienteTestimonio() {
+        this.testimonioActual = (this.testimonioActual + 1) % this.testimonios.length;
+    }
+
+    testimonioAnterior() {
+        this.testimonioActual = (this.testimonioActual - 1 + this.testimonios.length) % this.testimonios.length;
+    }
 
     /**
      * Constructor
