@@ -101,7 +101,17 @@
                         [mode]="'indeterminate'"></mat-progress-spinner>
                 </button>
 
-               
+                <!-- Agregar el botón que enlaza al landing page -->
+                <div class="flex justify-center mt-4">
+                    <button
+                        class="text-blue-600 hover:text-blue-800"
+                        mat-button
+                        [routerLink]="['/']">
+                        <mat-icon class="mr-2">home</mat-icon>
+                        Ir a la página principal de EPIC
+                    </button>
+                </div>
+
             </form>
         </div>
     </div>

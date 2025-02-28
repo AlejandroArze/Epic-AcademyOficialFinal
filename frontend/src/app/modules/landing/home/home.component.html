@@ -29,3 +29,96 @@
         </div>
     </div>
 </div>
+
+<!-- Banner principal -->
+<div class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    En español, nadie explica mejor que EPIC
+                </h1>
+                <p class="text-xl mb-8">
+                    Si piensas que la tecnología es difícil es porque no conoces EPIC,
+                    9 años siendo la plataforma más obsesionada con la calidad de los cursos.
+                </p>
+                <button mat-flat-button color="accent" class="text-lg px-8 py-3 rounded-full bg-white text-blue-900 hover:bg-blue-50">
+                    Comienza a estudiar gratis
+                </button>
+                <p class="text-sm mt-4 opacity-75">*No necesitas tarjeta de crédito</p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="assets/images/hero-image.png" alt="Estudiantes" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sección de escuelas -->
+<div class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Escuelas destacadas de EPIC</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div *ngFor="let escuela of escuelas" 
+                 class="bg-white p-6 rounded-xl shadow-lg border border-blue-100 hover:shadow-xl transition-shadow">
+                <mat-icon class="text-blue-600 text-4xl mb-4">{{escuela.icono}}</mat-icon>
+                <h3 class="text-xl font-bold text-blue-900 mb-2">{{escuela.titulo}}</h3>
+                <p class="text-gray-600">{{escuela.descripcion}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sección de testimonios -->
+<div class="bg-blue-50 py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Tu puedes ser la próxima historia de éxito</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <p class="text-gray-600 mb-4">"El curso superó todas mis expectativas. La calidad del contenido y la metodología de enseñanza son excepcionales."</p>
+                <div class="flex items-center">
+                    <div class="ml-3">
+                        <h4 class="font-semibold text-blue-900">Ana García</h4>
+                        <p class="text-sm text-gray-500">Desarrolladora Frontend</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Agregar más testimonios aquí -->
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">EPIC</h3>
+                <p class="text-blue-200">La plataforma líder en educación tecnológica en español</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Recursos</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-blue-200 hover:text-white">Blog</a></li>
+                    <li><a href="#" class="text-blue-200 hover:text-white">Guías</a></li>
+                    <li><a href="#" class="text-blue-200 hover:text-white">Tutoriales</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Empresa</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-blue-200 hover:text-white">Sobre nosotros</a></li>
+                    <li><a href="#" class="text-blue-200 hover:text-white">Contacto</a></li>
+                    <li><a href="#" class="text-blue-200 hover:text-white">Carreras</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Legal</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-blue-200 hover:text-white">Términos</a></li>
+                    <li><a href="#" class="text-blue-200 hover:text-white">Privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
