@@ -56,104 +56,197 @@
 <!-- Espaciador para compensar la barra fija -->
 <div class="h-16"></div>
 
-<div class="flex flex-col flex-auto min-w-0">
-    <!-- Banner principal -->
-    <div class="relative flex flex-col sm:flex-row flex-0 sm:items-center sm:justify-between py-8 px-6 md:px-8 border-b">
-        <div class="flex flex-1 items-center sm:justify-center">
-            <div class="flex flex-col">
-                <div class="mt-2">
-                    <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight leading-7 sm:leading-10 truncate">
-                        EPIC - Plataforma de Aprendizaje
-                    </h1>
-                </div>
+<div class="flex flex-col min-h-screen">
+    <!-- Main Hero Section -->
+    <div class="relative min-h-[600px] overflow-hidden">
+        <!-- Fondo con gradiente -->
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-950 to-blue-600"></div>
+        
+        <!-- Contenido principal -->
+        <div class="relative z-10 container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center">
+            <!-- Columna de texto -->
+            <div class="lg:w-1/2 text-white">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    En español, nadie explica mejor
+                    <span class="block text-yellow-400 mt-2">que EPIC</span>
+                </h1>
+                <p class="text-xl mb-8 text-blue-100">
+                    Si piensas que la tecnología es difícil es porque no conoces EPIC,
+                    <span class="block">
+                        <span class="border-b-2 border-blue-400">9 años la plataforma más obsesionada</span> con la calidad de los cursos.
+                    </span>
+                </p>
+                <button mat-flat-button 
+                        class="bg-yellow-400 text-blue-900 text-lg px-8 py-4 rounded-full hover:bg-yellow-300 transition-colors">
+                    Comienza a estudiar gratis
+                </button>
+                <p class="mt-4 text-sm text-blue-200">*No necesitas tarjeta de crédito</p>
             </div>
-        </div>
-    </div>
 
-    <!-- Main -->
-    <div class="flex-auto p-6 sm:p-8">
-        <!-- Sección Hero -->
-        <div class="bg-gradient-to-r from-blue-900 to-blue-700 rounded-3xl text-white p-8 mb-8">
-            <div class="flex flex-col md:flex-row items-center justify-between">
-                <div class="md:w-1/2 mb-8 md:mb-0">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-4">
-                        En español, nadie explica mejor que EPIC
-                    </h2>
-                    <p class="text-xl mb-8">
-                        Si piensas que la tecnología es difícil es porque no conoces EPIC,
-                        9 años siendo la plataforma más obsesionada con la calidad de los cursos.
-                    </p>
-                    <button mat-flat-button color="accent" class="text-lg px-8 py-3 rounded-full bg-white text-blue-900 hover:bg-blue-50">
-                        Comienza a estudiar gratis
-                    </button>
-                    <p class="text-sm mt-4 opacity-75">*No necesitas tarjeta de crédito</p>
-                </div>
-                <div class="md:w-1/2 flex justify-center">
-                    <img src="assets/images/hero-image.png" alt="Estudiantes" class="rounded-lg shadow-xl max-w-md">
-                </div>
-            </div>
-        </div>
-
-        <!-- Sección de escuelas -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-            <div *ngFor="let escuela of escuelas" 
-                 class="bg-card rounded-2xl shadow p-6 hover:shadow-lg transition-shadow">
-                <mat-icon class="text-primary text-4xl mb-4">{{escuela.icono}}</mat-icon>
-                <h3 class="text-xl font-bold text-primary mb-2">{{escuela.titulo}}</h3>
-                <p class="text-secondary">{{escuela.descripcion}}</p>
-            </div>
-        </div>
-
-        <!-- Sección de testimonios -->
-        <div class="bg-card rounded-2xl p-8 mb-8">
-            <h2 class="text-3xl font-bold text-center mb-8">Tu puedes ser la próxima historia de éxito</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-default rounded-xl p-6 shadow">
-                    <p class="text-secondary mb-4">"El curso superó todas mis expectativas. La calidad del contenido y la metodología de enseñanza son excepcionales."</p>
-                    <div class="flex items-center">
-                        <div>
-                            <h4 class="font-semibold text-primary">Ana García</h4>
-                            <p class="text-sm text-secondary">Desarrolladora Frontend</p>
-                        </div>
+            <!-- Columna de imagen -->
+            <div class="lg:w-1/2 mt-12 lg:mt-0 relative">
+                <!-- Círculos flotantes -->
+                <div class="absolute">
+                    <div class="absolute -top-20 right-10 w-12 h-12 rounded-full bg-blue-500/20 backdrop-blur-sm flex items-center justify-center">
+                        <mat-icon class="text-white">code</mat-icon>
+                    </div>
+                    <div class="absolute top-10 -right-10 w-12 h-12 rounded-full bg-green-500/20 backdrop-blur-sm flex items-center justify-center">
+                        <mat-icon class="text-white">terminal</mat-icon>
+                    </div>
+                    <div class="absolute bottom-20 left-10 w-12 h-12 rounded-full bg-purple-500/20 backdrop-blur-sm flex items-center justify-center">
+                        <mat-icon class="text-white">memory</mat-icon>
                     </div>
                 </div>
-                <!-- Puedes agregar más testimonios aquí -->
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- Footer -->
-<footer class="bg-blue-900 text-white py-12">
-    <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-                <h3 class="text-xl font-bold mb-4">EPIC</h3>
-                <p class="text-blue-200">La plataforma líder en educación tecnológica en español</p>
-            </div>
-            <div>
-                <h4 class="font-semibold mb-4">Recursos</h4>
-                <ul class="space-y-2">
-                    <li><a href="#" class="text-blue-200 hover:text-white">Blog</a></li>
-                    <li><a href="#" class="text-blue-200 hover:text-white">Guías</a></li>
-                    <li><a href="#" class="text-blue-200 hover:text-white">Tutoriales</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-semibold mb-4">Empresa</h4>
-                <ul class="space-y-2">
-                    <li><a href="#" class="text-blue-200 hover:text-white">Sobre nosotros</a></li>
-                    <li><a href="#" class="text-blue-200 hover:text-white">Contacto</a></li>
-                    <li><a href="#" class="text-blue-200 hover:text-white">Carreras</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-semibold mb-4">Legal</h4>
-                <ul class="space-y-2">
-                    <li><a href="#" class="text-blue-200 hover:text-white">Términos</a></li>
-                    <li><a href="#" class="text-blue-200 hover:text-white">Privacidad</a></li>
-                </ul>
+                <!-- Imagen principal con efecto de brillo -->
+                <div class="relative">
+                    <div class="absolute -bottom-10 w-full h-40 bg-blue-500/30 blur-3xl"></div>
+                    <img src="assets/images/hero-students.png" 
+                         alt="Estudiantes EPIC" 
+                         class="relative z-10 max-w-xl mx-auto">
+                    <!-- Anillo de luz -->
+                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[120%] h-4">
+                        <div class="w-full h-full bg-blue-400/30 blur-xl rounded-full"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</footer>
+
+    <!-- Sección de escuelas -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div *ngFor="let escuela of escuelas" 
+             class="bg-card rounded-2xl shadow p-6 hover:shadow-lg transition-shadow">
+            <mat-icon class="text-primary text-4xl mb-4">{{escuela.icono}}</mat-icon>
+            <h3 class="text-xl font-bold text-primary mb-2">{{escuela.titulo}}</h3>
+            <p class="text-secondary">{{escuela.descripcion}}</p>
+        </div>
+    </div>
+
+    <!-- Sección de testimonios -->
+    <div class="bg-card rounded-2xl p-8 mb-8">
+        <h2 class="text-3xl font-bold text-center mb-8">Tu puedes ser la próxima historia de éxito</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-default rounded-xl p-6 shadow">
+                <p class="text-secondary mb-4">"El curso superó todas mis expectativas. La calidad del contenido y la metodología de enseñanza son excepcionales."</p>
+                <div class="flex items-center">
+                    <div>
+                        <h4 class="font-semibold text-primary">Ana García</h4>
+                        <p class="text-sm text-secondary">Desarrolladora Frontend</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Puedes agregar más testimonios aquí -->
+        </div>
+    </div>
+
+    <!-- El footer al final -->
+    <footer class="bg-[#011627] text-gray-400 py-16 mt-auto">
+        <div class="container mx-auto px-4">
+            <!-- Logo y selector de moneda -->
+            <div class="mb-12">
+                <img class="w-32 mb-6" src="assets/images/logo/logo-text-on-dark.svg" alt="Logo EPIC">
+                <div class="flex items-center">
+                    <span class="mr-2">Estás usando EPIC en</span>
+                    <button mat-button class="bg-[#011F3B] text-white px-4 py-2 rounded flex items-center">
+                        <mat-icon class="mr-2" svgIcon="heroicons_outline:currency-dollar"></mat-icon>
+                        USD
+                        <mat-icon class="ml-2" svgIcon="heroicons_mini:chevron-down"></mat-icon>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Grid de enlaces -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Columna: Acerca de la empresa -->
+                <div>
+                    <h4 class="text-white font-medium mb-4">Acerca de la empresa</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition-colors">¿Qué es EPIC?</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">El equipo</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Los profesores</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Enunciado de misión</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Marca y logotipo</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Cultura</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna: Conecta con EPIC -->
+                <div>
+                    <h4 class="text-white font-medium mb-4">Conecta con EPIC</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition-colors">Soporte al cliente</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Política de privacidad</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Términos y condiciones</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Política de reembolsos</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Servicios para colegios y universidades</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna: Nuestros productos -->
+                <div>
+                    <h4 class="text-white font-medium mb-4">Nuestros productos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition-colors">Servicios para empresas</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Canjea cupones</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Regala cursos</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Sube a premium</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna: Recursos gratis -->
+                <div>
+                    <h4 class="text-white font-medium mb-4">Recursos gratis</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition-colors">Cursos gratis</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Conferencias</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Comunidad</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Como instalar la App de EPIC</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Firmas de correo</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sección inferior -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <!-- Ubicaciones -->
+                <div class="text-sm mb-4 md:mb-0">
+                    <span class="opacity-75">Lima - Perú</span>
+                    <span class="mx-2">•</span>
+                    <span class="opacity-75">Bogotá - Colombia</span>
+                    <span class="mx-2">•</span>
+                    <span class="opacity-75">Cochabamba - Bolivia</span>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="flex space-x-4">
+                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-[#011F3B] hover:bg-blue-900 transition-colors">
+                        <mat-icon class="text-white" svgIcon="feather:slack"></mat-icon>
+                    </a>
+                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-[#011F3B] hover:bg-blue-900 transition-colors">
+                        <mat-icon class="text-white" svgIcon="feather:youtube"></mat-icon>
+                    </a>
+                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-[#011F3B] hover:bg-blue-900 transition-colors">
+                        <mat-icon class="text-white" svgIcon="feather:tiktok"></mat-icon>
+                    </a>
+                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-[#011F3B] hover:bg-blue-900 transition-colors">
+                        <mat-icon class="text-white" svgIcon="feather:instagram"></mat-icon>
+                    </a>
+                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-[#011F3B] hover:bg-blue-900 transition-colors">
+                        <mat-icon class="text-white" svgIcon="feather:linkedin"></mat-icon>
+                    </a>
+                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-[#011F3B] hover:bg-blue-900 transition-colors">
+                        <mat-icon class="text-white" svgIcon="feather:twitter"></mat-icon>
+                    </a>
+                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-[#011F3B] hover:bg-blue-900 transition-colors">
+                        <mat-icon class="text-white" svgIcon="feather:github"></mat-icon>
+                    </a>
+                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-[#011F3B] hover:bg-blue-900 transition-colors">
+                        <mat-icon class="text-white" svgIcon="feather:whatsapp"></mat-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>

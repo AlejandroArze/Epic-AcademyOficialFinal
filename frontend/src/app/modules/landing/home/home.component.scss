@@ -34,7 +34,20 @@
 }
 
 .hero-section {
+    position: relative;
+    overflow: hidden;
     background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, #1a237e 0%, #1e88e5 100%);
+        z-index: -1;
+    }
 }
 
 .card-hover {
@@ -113,4 +126,103 @@
     min-height: 20px;
     font-size: 20px;
     line-height: 20px;
+}
+
+// Efecto de brillo
+.glow-effect {
+    position: relative;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120%;
+        height: 40px;
+        background: radial-gradient(ellipse at center, rgba(77,208,225,0.4) 0%, rgba(77,208,225,0) 70%);
+        filter: blur(20px);
+    }
+}
+
+// Iconos flotantes
+.floating-icon {
+    animation: float 3s ease-in-out infinite;
+    
+    @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+            animation-delay: #{$i * 0.5}s;
+        }
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 1024px) {
+    .hero-content {
+        text-align: center;
+        
+        .hero-image {
+            margin-top: 2rem;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+// Efecto de brillo para los círculos
+.blur-circle {
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+// Footer styles
+footer {
+    .container {
+        max-width: 1280px;
+    }
+
+    a {
+        transition: all 0.2s ease-in-out;
+        
+        &:hover {
+            color: white;
+        }
+    }
+
+    .social-icons {
+        a {
+            transition: all 0.2s ease-in-out;
+            
+            &:hover {
+                transform: translateY(-2px);
+            }
+        }
+    }
+}
+
+// Asegura que el contenedor principal ocupe todo el alto disponible
+.min-h-screen {
+    min-height: 100vh;
+}
+
+// Estilo para el botón de moneda
+.currency-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease-in-out;
+    
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+    }
 } 
