@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, ViewChild, ElementRef, AfterViewInit, OnDestroy } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterLink } from '@angular/router';
@@ -34,8 +34,12 @@ import { animate, style, transition, trigger } from '@angular/animations';
         ])
     ]
 })
-export class LandingHomeComponent
+export class LandingHomeComponent implements AfterViewInit, OnDestroy
 {
+    @ViewChild('schoolsCarousel') schoolsCarousel: ElementRef;
+    currentPosition = 0;
+    private autoScrollInterval: any;
+
     escuelas = [
         {
             titulo: 'PROGRAMACIÓN Y DESARROLLO WEB',
@@ -125,5 +129,75 @@ export class LandingHomeComponent
      */
     constructor()
     {
+    }
+
+    ngAfterViewInit() {
+        const carousel = this.schoolsCarousel.nativeElement.querySelector('.animate-carousel');
+        
+        // Observar las transiciones del carrusel
+        carousel.addEventListener('transitionend', () => {
+            this.updateCarouselPosition();
+        });
+
+        // Iniciar desplazamiento automático
+        this.startAutoScroll();
+    }
+
+    updateCarouselPosition() {
+        const carousel = this.schoolsCarousel.nativeElement.querySelector('.animate-carousel');
+        const cards = carousel.children;
+        
+        // Mover la primera tarjeta al final
+        const firstCard = cards[0];
+        carousel.appendChild(firstCard.cloneNode(true));
+        carousel.removeChild(firstCard);
+        
+        // Resetear la posición del carrusel sin animación
+        carousel.style.transition = 'none';
+        carousel.style.transform = 'translateX(0)';
+        
+        // Forzar reflow
+        carousel.offsetHeight;
+        
+        // Restaurar la transición con easing
+        carousel.style.transition = 'transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+    }
+
+    startAutoScroll() {
+        this.autoScrollInterval = setInterval(() => {
+            this.moveCarousel();
+        }, 3000); // Mover cada 3 segundos
+    }
+
+    moveCarousel() {
+        const carousel = this.schoolsCarousel.nativeElement.querySelector('.animate-carousel');
+        carousel.style.transition = 'transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+        
+        // Obtener el ancho de la ventana
+        const width = window.innerWidth;
+        let moveAmount;
+
+        // Ajustar la cantidad de movimiento según el tamaño de la pantalla
+        if (width > 1536) {
+            moveAmount = 'calc(-400px - 2rem)';
+        } else if (width > 1280) {
+            moveAmount = 'calc(-350px - 2rem)';
+        } else if (width > 1024) {
+            moveAmount = 'calc(-300px - 1.5rem)';
+        } else if (width > 768) {
+            moveAmount = 'calc(-280px - 1.5rem)';
+        } else if (width > 640) {
+            moveAmount = 'calc(-250px - 1rem)';
+        } else {
+            moveAmount = 'calc(-85vw - 0.5rem)';
+        }
+
+        carousel.style.transform = `translateX(${moveAmount})`;
+    }
+
+    ngOnDestroy() {
+        if (this.autoScrollInterval) {
+            clearInterval(this.autoScrollInterval);
+        }
     }
 }

@@ -1,377 +1,557 @@
-<!-- Barra de navegación -->
-<div class="fixed top-0 left-0 right-0 z-50 bg-white border-b shadow-sm">
-    <div class="flex h-16 items-center px-4 md:px-6 lg:px-8 max-w-7xl mx-auto">
-        <!-- Logo -->
-        <div class="flex items-center mr-8">
-            <img class="w-8 h-8" src="assets/images/logo/logo.svg" alt="Logo EPIC">
-            <span class="ml-2 text-2xl font-bold text-blue-900">EPIC</span>
-        </div>
+<div class="landing-container">
+    <!-- Barra de navegación -->
+    <div class="fixed top-0 left-0 right-0 z-50 bg-white border-b shadow-sm">
+        <div class="flex h-16 items-center px-4 md:px-6 lg:px-8 max-w-7xl mx-auto">
+            <!-- Logo -->
+            <div class="flex items-center mr-8">
+                <img class="w-8 h-8" src="assets/images/logo/logo.svg" alt="Logo EPIC">
+                <span class="ml-2 text-2xl font-bold text-blue-900">EPIC</span>
+            </div>
 
-        <!-- Menú principal -->
-        <div class="hidden md:flex items-center space-x-1 flex-1">
-            <ng-container *ngFor="let item of menuItems">
+            <!-- Menú principal -->
+            <div class="hidden md:flex items-center space-x-1 flex-1">
+                <ng-container *ngFor="let item of menuItems">
+                    <button 
+                        mat-button 
+                        [matMenuTriggerFor]="item.hasSubmenu ? menu : null"
+                        class="h-16 px-3 menu-item"
+                        [ngClass]="{'text-blue-600 font-medium': item.highlight}">
+                        <mat-icon 
+                            class="icon-size-5 mr-2"
+                            [svgIcon]="'heroicons_outline:' + item.icon">
+                        </mat-icon>
+                        <span>{{item.title}}</span>
+                        <span *ngIf="item.badge" 
+                              class="ml-2 badge badge-new">
+                            {{item.badge}}
+                        </span>
+                        <mat-icon 
+                            *ngIf="item.hasSubmenu" 
+                            class="icon-size-5 ml-1 opacity-50"
+                            [svgIcon]="'heroicons_mini:chevron-down'">
+                        </mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu" class="w-64">
+                        <!-- Aquí irá el contenido del menú desplegable -->
+                    </mat-menu>
+                </ng-container>
+            </div>
+
+            <!-- Botones de acción -->
+            <div class="flex items-center space-x-2">
                 <button 
                     mat-button 
-                    [matMenuTriggerFor]="item.hasSubmenu ? menu : null"
-                    class="h-16 px-3 menu-item"
-                    [ngClass]="{'text-blue-600 font-medium': item.highlight}">
-                    <mat-icon 
-                        class="icon-size-5 mr-2"
-                        [svgIcon]="'heroicons_outline:' + item.icon">
-                    </mat-icon>
-                    <span>{{item.title}}</span>
-                    <span *ngIf="item.badge" 
-                          class="ml-2 badge badge-new">
-                        {{item.badge}}
-                    </span>
-                    <mat-icon 
-                        *ngIf="item.hasSubmenu" 
-                        class="icon-size-5 ml-1 opacity-50"
-                        [svgIcon]="'heroicons_mini:chevron-down'">
-                    </mat-icon>
+                    class="text-gray-700 hover:text-blue-600">
+                    Inicia sesión
                 </button>
-                <mat-menu #menu="matMenu" class="w-64">
-                    <!-- Aquí irá el contenido del menú desplegable -->
-                </mat-menu>
-            </ng-container>
-        </div>
-
-        <!-- Botones de acción -->
-        <div class="flex items-center space-x-2">
-            <button 
-                mat-button 
-                class="text-gray-700 hover:text-blue-600">
-                Inicia sesión
-            </button>
-            <button 
-                mat-flat-button 
-                color="primary" 
-                class="rounded-full px-6">
-                ¡Comienza gratis!
-            </button>
-        </div>
-    </div>
-</div>
-
-<!-- Espaciador para compensar la barra fija -->
-<div class="h-16"></div>
-
-<div class="flex flex-col min-h-screen">
-    <!-- Main Hero Section -->
-    <div class="relative min-h-[600px] overflow-hidden">
-        <!-- Fondo con gradiente -->
-        <div class="absolute inset-0 bg-gradient-to-r from-blue-950 to-blue-600"></div>
-        
-        <!-- Contenido principal -->
-        <div class="relative z-10 container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center">
-            <!-- Columna de texto -->
-            <div class="lg:w-1/2 text-white">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">
-                    En español, nadie explica mejor
-                    <span class="block text-yellow-400 mt-2">que EPIC</span>
-                </h1>
-                <p class="text-xl mb-8 text-blue-100">
-                    Si piensas que la tecnología es difícil es porque no conoces EPIC,
-                    <span class="block">
-                        <span class="border-b-2 border-blue-400">9 años la plataforma más obsesionada</span> con la calidad de los cursos.
-                    </span>
-                </p>
-                <button mat-flat-button 
-                        class="bg-yellow-400 text-blue-900 text-lg px-8 py-4 rounded-full hover:bg-yellow-300 transition-colors">
-                    Comienza a estudiar gratis
+                <button 
+                    mat-flat-button 
+                    color="primary" 
+                    class="rounded-full px-6">
+                    ¡Comienza gratis!
                 </button>
-                <p class="mt-4 text-sm text-blue-200">*No necesitas tarjeta de crédito</p>
-            </div>
-
-            <!-- Columna de imagen -->
-            <div class="lg:w-1/2 mt-12 lg:mt-0 relative">
-                <!-- Círculos flotantes -->
-                <div class="absolute">
-                    <div class="absolute -top-20 right-10 w-12 h-12 rounded-full bg-blue-500/20 backdrop-blur-sm flex items-center justify-center">
-                        <mat-icon class="text-white">code</mat-icon>
-                    </div>
-                    <div class="absolute top-10 -right-10 w-12 h-12 rounded-full bg-green-500/20 backdrop-blur-sm flex items-center justify-center">
-                        <mat-icon class="text-white">terminal</mat-icon>
-                    </div>
-                    <div class="absolute bottom-20 left-10 w-12 h-12 rounded-full bg-purple-500/20 backdrop-blur-sm flex items-center justify-center">
-                        <mat-icon class="text-white">memory</mat-icon>
-                    </div>
-                </div>
-
-                <!-- Imagen principal con efecto de brillo -->
-                <div class="relative">
-                    <div class="absolute -bottom-10 w-full h-40 bg-blue-500/30 blur-3xl"></div>
-                    <img src="assets/images/hero-students.png" 
-                         alt="Estudiantes EPIC" 
-                         class="relative z-10 max-w-xl mx-auto">
-                    <!-- Anillo de luz -->
-                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[120%] h-4">
-                        <div class="w-full h-full bg-blue-400/30 blur-xl rounded-full"></div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 
-    <!-- Sección de escuelas -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-        <div *ngFor="let escuela of escuelas" 
-             class="bg-card rounded-2xl shadow p-6 hover:shadow-lg transition-shadow">
-            <mat-icon class="text-primary text-4xl mb-4">{{escuela.icono}}</mat-icon>
-            <h3 class="text-xl font-bold text-primary mb-2">{{escuela.titulo}}</h3>
-            <p class="text-secondary">{{escuela.descripcion}}</p>
-        </div>
-    </div>
+    <!-- Espaciador para compensar la barra fija -->
+    <div class="h-16"></div>
 
-    <!-- Sección de Planes PRIMERO -->
-    <div class="dark-bg py-20">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center text-white mb-2">
-                Planes de estudio para que <span class="text-blue-400">#NoTeDetengas</span>
-            </h2>
+    <div class="flex flex-col min-h-screen">
+        <!-- Main Hero Section -->
+        <div class="relative min-h-[600px] overflow-hidden">
+            <!-- Fondo con gradiente -->
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-950 to-blue-600"></div>
             
-            <!-- Grid de planes -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-                <!-- Plan Gratuito -->
-                <div class="plan-card p-6 rounded-lg border-t-4 border-green-400">
-                    <div class="flex justify-center mb-6">
-                        <img src="assets/icons/gift.svg" alt="Plan gratuito" class="w-16 h-16">
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-4">Plan gratuito</h3>
-                    <p class="text-gray-400 mb-6">
-                        Toma nuestros 9 cursos gratuitos (incluyen certificado) y mira las primeras clases de todos los cursos.
+            <!-- Contenido principal -->
+            <div class="relative z-10 container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center">
+                <!-- Columna de texto -->
+                <div class="lg:w-1/2 text-white">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                        En español, nadie explica mejor
+                        <span class="block text-yellow-400 mt-2">que EPIC</span>
+                    </h1>
+                    <p class="text-xl mb-8 text-blue-100">
+                        Si piensas que la tecnología es difícil es porque no conoces EPIC,
+                        <span class="block">
+                            <span class="border-b-2 border-blue-400">9 años la plataforma más obsesionada</span> con la calidad de los cursos.
+                        </span>
                     </p>
-                    <button mat-flat-button class="w-full bg-green-400 text-blue-900">
+                    <button mat-flat-button 
+                            class="bg-yellow-400 text-blue-900 text-lg px-8 py-4 rounded-full hover:bg-yellow-300 transition-colors">
                         Comienza a estudiar gratis
                     </button>
+                    <p class="mt-4 text-sm text-blue-200">*No necesitas tarjeta de crédito</p>
                 </div>
 
-                <!-- Plan Premium -->
-                <div class="plan-card p-6 rounded-lg border-t-4 border-yellow-400">
-                    <div class="flex justify-center mb-6">
-                        <img src="assets/icons/trophy.svg" alt="Plan premium" class="w-16 h-16">
+                <!-- Columna de imagen -->
+                <div class="lg:w-1/2 mt-12 lg:mt-0 relative">
+                    <!-- Círculos flotantes -->
+                    <div class="absolute">
+                        <div class="absolute -top-20 right-10 w-12 h-12 rounded-full bg-blue-500/20 backdrop-blur-sm flex items-center justify-center">
+                            <mat-icon class="text-white">code</mat-icon>
+                        </div>
+                        <div class="absolute top-10 -right-10 w-12 h-12 rounded-full bg-green-500/20 backdrop-blur-sm flex items-center justify-center">
+                            <mat-icon class="text-white">terminal</mat-icon>
+                        </div>
+                        <div class="absolute bottom-20 left-10 w-12 h-12 rounded-full bg-purple-500/20 backdrop-blur-sm flex items-center justify-center">
+                            <mat-icon class="text-white">memory</mat-icon>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-4">Plan Premium</h3>
-                    <p class="text-gray-400 mb-6">
-                        Acceso total a cientos de cursos, talleres y rutas de EPIC con un único pago.
-                    </p>
-                    <button mat-flat-button class="w-full bg-yellow-400 text-blue-900">
-                        ¡Sube a premium ahora!
-                    </button>
-                </div>
 
-                <!-- Plan para empresas -->
-                <div class="plan-card p-6 rounded-lg border-t-4 border-red-400">
-                    <div class="flex justify-center mb-6">
-                        <img src="assets/icons/briefcase.svg" alt="Plan empresas" class="w-16 h-16">
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-4">Plan para empresas</h3>
-                    <p class="text-gray-400 mb-6">
-                        Capacita a todo tu equipo desde un único lugar y supervisa sus objetivos de aprendizaje.
-                    </p>
-                    <button mat-flat-button class="w-full bg-red-400 text-white">
-                        Más información
-                    </button>
-                </div>
-
-                <!-- Plan para estudiantes -->
-                <div class="plan-card p-6 rounded-lg border-t-4 border-blue-400">
-                    <div class="flex justify-center mb-6">
-                        <img src="assets/icons/backpack.svg" alt="Plan estudiantes" class="w-16 h-16">
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-4">Plan para estudiantes</h3>
-                    <p class="text-gray-400 mb-6">
-                        Si estás en la universidad, colegio o instituto, obtén una beca del 50% por un año en EPIC.
-                    </p>
-                    <button mat-flat-button class="w-full bg-blue-400 text-white">
-                        Más información
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sección de Testimonios -->
-    <div class="dark-bg py-20">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold mb-2 text-white">
-                Tu puedes ser la próxima <span class="text-blue-400">historia de éxito</span>
-            </h2>
-            <p class="text-gray-400 mb-12">Así como ellos tú también puedes alcanzar tus metas.</p>
-
-            <!-- Carrusel de testimonios -->
-            <div class="relative max-w-4xl mx-auto">
-                <!-- Botones de navegación -->
-                <button 
-                    (click)="testimonioAnterior()"
-                    class="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-blue-500 hover:bg-blue-600 transition-colors">
-                    <mat-icon class="text-white text-xl">chevron_left</mat-icon>
-                </button>
-                
-                <button 
-                    (click)="siguienteTestimonio()"
-                    class="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-blue-500 hover:bg-blue-600 transition-colors">
-                    <mat-icon class="text-white text-xl">chevron_right</mat-icon>
-                </button>
-
-                <!-- Contenedor del carrusel -->
-                <div class="overflow-hidden px-12">
-                    <div class="transition-all duration-300 ease-in-out"
-                         [@slideAnimation]="testimonioActual">
-                        <!-- Testimonio actual -->
-                        <div class="bg-[#011F3B] p-8 rounded-lg text-left border-l-4 border-blue-500">
-                            <div class="flex items-center mb-6">
-                                <img [src]="testimonios[testimonioActual].imagen" 
-                                     [alt]="testimonios[testimonioActual].nombre" 
-                                     class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-blue-500">
-                                <div>
-                                    <h4 class="text-white text-xl font-medium flex items-center">
-                                        {{testimonios[testimonioActual].nombre}}
-                                        <span class="ml-2 text-2xl">{{testimonios[testimonioActual].pais}}</span>
-                                    </h4>
-                                </div>
-                            </div>
-                            <p class="text-gray-300 text-lg leading-relaxed mb-6">
-                                {{testimonios[testimonioActual].texto}}
-                            </p>
-                            <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors inline-flex items-center text-sm">
-                                Lee la historia completa
-                                <mat-icon class="ml-1 icon-size-5">arrow_forward</mat-icon>
-                            </a>
+                    <!-- Imagen principal con efecto de brillo -->
+                    <div class="relative">
+                        <div class="absolute -bottom-10 w-full h-40 bg-blue-500/30 blur-3xl"></div>
+                        <img src="assets/images/hero-students.png" 
+                             alt="Estudiantes EPIC" 
+                             class="relative z-10 max-w-xl mx-auto">
+                        <!-- Anillo de luz -->
+                        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[120%] h-4">
+                            <div class="w-full h-full bg-blue-400/30 blur-xl rounded-full"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Justo antes del footer -->
-    <div class="bg-gradient-to-r from-blue-900 to-blue-700 py-20">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-                No postergues más tu educación, ¡tu futuro te está esperando!
-            </h2>
-            <p class="text-xl text-blue-100 mb-12 max-w-3xl mx-auto">
-                Un nuevo empleo, mejor salario, mayor calidad de vida, ¡todo lo puedes conseguir con educación! 
-                Es el momento de lograr lo que siempre has querido.
-            </p>
-            <div class="flex flex-col items-center">
-                <button mat-flat-button 
-                        class="bg-white text-blue-900 text-lg px-8 py-4 rounded-full hover:bg-blue-50 transition-colors mb-4">
-                    Comienza a estudiar gratis
-                </button>
-                <span class="text-blue-200 text-sm">*Solo necesitas un correo electrónico</span>
+        <!-- Sección de escuelas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <div *ngFor="let escuela of escuelas" 
+                 class="bg-card rounded-2xl shadow p-6 hover:shadow-lg transition-shadow">
+                <mat-icon class="text-primary text-4xl mb-4">{{escuela.icono}}</mat-icon>
+                <h3 class="text-xl font-bold text-primary mb-2">{{escuela.titulo}}</h3>
+                <p class="text-secondary">{{escuela.descripcion}}</p>
             </div>
         </div>
-    </div>
 
-    <!-- El footer al final -->
-    <footer class="bg-[#011627] text-gray-400 py-16 mt-auto">
-        <div class="container mx-auto px-4">
-            <!-- Logo y selector de moneda -->
-            <div class="mb-12">
-                <img class="w-32 mb-6" src="assets/images/logo/logo-text-on-dark.svg" alt="Logo EPIC">
-                <div class="flex items-center">
-                    <span class="mr-2">Estás usando EPIC en</span>
-                    <button mat-button class="currency-btn text-white px-4 py-2 rounded flex items-center">
-                        <mat-icon class="mr-2" svgIcon="heroicons_outline:currency-dollar"></mat-icon>
-                        USD
-                        <mat-icon class="ml-2" svgIcon="heroicons_mini:chevron-down"></mat-icon>
+        <!-- Sección de Explora otras escuelas -->
+        <div class="bg-[#011F3B] py-20 relative overflow-hidden">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-white mb-12">
+                    Explora otras escuelas de EPIC
+                </h2>
+            </div>
+
+            <!-- Carrusel de escuelas a ancho completo -->
+            <div class="schools-carousel" #schoolsCarousel>
+                <div class="flex gap-6 animate-carousel">
+                    <!-- 5 tarjetas visibles -->
+                    <div class="school-card bg-gradient-to-r from-blue-900 to-indigo-900 rounded-2xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-orange-500/20 flex items-center justify-center mr-4">
+                                <mat-icon class="text-orange-500">language</mat-icon>
+                            </div>
+                            <span class="text-blue-400 text-sm">Escuela de</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">INGLÉS</h3>
+                        <p class="text-gray-400 mb-6">
+                            Mejora tus habilidades en inglés, donde aprenderás a comunicarte de manera efectiva en situaciones...
+                        </p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 inline-flex items-center group">
+                            Empieza a estudiar
+                            <mat-icon class="ml-2 transform group-hover:translate-x-1 transition-transform">arrow_forward</mat-icon>
+                        </a>
+                    </div>
+                    <div class="school-card bg-gradient-to-r from-blue-900 to-indigo-900 rounded-2xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center mr-4">
+                                <mat-icon class="text-purple-500">design_services</mat-icon>
+                            </div>
+                            <span class="text-blue-400 text-sm">Escuela de</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">UX / UI</h3>
+                        <p class="text-gray-400 mb-6">
+                            Fortalece tus habilidades en diseño UX/UI en nuestra escuela, donde aprenderás a crear experiencias de...
+                        </p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 inline-flex items-center group">
+                            Empieza a estudiar
+                            <mat-icon class="ml-2 transform group-hover:translate-x-1 transition-transform">arrow_forward</mat-icon>
+                        </a>
+                    </div>
+                    <div class="school-card bg-gradient-to-r from-blue-900 to-indigo-900 rounded-2xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center mr-4">
+                                <mat-icon class="text-green-500">brush</mat-icon>
+                            </div>
+                            <span class="text-blue-400 text-sm">Escuela de</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">DISEÑO Y MULTIMEDIA</h3>
+                        <p class="text-gray-400 mb-6">
+                            Potencia tus habilidades en diseño y multimedia en nuestra escuela, donde aprenderás a crear contenido visual...
+                        </p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 inline-flex items-center group">
+                            Empieza a estudiar
+                            <mat-icon class="ml-2 transform group-hover:translate-x-1 transition-transform">arrow_forward</mat-icon>
+                        </a>
+                    </div>
+                    <div class="school-card bg-gradient-to-r from-blue-900 to-indigo-900 rounded-2xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-orange-500/20 flex items-center justify-center mr-4">
+                                <mat-icon class="text-orange-500">language</mat-icon>
+                            </div>
+                            <span class="text-blue-400 text-sm">Escuela de</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">INGLÉS</h3>
+                        <p class="text-gray-400 mb-6">
+                            Mejora tus habilidades en inglés, donde aprenderás a comunicarte de manera efectiva en situaciones...
+                        </p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 inline-flex items-center group">
+                            Empieza a estudiar
+                            <mat-icon class="ml-2 transform group-hover:translate-x-1 transition-transform">arrow_forward</mat-icon>
+                        </a>
+                    </div>
+                    <div class="school-card bg-gradient-to-r from-blue-900 to-indigo-900 rounded-2xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center mr-4">
+                                <mat-icon class="text-purple-500">design_services</mat-icon>
+                            </div>
+                            <span class="text-blue-400 text-sm">Escuela de</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">UX / UI</h3>
+                        <p class="text-gray-400 mb-6">
+                            Fortalece tus habilidades en diseño UX/UI en nuestra escuela, donde aprenderás a crear experiencias de...
+                        </p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 inline-flex items-center group">
+                            Empieza a estudiar
+                            <mat-icon class="ml-2 transform group-hover:translate-x-1 transition-transform">arrow_forward</mat-icon>
+                        </a>
+                    </div>
+                    <div class="school-card bg-gradient-to-r from-blue-900 to-indigo-900 rounded-2xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center mr-4">
+                                <mat-icon class="text-green-500">brush</mat-icon>
+                            </div>
+                            <span class="text-blue-400 text-sm">Escuela de</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">DISEÑO Y MULTIMEDIA</h3>
+                        <p class="text-gray-400 mb-6">
+                            Potencia tus habilidades en diseño y multimedia en nuestra escuela, donde aprenderás a crear contenido visual...
+                        </p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 inline-flex items-center group">
+                            Empieza a estudiar
+                            <mat-icon class="ml-2 transform group-hover:translate-x-1 transition-transform">arrow_forward</mat-icon>
+                        </a>
+                    </div>
+                    <!-- Duplicar la primera tarjeta al final para el efecto infinito -->
+                    <div class="school-card bg-gradient-to-r from-blue-900 to-indigo-900 rounded-2xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-orange-500/20 flex items-center justify-center mr-4">
+                                <mat-icon class="text-orange-500">language</mat-icon>
+                            </div>
+                            <span class="text-blue-400 text-sm">Escuela de</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">INGLÉS</h3>
+                        <p class="text-gray-400 mb-6">
+                            Mejora tus habilidades en inglés, donde aprenderás a comunicarte de manera efectiva en situaciones...
+                        </p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 inline-flex items-center group">
+                            Empieza a estudiar
+                            <mat-icon class="ml-2 transform group-hover:translate-x-1 transition-transform">arrow_forward</mat-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mx-auto px-4">
+                <!-- Botón de explorar todas -->
+                <div class="text-center mt-12">
+                    <button mat-flat-button 
+                            class="bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-blue-600 transition-colors">
+                        ¡Explora todas nuestras escuelas!
                     </button>
                 </div>
             </div>
+        </div>
 
-            <!-- Grid de enlaces -->
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-                <!-- Columna: Acerca de la empresa -->
-                <div>
-                    <h4 class="text-white font-medium mb-4">Acerca de la empresa</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white transition-colors">¿Qué es EPIC?</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">El equipo</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Los profesores</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Enunciado de misión</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Marca y logotipo</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Cultura</a></li>
-                    </ul>
-                </div>
+        <!-- Sección de Planes PRIMERO -->
+        <div class="dark-bg py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-white mb-2">
+                    Planes de estudio para que <span class="text-blue-400">#NoTeDetengas</span>
+                </h2>
+                
+                <!-- Grid de planes -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                    <!-- Plan Gratuito -->
+                    <div class="plan-card p-6 rounded-lg border-t-4 border-green-400">
+                        <div class="flex justify-center mb-6">
+                            <img src="assets/icons/gift.svg" alt="Plan gratuito" class="w-16 h-16">
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Plan gratuito</h3>
+                        <p class="text-gray-400 mb-6">
+                            Toma nuestros 9 cursos gratuitos (incluyen certificado) y mira las primeras clases de todos los cursos.
+                        </p>
+                        <button mat-flat-button class="w-full bg-green-400 text-blue-900">
+                            Comienza a estudiar gratis
+                        </button>
+                    </div>
 
-                <!-- Columna: Conecta con EPIC -->
-                <div>
-                    <h4 class="text-white font-medium mb-4">Conecta con EPIC</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white transition-colors">Soporte al cliente</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Política de privacidad</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Términos y condiciones</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Política de reembolsos</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Servicios para colegios y universidades</a></li>
-                    </ul>
-                </div>
+                    <!-- Plan Premium -->
+                    <div class="plan-card p-6 rounded-lg border-t-4 border-yellow-400">
+                        <div class="flex justify-center mb-6">
+                            <img src="assets/icons/trophy.svg" alt="Plan premium" class="w-16 h-16">
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Plan Premium</h3>
+                        <p class="text-gray-400 mb-6">
+                            Acceso total a cientos de cursos, talleres y rutas de EPIC con un único pago.
+                        </p>
+                        <button mat-flat-button class="w-full bg-yellow-400 text-blue-900">
+                            ¡Sube a premium ahora!
+                        </button>
+                    </div>
 
-                <!-- Columna: Nuestros productos -->
-                <div>
-                    <h4 class="text-white font-medium mb-4">Nuestros productos</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white transition-colors">Servicios para empresas</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Canjea cupones</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Regala cursos</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Sube a premium</a></li>
-                    </ul>
-                </div>
+                    <!-- Plan para empresas -->
+                    <div class="plan-card p-6 rounded-lg border-t-4 border-red-400">
+                        <div class="flex justify-center mb-6">
+                            <img src="assets/icons/briefcase.svg" alt="Plan empresas" class="w-16 h-16">
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Plan para empresas</h3>
+                        <p class="text-gray-400 mb-6">
+                            Capacita a todo tu equipo desde un único lugar y supervisa sus objetivos de aprendizaje.
+                        </p>
+                        <button mat-flat-button class="w-full bg-red-400 text-white">
+                            Más información
+                        </button>
+                    </div>
 
-                <!-- Columna: Recursos gratis -->
-                <div>
-                    <h4 class="text-white font-medium mb-4">Recursos gratis</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white transition-colors">Cursos gratis</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Conferencias</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Comunidad</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Como instalar la App de EPIC</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Firmas de correo</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Sección inferior -->
-            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <!-- Ubicaciones -->
-                <div class="text-sm mb-4 md:mb-0">
-                    <span class="opacity-75">Lima - Perú</span>
-                    <span class="mx-2">•</span>
-                    <span class="opacity-75">Bogotá - Colombia</span>
-                    <span class="mx-2">•</span>
-                    <span class="opacity-75">Cochabamba - Bolivia</span>
-                </div>
-
-                <!-- Redes sociales -->
-                <div class="flex space-x-4">
-                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full social-icon transition-colors">
-                        <mat-icon class="text-white" svgIcon="feather:slack"></mat-icon>
-                    </a>
-                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full social-icon transition-colors">
-                        <mat-icon class="text-white" svgIcon="feather:youtube"></mat-icon>
-                    </a>
-                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full social-icon transition-colors">
-                        <mat-icon class="text-white" svgIcon="feather:tiktok"></mat-icon>
-                    </a>
-                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full social-icon transition-colors">
-                        <mat-icon class="text-white" svgIcon="feather:instagram"></mat-icon>
-                    </a>
-                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full social-icon transition-colors">
-                        <mat-icon class="text-white" svgIcon="feather:linkedin"></mat-icon>
-                    </a>
-                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full social-icon transition-colors">
-                        <mat-icon class="text-white" svgIcon="feather:twitter"></mat-icon>
-                    </a>
-                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full social-icon transition-colors">
-                        <mat-icon class="text-white" svgIcon="feather:github"></mat-icon>
-                    </a>
-                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full social-icon transition-colors">
-                        <mat-icon class="text-white" svgIcon="feather:whatsapp"></mat-icon>
-                    </a>
+                    <!-- Plan para estudiantes -->
+                    <div class="plan-card p-6 rounded-lg border-t-4 border-blue-400">
+                        <div class="flex justify-center mb-6">
+                            <img src="assets/icons/backpack.svg" alt="Plan estudiantes" class="w-16 h-16">
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Plan para estudiantes</h3>
+                        <p class="text-gray-400 mb-6">
+                            Si estás en la universidad, colegio o instituto, obtén una beca del 50% por un año en EPIC.
+                        </p>
+                        <button mat-flat-button class="w-full bg-blue-400 text-white">
+                            Más información
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+
+        <!-- Sección de Testimonios -->
+        <div class="dark-bg py-20">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold mb-2 text-white">
+                    Tu puedes ser la próxima <span class="text-blue-400">historia de éxito</span>
+                </h2>
+                <p class="text-gray-400 mb-12">Así como ellos tú también puedes alcanzar tus metas.</p>
+
+                <!-- Carrusel de testimonios con previews -->
+                <div class="relative max-w-6xl mx-auto">
+                    <!-- Botones de navegación -->
+                    <button 
+                        (click)="testimonioAnterior()"
+                        class="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-10 h-10 flex items-center justify-center rounded-full bg-blue-500 hover:bg-blue-600 transition-colors">
+                        <mat-icon class="text-white text-xl">chevron_left</mat-icon>
+                    </button>
+                    
+                    <button 
+                        (click)="siguienteTestimonio()"
+                        class="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-10 h-10 flex items-center justify-center rounded-full bg-blue-500 hover:bg-blue-600 transition-colors">
+                        <mat-icon class="text-white text-xl">chevron_right</mat-icon>
+                    </button>
+
+                    <!-- Contenedor del carrusel con previews -->
+                    <div class="flex items-center justify-center gap-8">
+                        <!-- Preview anterior -->
+                        <div class="relative w-[600px] transform -translate-x-8 scale-90 opacity-70">
+                            <div class="bg-[#011F3B] p-8 rounded-lg text-left border-l-4 border-blue-500 blur-[2px]">
+                                <div class="flex items-center mb-4">
+                                    <img [src]="testimonios[(testimonioActual - 1 + testimonios.length) % testimonios.length].imagen" 
+                                         [alt]="testimonios[(testimonioActual - 1 + testimonios.length) % testimonios.length].nombre" 
+                                         class="w-14 h-14 rounded-full mr-4 object-cover border-2 border-blue-500">
+                                    <div>
+                                        <h4 class="text-white text-lg font-medium">
+                                            {{testimonios[(testimonioActual - 1 + testimonios.length) % testimonios.length].nombre}}
+                                            <span class="ml-2">{{testimonios[(testimonioActual - 1 + testimonios.length) % testimonios.length].pais}}</span>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <p class="text-gray-400 line-clamp-3">
+                                    {{testimonios[(testimonioActual - 1 + testimonios.length) % testimonios.length].texto}}
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Testimonio actual -->
+                        <div class="z-10 w-full max-w-3xl">
+                            <div class="bg-[#011F3B] p-8 rounded-lg text-left border-l-4 border-blue-500 transform transition-all duration-500">
+                                <div class="flex items-center mb-6">
+                                    <img [src]="testimonios[testimonioActual].imagen" 
+                                         [alt]="testimonios[testimonioActual].nombre" 
+                                         class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-blue-500">
+        <div>
+                                        <h4 class="text-white text-xl font-medium flex items-center">
+                                            {{testimonios[testimonioActual].nombre}}
+                                            <span class="ml-2 text-2xl">{{testimonios[testimonioActual].pais}}</span>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                                    {{testimonios[testimonioActual].texto}}
+                                </p>
+                                <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors inline-flex items-center text-sm">
+                                    Lee la historia completa
+                                    <mat-icon class="ml-1 icon-size-5">arrow_forward</mat-icon>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Preview siguiente -->
+                        <div class="relative w-[600px] transform translate-x-8 scale-90 opacity-70">
+                            <div class="bg-[#011F3B] p-8 rounded-lg text-left border-l-4 border-blue-500 blur-[2px]">
+                                <div class="flex items-center mb-4">
+                                    <img [src]="testimonios[(testimonioActual + 1) % testimonios.length].imagen" 
+                                         [alt]="testimonios[(testimonioActual + 1) % testimonios.length].nombre" 
+                                         class="w-14 h-14 rounded-full mr-4 object-cover border-2 border-blue-500">
+                                    <div>
+                                        <h4 class="text-white text-lg font-medium">
+                                            {{testimonios[(testimonioActual + 1) % testimonios.length].nombre}}
+                                            <span class="ml-2">{{testimonios[(testimonioActual + 1) % testimonios.length].pais}}</span>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <p class="text-gray-400 line-clamp-3">
+                                    {{testimonios[(testimonioActual + 1) % testimonios.length].texto}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Justo antes del footer -->
+        <div class="bg-gradient-to-r from-blue-900 to-blue-700 py-20">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    No postergues más tu educación, ¡tu futuro te está esperando!
+                </h2>
+                <p class="text-xl text-blue-100 mb-12 max-w-3xl mx-auto">
+                    Un nuevo empleo, mejor salario, mayor calidad de vida, ¡todo lo puedes conseguir con educación! 
+                    Es el momento de lograr lo que siempre has querido.
+                </p>
+                <div class="flex flex-col items-center">
+                    <button mat-flat-button 
+                            class="bg-white text-blue-900 text-lg px-8 py-4 rounded-full hover:bg-blue-50 transition-colors mb-4">
+                        Comienza a estudiar gratis
+                    </button>
+                    <span class="text-blue-200 text-sm">*Solo necesitas un correo electrónico</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- El footer al final -->
+        <footer class="bg-[#011627] text-gray-400 py-16 mt-auto">
+            <div class="container mx-auto px-4">
+                <!-- Logo y selector de moneda -->
+                <div class="mb-12">
+                    <img class="w-32 mb-6" src="assets/images/logo/logo-text-on-dark.svg" alt="Logo EPIC">
+                    <div class="flex items-center">
+                        <span class="mr-2">Estás usando EPIC en</span>
+                        <button mat-button class="currency-btn text-white px-4 py-2 rounded flex items-center">
+                            <mat-icon class="mr-2" svgIcon="heroicons_outline:currency-dollar"></mat-icon>
+                            USD
+                            <mat-icon class="ml-2" svgIcon="heroicons_mini:chevron-down"></mat-icon>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Grid de enlaces -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                    <!-- Columna: Acerca de la empresa -->
+                    <div>
+                        <h4 class="text-white font-medium mb-4">Acerca de la empresa</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-white transition-colors">¿Qué es EPIC?</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">El equipo</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Los profesores</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Enunciado de misión</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Marca y logotipo</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Cultura</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Columna: Conecta con EPIC -->
+                    <div>
+                        <h4 class="text-white font-medium mb-4">Conecta con EPIC</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-white transition-colors">Soporte al cliente</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Política de privacidad</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Términos y condiciones</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Política de reembolsos</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Servicios para colegios y universidades</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Columna: Nuestros productos -->
+                    <div>
+                        <h4 class="text-white font-medium mb-4">Nuestros productos</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-white transition-colors">Servicios para empresas</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Canjea cupones</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Regala cursos</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Sube a premium</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Columna: Recursos gratis -->
+                    <div>
+                        <h4 class="text-white font-medium mb-4">Recursos gratis</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-white transition-colors">Cursos gratis</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Conferencias</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Comunidad</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Como instalar la App de EPIC</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Firmas de correo</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sección inferior -->
+                <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                    <!-- Ubicaciones -->
+                    <div class="text-sm mb-4 md:mb-0">
+                        <span class="opacity-75">Lima - Perú</span>
+                        <span class="mx-2">•</span>
+                        <span class="opacity-75">Bogotá - Colombia</span>
+                        <span class="mx-2">•</span>
+                        <span class="opacity-75">Cochabamba - Bolivia</span>
+                    </div>
+
+                    <!-- Redes sociales -->
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full social-icon transition-colors">
+                            <mat-icon class="text-white" svgIcon="feather:slack"></mat-icon>
+                        </a>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full social-icon transition-colors">
+                            <mat-icon class="text-white" svgIcon="feather:youtube"></mat-icon>
+                        </a>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full social-icon transition-colors">
+                            <mat-icon class="text-white" svgIcon="feather:tiktok"></mat-icon>
+                        </a>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full social-icon transition-colors">
+                            <mat-icon class="text-white" svgIcon="feather:instagram"></mat-icon>
+                        </a>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full social-icon transition-colors">
+                            <mat-icon class="text-white" svgIcon="feather:linkedin"></mat-icon>
+                        </a>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full social-icon transition-colors">
+                            <mat-icon class="text-white" svgIcon="feather:twitter"></mat-icon>
+                        </a>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full social-icon transition-colors">
+                            <mat-icon class="text-white" svgIcon="feather:github"></mat-icon>
+                        </a>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full social-icon transition-colors">
+                            <mat-icon class="text-white" svgIcon="feather:whatsapp"></mat-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </div>

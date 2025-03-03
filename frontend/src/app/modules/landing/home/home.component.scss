@@ -1,6 +1,20 @@
+// Variables para breakpoints
+$breakpoints: (
+    'sm': 640px,
+    'md': 768px,
+    'lg': 1024px,
+    'xl': 1280px,
+    '2xl': 1536px
+);
+
+// Estilos base
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    @apply px-4 mx-auto;
+    max-width: 1280px;
+
+    @media (max-width: map-get($breakpoints, 'lg')) {
+        max-width: 100%;
+    }
 }
 
 .bg-gradient-to-r {
@@ -34,6 +48,7 @@
 }
 
 .hero-section {
+    @apply py-16 lg:py-24;
     position: relative;
     overflow: hidden;
     background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
@@ -47,6 +62,30 @@
         bottom: 0;
         background: linear-gradient(135deg, #1a237e 0%, #1e88e5 100%);
         z-index: -1;
+    }
+
+    .hero-content {
+        @apply flex flex-col lg:flex-row items-center;
+        
+        .text-content {
+            @apply w-full lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0;
+
+            h1 {
+                @apply text-3xl md:text-4xl lg:text-6xl;
+            }
+
+            p {
+                @apply text-base md:text-lg lg:text-xl;
+            }
+        }
+
+        .image-content {
+            @apply w-full lg:w-1/2;
+            
+            img {
+                @apply max-w-full lg:max-w-xl mx-auto;
+            }
+        }
     }
 }
 
@@ -189,24 +228,114 @@
 
 // Footer styles
 footer {
-    .container {
-        max-width: 1280px;
-    }
+    @apply bg-[#011627] text-gray-400 py-8 md:py-12 lg:py-16;
 
-    a {
-        transition: all 0.2s ease-in-out;
-        
-        &:hover {
-            color: white;
+    .container {
+        @apply px-4 mx-auto;
+        max-width: 1280px;
+
+        @media (max-width: 1024px) {
+            max-width: 100%;
         }
     }
 
-    .social-icons {
-        a {
-            transition: all 0.2s ease-in-out;
+    // Logo y selector de moneda
+    .footer-header {
+        @apply mb-8 md:mb-12;
+
+        .logo {
+            @apply w-24 md:w-32 mb-4 md:mb-6;
+        }
+
+        .currency-selector {
+            @apply flex flex-col md:flex-row md:items-center gap-2 md:gap-4;
             
-            &:hover {
-                transform: translateY(-2px);
+            span {
+                @apply text-sm md:text-base;
+            }
+
+            button {
+                @apply w-full md:w-auto;
+            }
+        }
+    }
+
+    // Grid de enlaces
+    .footer-grid {
+        @apply grid gap-8 mb-8 md:mb-12;
+        grid-template-columns: repeat(1, 1fr);
+
+        @media (min-width: 640px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (min-width: 1024px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .footer-column {
+            @apply space-y-2;
+
+            h4 {
+                @apply text-white font-medium text-lg mb-4;
+            }
+
+            ul {
+                @apply space-y-2;
+
+                li a {
+                    @apply text-gray-400 hover:text-white transition-colors text-sm md:text-base;
+                    display: inline-block;
+                    padding: 0.25rem 0;
+                }
+            }
+        }
+    }
+
+    // Sección inferior
+    .footer-bottom {
+        @apply border-t border-gray-800 pt-6 md:pt-8;
+
+        .footer-content {
+            @apply flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0;
+
+            // Ubicaciones
+            .locations {
+                @apply text-xs md:text-sm text-center md:text-left;
+                
+                span {
+                    @apply opacity-75;
+                }
+
+                .separator {
+                    @apply mx-2 hidden md:inline;
+                }
+
+                // En móvil, apilar las ubicaciones
+                @media (max-width: 768px) {
+                    .separator {
+                        display: block;
+                        height: 0.5rem;
+                    }
+                }
+            }
+
+            // Redes sociales
+            .social-icons {
+                @apply flex flex-wrap justify-center md:justify-start gap-3 md:gap-4;
+
+                a {
+                    @apply w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-[#011F3B] 
+                           hover:bg-blue-900 transition-colors;
+
+                    .mat-icon {
+                        @apply text-white text-base md:text-lg;
+                    }
+                }
             }
         }
     }
@@ -228,29 +357,91 @@ footer {
 }
 
 // Estilos para la sección CTA
-.bg-gradient-to-r {
-    &.from-blue-900.to-blue-700 {
-        position: relative;
-        overflow: hidden;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-            background-size: 20px 20px;
-            opacity: 0.2;
+.cta-section {
+    @apply bg-gradient-to-r from-blue-900 to-blue-700 relative overflow-hidden;
+    
+    // Contenedor principal
+    .container {
+        @apply px-4 py-12 md:py-16 lg:py-20;
+        
+        // Ajustes de texto
+        h2 {
+            @apply text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6;
+            
+            @media (max-width: 640px) {
+                @apply text-2xl leading-tight;
+            }
+        }
+        
+        p {
+            @apply text-base md:text-lg lg:text-xl text-blue-100 mb-8 md:mb-12;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            @media (max-width: 640px) {
+                @apply text-sm leading-relaxed;
+            }
         }
 
-        button {
-            &:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-                          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        // Contenedor de botones
+        .button-container {
+            @apply flex flex-col md:flex-row items-center justify-center gap-4;
+
+            button {
+                @apply w-full md:w-auto px-6 md:px-8 py-3 md:py-4 text-base md:text-lg 
+                       rounded-full transition-all duration-300;
+                
+                &.primary-button {
+                    @apply bg-white text-blue-900 hover:bg-blue-50;
+                    
+                    @media (max-width: 640px) {
+                        @apply text-sm py-2;
+                    }
+                }
             }
+
+            // Texto debajo del botón
+            span {
+                @apply text-xs md:text-sm text-blue-200;
+                
+                @media (max-width: 640px) {
+                    @apply text-center;
+                }
+            }
+        }
+    }
+
+    // Efecto de fondo
+    &::before {
+        content: '';
+        @apply absolute inset-0;
+        background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+        background-size: 20px 20px;
+        opacity: 0.2;
+        
+        @media (max-width: 768px) {
+            background-size: 15px 15px;
+        }
+    }
+
+    // Animaciones y efectos hover
+    .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s ease-out;
+
+        &.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    button {
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                       0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
     }
 }
@@ -277,6 +468,7 @@ footer {
 
 // Estilos para las tarjetas de planes
 .plan-card {
+    @apply p-4 md:p-6;
     background-color: #011F3B;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     
@@ -285,43 +477,106 @@ footer {
         box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2),
                    0 10px 10px -5px rgba(0, 0, 0, 0.1);
     }
+
+    h3 {
+        @apply text-lg md:text-xl;
+    }
+
+    p {
+        @apply text-sm md:text-base;
+    }
 }
 
-// Estilos para el carrusel de testimonios
+// Estilos para el carrusel con previews
 .testimonial-carousel {
-    position: relative;
-    
-    .navigation-button {
-        @apply absolute top-1/2 -translate-y-1/2 z-10;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: #3B82F6;
-        transition: all 0.3s ease;
-        
-        &:hover {
-            background-color: #2563EB;
-            transform: translateY(-50%) scale(1.1);
-        }
-        
+    &-container {
+        position: relative;
+        overflow: visible;
+        padding: 2rem 0;
+    }
+
+    &-preview {
+        transition: all 0.5s ease;
+        filter: blur(2px);
+        opacity: 0.7;
+        transform: scale(0.9);
+
         &.left {
-            left: -20px;
+            transform: translateX(-1rem) scale(0.9);
         }
-        
+
         &.right {
-            right: -20px;
+            transform: translateX(1rem) scale(0.9);
         }
+
+        &:hover {
+            opacity: 0.8;
+            transform: scale(0.95);
+        }
+    }
+
+    &-active {
+        transition: all 0.5s ease;
+        z-index: 10;
+        transform: scale(1);
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+// Ajuste del contenedor principal para las previews
+.testimonials-wrapper {
+    @apply max-w-[90rem] mx-auto relative;
+    padding: 0 8rem;
+}
+
+// Ajustes para las tarjetas preview
+.preview-card {
+    @apply bg-[#011F3B] p-8 rounded-lg border-l-4 border-blue-500;
+    min-height: 280px;
+    min-width: 600px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(0.95);
+        opacity: 0.8;
+    }
+}
+
+// Efecto de desenfoque para las previews
+.blur-sm {
+    filter: blur(2px);
+    transition: all 0.3s ease;
+}
+
+// Animación para el cambio de testimonios
+.slide-transition {
+    transition: all 0.5s ease-in-out;
+}
+
+// Ajustes responsive
+@media (max-width: 1536px) {
+    .testimonial-carousel-preview {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .testimonial-carousel-preview {
+        width: 400px;
     }
 }
 
 // Estilo para la tarjeta de testimonio
 .testimonio-card {
+    @apply w-full md:max-w-2xl lg:max-w-3xl mx-auto;
     background-color: #011F3B;
     border-left: 4px solid #3B82F6;
     border-radius: 8px;
     padding: 2rem;
     
     .avatar {
+        @apply w-12 h-12 md:w-16 md:h-16;
         width: 64px;
         height: 64px;
         border-radius: 50%;
@@ -426,4 +681,230 @@ footer {
     &:hover {
         background-color: #1e40af;
     }
+}
+
+// Ajustes para el texto truncado
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.5;
+    height: auto;
+    max-height: 4.5em;
+}
+
+// Estilos para las tarjetas de escuelas
+.escuela-card {
+    @apply bg-[#011F3B] rounded-lg p-6;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2),
+                   0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    }
+
+    .icon-container {
+        @apply w-12 h-12 rounded-full flex items-center justify-center mr-4;
+        background: rgba(59, 130, 246, 0.2);
+
+        .mat-icon {
+            @apply text-blue-500;
+            font-size: 24px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .escuela-link {
+        @apply text-blue-400 inline-flex items-center;
+        
+        .mat-icon {
+            transition: transform 0.3s ease;
+        }
+
+        &:hover {
+            @apply text-blue-300;
+            
+            .mat-icon {
+                transform: translateX(4px);
+            }
+        }
+    }
+}
+
+// Animación para los íconos
+.icon-bounce {
+    animation: iconBounce 2s ease-in-out infinite;
+}
+
+@keyframes iconBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+// Estilos para el carrusel de escuelas
+.schools-carousel {
+    position: relative;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 1rem 0;
+
+    .animate-carousel {
+        display: flex;
+        gap: 2rem;
+        transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 0 calc(50vw - (2.5 * (400px + 2rem)) + 12rem);
+
+        @media (max-width: 1536px) {
+            padding: 0 calc(50vw - (2.5 * (350px + 2rem)) + 10rem);
+        }
+
+        @media (max-width: 768px) {
+            padding: 0 1rem;
+        }
+    }
+}
+
+.school-card {
+    @apply p-4 md:p-6;
+    transition: all 0.5s ease;
+    border-radius: 1rem;
+    min-width: calc(100vw - 2rem);
+    flex: 0 0 400px;
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 1.5rem;
+    margin: 0.5rem;
+
+    @media (min-width: map-get($breakpoints, 'sm')) {
+        min-width: 300px;
+    }
+    
+    @media (min-width: map-get($breakpoints, 'md')) {
+        min-width: 350px;
+    }
+
+    h3 {
+        @apply text-lg md:text-xl lg:text-2xl;
+    }
+
+    p {
+        @apply text-sm md:text-base;
+    }
+}
+
+// Ajustar el movimiento del carrusel para diferentes tamaños de pantalla
+@media (max-width: 1536px) {
+    .moveCarousel {
+        transform: translateX(calc(-350px - 2rem)) !important;
+    }
+}
+
+@media (max-width: 1280px) {
+    .moveCarousel {
+        transform: translateX(calc(-300px - 1.5rem)) !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .moveCarousel {
+        transform: translateX(calc(-280px - 1.5rem)) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .moveCarousel {
+        transform: translateX(calc(-250px - 1rem)) !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .moveCarousel {
+        transform: translateX(calc(-85vw - 0.5rem)) !important;
+    }
+}
+
+// Planes de Estudio
+.planes-grid {
+    @apply grid gap-6;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    @media (min-width: map-get($breakpoints, 'lg')) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+// Testimonios
+.testimonios-section {
+    @apply px-4;
+}
+
+// Footer
+.footer {
+    @apply py-12 md:py-16;
+
+    .grid-cols-footer {
+        @apply grid gap-8;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+        @media (min-width: map-get($breakpoints, 'lg')) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .social-icons {
+        @apply flex flex-wrap gap-4 justify-center md:justify-start;
+    }
+}
+
+// Utilidades generales
+.text-responsive {
+    @apply text-base md:text-lg lg:text-xl;
+}
+
+.heading-responsive {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+}
+
+// Ajustes para el espaciado
+.section-spacing {
+    @apply py-8 md:py-12 lg:py-16;
+}
+
+// Ajustes para botones
+.button-responsive {
+    @apply px-4 md:px-6 lg:px-8 py-2 md:py-3 text-sm md:text-base;
+}
+
+// Primero, agregar estilos globales para prevenir el scroll horizontal
+:host {
+    display: block;
+    width: 100%;
+    overflow-x: hidden; // Previene scroll horizontal
+}
+
+// Ajustar el contenedor principal
+.landing-container {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+// Ajustar otras secciones que puedan causar overflow
+.full-width-section {
+    position: relative;
+    width: 100%;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
 } 
