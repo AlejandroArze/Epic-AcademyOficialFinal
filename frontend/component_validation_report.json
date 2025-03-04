@@ -1,0 +1,179 @@
+{
+  "total_componentes": 36,
+  "componentes_con_errores": 1,
+  "errores": [
+    "No se encontró definición de clase en frontend/src/app/modules/landing\\en-español,-nadie-explica-mejorque-edteam\\en-español,-nadie-explica-mejorque-edteam.component.ts"
+  ],
+  "correcciones": [
+    {
+      "archivo": "frontend/src/app/modules/landing\\análisis-y-ciencia-de-datos\\análisis-y-ciencia-de-datos.component.ts",
+      "nombre_anterior": "AnálisisYCienciaDeDatos",
+      "nombre_corregido": "AnálisisYCienciaDeDatosComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\blog\\blog.component.ts",
+      "nombre_anterior": "Blog",
+      "nombre_corregido": "BlogComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\ciberseguridad\\ciberseguridad.component.ts",
+      "nombre_anterior": "Ciberseguridad",
+      "nombre_corregido": "CiberseguridadComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\creación-de-contenidos\\creación-de-contenidos.component.ts",
+      "nombre_anterior": "CreaciónDeContenidos",
+      "nombre_corregido": "CreaciónDeContenidosComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\creación-de-interfaces-con-swiftui\\creación-de-interfaces-con-swiftui.component.ts",
+      "nombre_anterior": "CreaciónDeInterfacesConSwiftui",
+      "nombre_corregido": "CreaciónDeInterfacesConSwiftuiComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\cursos\\cursos.component.ts",
+      "nombre_anterior": "Cursos",
+      "nombre_corregido": "CursosComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\desarrollo-backend\\desarrollo-backend.component.ts",
+      "nombre_anterior": "DesarrolloBackend",
+      "nombre_corregido": "DesarrolloBackendComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\desarrollo-frontend\\desarrollo-frontend.component.ts",
+      "nombre_anterior": "DesarrolloFrontend",
+      "nombre_corregido": "DesarrolloFrontendComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\desarrollo-móvil\\desarrollo-móvil.component.ts",
+      "nombre_anterior": "DesarrolloMóvil",
+      "nombre_corregido": "DesarrolloMóvilComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\devops-y-cloud-computing\\devops-y-cloud-computing.component.ts",
+      "nombre_anterior": "DevopsYCloudComputing",
+      "nombre_corregido": "DevopsYCloudComputingComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\diseño-y-multimedia\\diseño-y-multimedia.component.ts",
+      "nombre_anterior": "DiseñoYMultimedia",
+      "nombre_corregido": "DiseñoYMultimediaComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\en-español-nadie-explica-mejorque-edteam\\en-español-nadie-explica-mejorque-edteam.component.ts",
+      "nombre_anterior": "EnEspañolNadieExplicaMejorqueEdteam",
+      "nombre_corregido": "EnEspañolNadieExplicaMejorqueEdteamComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\escuela-de-emprendedores-2025\\escuela-de-emprendedores-2025.component.ts",
+      "nombre_anterior": "EscuelaDeEmprendedores2025",
+      "nombre_corregido": "EscuelaDeEmprendedores2025Component"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\escuelas\\escuelas.component.ts",
+      "nombre_anterior": "Escuelas",
+      "nombre_corregido": "EscuelasComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\escuelas-destacadas-de-edteam\\escuelas-destacadas-de-edteam.component.ts",
+      "nombre_anterior": "EscuelasDestacadasDeEdteam",
+      "nombre_corregido": "EscuelasDestacadasDeEdteamComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\explora-otras-escuelas-de-edteam\\explora-otras-escuelas-de-edteam.component.ts",
+      "nombre_anterior": "ExploraOtrasEscuelasDeEdteam",
+      "nombre_corregido": "ExploraOtrasEscuelasDeEdteamComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\hacking-ético-elevación-de-privilegios-en-linux\\hacking-ético-elevación-de-privilegios-en-linux.component.ts",
+      "nombre_anterior": "HackingÉticoElevaciónDePrivilegiosEnLinux",
+      "nombre_corregido": "HackingÉticoElevaciónDePrivilegiosEnLinuxComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\home\\home.component.ts",
+      "nombre_anterior": "Home",
+      "nombre_corregido": "HomeComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\inglés\\inglés.component.ts",
+      "nombre_anterior": "Inglés",
+      "nombre_corregido": "InglésComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\inteligencia-artificial\\inteligencia-artificial.component.ts",
+      "nombre_anterior": "InteligenciaArtificial",
+      "nombre_corregido": "InteligenciaArtificialComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\inteligencia-artificial-para-todos\\inteligencia-artificial-para-todos.component.ts",
+      "nombre_anterior": "InteligenciaArtificialParaTodos",
+      "nombre_corregido": "InteligenciaArtificialParaTodosComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\marketing-y-negocios\\marketing-y-negocios.component.ts",
+      "nombre_anterior": "MarketingYNegocios",
+      "nombre_corregido": "MarketingYNegociosComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\no-postergues-más-tu-educación-tu-futuro-te-está-esperando\\no-postergues-más-tu-educación-tu-futuro-te-está-esperando.component.ts",
+      "nombre_anterior": "NoPosterguesMásTuEducaciónTuFuturoTeEstáEsperando",
+      "nombre_corregido": "NoPosterguesMásTuEducaciónTuFuturoTeEstáEsperandoComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\plan-gratuito\\plan-gratuito.component.ts",
+      "nombre_anterior": "PlanGratuito",
+      "nombre_corregido": "PlanGratuitoComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\plan-para-empresas\\plan-para-empresas.component.ts",
+      "nombre_anterior": "PlanParaEmpresas",
+      "nombre_corregido": "PlanParaEmpresasComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\plan-para-estudiantes\\plan-para-estudiantes.component.ts",
+      "nombre_anterior": "PlanParaEstudiantes",
+      "nombre_corregido": "PlanParaEstudiantesComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\plan-premium\\plan-premium.component.ts",
+      "nombre_anterior": "PlanPremium",
+      "nombre_corregido": "PlanPremiumComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\planes\\planes.component.ts",
+      "nombre_anterior": "Planes",
+      "nombre_corregido": "PlanesComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\planes-de-estudio-para-quenotedetengas\\planes-de-estudio-para-quenotedetengas.component.ts",
+      "nombre_anterior": "PlanesDeEstudioParaQuenotedetengas",
+      "nombre_corregido": "PlanesDeEstudioParaQuenotedetengasComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\procesamiento-de-datos-en-java-con-streams-y-lambdas\\procesamiento-de-datos-en-java-con-streams-y-lambdas.component.ts",
+      "nombre_anterior": "ProcesamientoDeDatosEnJavaConStreamsYLambdas",
+      "nombre_corregido": "ProcesamientoDeDatosEnJavaConStreamsYLambdasComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\programación-y-desarrollo-web\\programación-y-desarrollo-web.component.ts",
+      "nombre_anterior": "ProgramaciónYDesarrolloWeb",
+      "nombre_corregido": "ProgramaciónYDesarrolloWebComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\redes-y-electrónica\\redes-y-electrónica.component.ts",
+      "nombre_anterior": "RedesYElectrónica",
+      "nombre_corregido": "RedesYElectrónicaComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\tu-puedes-ser-la-próximahistoria-de-éxito\\tu-puedes-ser-la-próximahistoria-de-éxito.component.ts",
+      "nombre_anterior": "TuPuedesSerLaPróximahistoriaDeÉxito",
+      "nombre_corregido": "TuPuedesSerLaPróximahistoriaDeÉxitoComponent"
+    },
+    {
+      "archivo": "frontend/src/app/modules/landing\\ux-ui\\ux-ui.component.ts",
+      "nombre_anterior": "UxUi",
+      "nombre_corregido": "UxUiComponent"
+    }
+  ]
+}

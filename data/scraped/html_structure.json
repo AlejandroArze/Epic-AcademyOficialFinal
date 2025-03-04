@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "url": "https://ed.team/",
+    "titulo": "EDteam - En español nadie te explica mejor",
+    "descripcion": "Aprende programación, diseño y emprendimiento en español con profesores que aman enseñar. Invierte en tu conocimiento. Tu futuro te está esperando.",
+    "palabras_clave": []
+  },
+  "estructura": {
+    "secciones_principales": [
+      {
+        "texto": "En español, nadie explica mejorque EDteam",
+        "nivel": "h1"
+      },
+      {
+        "texto": "Hacking ético: Elevación de privilegios en Linux",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Inteligencia Artificial para todos",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Procesamiento de datos en Java con Streams y Lambdas",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Creación de interfaces con SwiftUI",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Escuela de emprendedores 2025",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Hacking ético: Elevación de privilegios en Linux",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Inteligencia Artificial para todos",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Escuelas destacadas de EDteam",
+        "nivel": "h1"
+      },
+      {
+        "texto": "Programación y desarrollo web",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Desarrollo frontend",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Desarrollo backend",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Inteligencia Artificial",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Marketing y negocios",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Explora otras escuelas de EDteam",
+        "nivel": "h1"
+      },
+      {
+        "texto": "Desarrollo móvil",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Redes y electrónica",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Análisis y ciencia de datos",
+        "nivel": "h3"
+      },
+      {
+        "texto": "DevOps y Cloud computing",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Ciberseguridad",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Inglés",
+        "nivel": "h3"
+      },
+      {
+        "texto": "UX / UI",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Diseño y multimedia",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Creación de contenidos",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Desarrollo móvil",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Redes y electrónica",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Análisis y ciencia de datos",
+        "nivel": "h3"
+      },
+      {
+        "texto": "DevOps y Cloud computing",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Planes de estudio para que#NoTeDetengas",
+        "nivel": "h2"
+      },
+      {
+        "texto": "Plan gratuito",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Plan Premium",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Plan para empresas",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Plan para estudiantes",
+        "nivel": "h3"
+      },
+      {
+        "texto": "Tu puedes ser la próximahistoria de éxito",
+        "nivel": "h2"
+      },
+      {
+        "texto": "No postergues más tu educación, ¡tu futuro te está esperando!",
+        "nivel": "h2"
+      }
+    ],
+    "componentes_ui": [
+      {
+        "tipo": "footer",
+        "cantidad": 3
+      },
+      {
+        "tipo": "card",
+        "cantidad": 144
+      },
+      {
+        "tipo": "carousel",
+        "cantidad": 5
+      },
+      {
+        "tipo": "button",
+        "cantidad": 52
+      }
+    ],
+    "flujos_navegacion": []
+  },
+  "recursos": {
+    "imagenes": [
+      "https://www.facebook.com/tr?id=1393633694726431&ev=PageView&noscript=1",
+      "https://edteam-media.s3.amazonaws.com/web/modules/schools/schools-banner-background.webp",
+      "https://edteam-media.s3.amazonaws.com/web/modules/schools/schools-banner-picture-2.webp",
+      "https://edteam-media.s3.amazonaws.com/web/modules/schools/tech-desktop-figma.webp",
+      "https://edteam-media.s3.amazonaws.com/web/modules/schools/tech-desktop-reactjs.webp",
+      "https://edteam-media.s3.amazonaws.com/web/modules/schools/tech-desktop-go.webp",
+      "https://edteam-media.s3.amazonaws.com/web/modules/schools/tech-desktop-linux.webp",
+      "https://edteam-media.s3.amazonaws.com/monorepo/modules/schools/banner-sparkles.webp",
+      "https://edteam-media.s3.amazonaws.com/courses/big/7d810773-b366-4445-b890-f825eaa26cb9.png",
+      "https://edteam-media.s3.amazonaws.com/courses/big/909308c6-c157-401d-9faf-9bd83544550e.jpeg",
+      "https://edteam-media.s3.amazonaws.com/courses/big/77d55f84-a996-4941-a67c-3c62c0b269be.png",
+      "https://edteam-media.s3.amazonaws.com/courses/big/b76045e9-7746-4c56-986a-36e2b043708f.png",
+      "https://edteam-media.s3.amazonaws.com/courses/big/8db261a5-afc4-4da0-a248-42571f5a7003.png",
+      "https://edteam-media.s3.amazonaws.com/courses/big/7d810773-b366-4445-b890-f825eaa26cb9.png",
+      "https://edteam-media.s3.amazonaws.com/courses/big/909308c6-c157-401d-9faf-9bd83544550e.jpeg",
+      "https://edteam-media.s3.amazonaws.com/schools/medium/ef08ce8f-9dc2-44dc-ae07-eda69c74e74d.webp",
+      "https://edteam-media.s3.amazonaws.com/monorepo/modules/schools/sparkles.webp",
+      "https://edteam-media.s3.amazonaws.com/schools/medium/b8d8bb4b-ea5d-4f74-8ebf-69682353936e.webp",
+      "https://edteam-media.s3.amazonaws.com/monorepo/modules/schools/sparkles.webp",
+      "https://edteam-media.s3.amazonaws.com/schools/medium/14626334-bbc6-4135-a060-aa9ce592b417.webp"
+    ],
+    "estilos": {
+      "colores_principales": [],
+      "fuentes": [
+        "https://ed.team/_next/static/css/652b8ec557fcfa9c.css",
+        "https://ed.team/_next/static/css/88a810fcd7097e4f.css"
+      ]
+    },
+    "scripts": [
+      "https://ed.team/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js",
+      "https://ed.team/_next/static/chunks/webpack-e81585bb9a6b8f4d.js",
+      "https://ed.team/_next/static/chunks/framework-2c15c603e130d21e.js",
+      "https://ed.team/_next/static/chunks/main-9b93b2c83b8821db.js",
+      "https://ed.team/_next/static/chunks/pages/_app-ebe52899feb14636.js",
+      "https://ed.team/_next/static/chunks/pages/index-8faf0b018ea061a9.js",
+      "https://ed.team/_next/static/d3WO5Kzu7i_oOslqi55W1/_buildManifest.js",
+      "https://ed.team/_next/static/d3WO5Kzu7i_oOslqi55W1/_ssgManifest.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-13V1Q1Q6EG"
+    ]
+  },
+  "plan_clonacion": {
+    "tecnologias_detectadas": {
+      "frontend": [
+        "React"
+      ],
+      "backend": [
+        "No detectado"
+      ]
+    },
+    "complejidad_estimada": "Alta",
+    "tiempo_estimado": "5-8 semanas"
+  }
+}

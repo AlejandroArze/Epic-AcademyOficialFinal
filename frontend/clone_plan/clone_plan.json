@@ -1,0 +1,28 @@
+{
+  "proyecto": {
+    "nombre": "ED Team Clone",
+    "url_original": "EDteam - En español nadie te explica mejor"
+  },
+  "estructura_componentes": {
+    "paginas_principales": [],
+    "componentes_comunes": [],
+    "rutas_navegacion": []
+  },
+  "recursos_a_clonar": {
+    "imagenes": [],
+    "estilos": {
+      "paleta_colores": [],
+      "tipografias": []
+    },
+    "contenido_textual": {
+      "titulos": [],
+      "secciones_principales": []
+    }
+  },
+  "tareas_pendientes": [
+    "Analizar estructura de navegación",
+    "Identificar componentes reutilizables",
+    "Mapear flujos de usuario",
+    "Extraer estilos y diseño"
+  ]
+}

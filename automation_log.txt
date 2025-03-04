@@ -1,0 +1,597 @@
+2025-03-03 20:22:33,207 - INFO: Iniciando Automatización de Clonación Web
+2025-03-03 20:22:33,208 - INFO: Iniciando Web Scraping...
+2025-03-03 20:22:33,880 - INFO: Web Scraping completado exitosamente
+2025-03-03 20:22:33,881 - INFO: Generando Frontend...
+2025-03-03 20:22:33,909 - ERROR: Error en Generación de Frontend: name 'mockData' is not defined
+2025-03-03 20:22:33,910 - ERROR: Proceso de automatización detenido
+2025-03-03 20:26:40,020 - INFO: Iniciando Automatización de Clonación Web
+2025-03-03 20:26:40,020 - INFO: Iniciando Web Scraping...
+2025-03-03 20:26:40,634 - INFO: Web Scraping completado exitosamente
+2025-03-03 20:26:40,635 - INFO: Generando Frontend...
+2025-03-03 20:26:40,663 - ERROR: Error en Generación de Frontend: 'FrontendGenerationTaskManager' object has no attribute 'generate_react_components'
+2025-03-03 20:26:40,664 - ERROR: Proceso de automatización detenido
+2025-03-03 20:27:19,399 - INFO: Iniciando Automatización de Clonación Web
+2025-03-03 20:27:19,400 - INFO: Iniciando Web Scraping...
+2025-03-03 20:27:19,930 - INFO: Web Scraping completado exitosamente
+2025-03-03 20:27:19,930 - INFO: Generando Frontend...
+2025-03-03 20:27:19,983 - INFO: Generación de Frontend completada
+2025-03-03 20:27:19,983 - INFO: Ejecutando Pruebas de Frontend...
+2025-03-03 20:27:19,986 - ERROR: Error en Pruebas de Frontend: [Errno 2] No such file or directory: 'frontend/src/data/mock_data.json'
+2025-03-03 20:27:19,986 - ERROR: Proceso de automatización detenido
+2025-03-03 20:28:05,645 - INFO: Iniciando Automatización de Clonación Web
+2025-03-03 20:28:05,645 - INFO: Iniciando Web Scraping...
+2025-03-03 20:28:06,271 - INFO: Web Scraping completado exitosamente
+2025-03-03 20:28:06,272 - INFO: Generando Frontend...
+2025-03-03 20:28:06,301 - INFO: Generación de Frontend completada
+2025-03-03 20:28:06,302 - INFO: Ejecutando Pruebas de Frontend...
+2025-03-03 20:28:06,302 - INFO: Creado archivo de mock data en frontend/src/data/mock_data.json
+2025-03-03 20:28:06,302 - INFO: Pruebas de componentes completadas
+2025-03-03 20:28:06,314 - INFO: Verificación de datos completada
+2025-03-03 20:28:06,325 - INFO: Informe de pruebas generado en frontend/test_report.json
+2025-03-03 20:28:06,339 - INFO: Pruebas de Frontend completadas
+2025-03-03 20:28:08,574 - INFO: Automatización completada exitosamente
+2025-03-03 20:30:28,698 - INFO: Iniciando Automatización de Clonación Web
+2025-03-03 20:30:28,698 - INFO: Iniciando Web Scraping...
+2025-03-03 20:30:29,450 - INFO: Scraping completado exitosamente
+2025-03-03 20:30:29,450 - INFO: Web Scraping completado exitosamente
+2025-03-03 20:30:29,451 - INFO: Generando Frontend...
+2025-03-03 20:30:29,476 - ERROR: Error en generación de frontend: [WinError 267] El nombre del directorio no es válido: 'frontend/src/app/modules/landing\\hacking-ético:-elevación-de-privilegios-en-linux'
+2025-03-03 20:30:29,477 - ERROR: Error en Generación de Frontend: [WinError 267] El nombre del directorio no es válido: 'frontend/src/app/modules/landing\\hacking-ético:-elevación-de-privilegios-en-linux'
+2025-03-03 20:30:29,477 - ERROR: Proceso de automatización detenido
+2025-03-03 20:31:22,912 - INFO: Iniciando Automatización de Clonación Web
+2025-03-03 20:31:22,912 - INFO: Iniciando Web Scraping...
+2025-03-03 20:31:23,499 - INFO: Scraping completado exitosamente
+2025-03-03 20:31:23,500 - INFO: Web Scraping completado exitosamente
+2025-03-03 20:31:23,500 - INFO: Generando Frontend...
+2025-03-03 20:31:23,533 - INFO: Componente generado: en-español-nadie-explica-mejorque-edteam
+2025-03-03 20:31:23,534 - INFO: Componente generado: hacking-ético-elevación-de-privilegios-en-linux
+2025-03-03 20:31:23,536 - INFO: Componente generado: inteligencia-artificial-para-todos
+2025-03-03 20:31:23,537 - INFO: Componente generado: procesamiento-de-datos-en-java-con-streams-y-lambdas
+2025-03-03 20:31:23,539 - INFO: Componente generado: creación-de-interfaces-con-swiftui
+2025-03-03 20:31:23,542 - INFO: Componente generado: escuela-de-emprendedores-2025
+2025-03-03 20:31:23,543 - INFO: Componente generado: hacking-ético-elevación-de-privilegios-en-linux
+2025-03-03 20:31:23,544 - INFO: Componente generado: inteligencia-artificial-para-todos
+2025-03-03 20:31:23,546 - INFO: Componente generado: escuelas-destacadas-de-edteam
+2025-03-03 20:31:23,549 - INFO: Componente generado: programación-y-desarrollo-web
+2025-03-03 20:31:23,550 - INFO: Componente generado: desarrollo-frontend
+2025-03-03 20:31:23,551 - INFO: Componente generado: desarrollo-backend
+2025-03-03 20:31:23,555 - INFO: Componente generado: inteligencia-artificial
+2025-03-03 20:31:23,557 - INFO: Componente generado: marketing-y-negocios
+2025-03-03 20:31:23,558 - INFO: Componente generado: explora-otras-escuelas-de-edteam
+2025-03-03 20:31:23,560 - INFO: Componente generado: desarrollo-móvil
+2025-03-03 20:31:23,563 - INFO: Componente generado: redes-y-electrónica
+2025-03-03 20:31:23,564 - INFO: Componente generado: análisis-y-ciencia-de-datos
+2025-03-03 20:31:23,566 - INFO: Componente generado: devops-y-cloud-computing
+2025-03-03 20:31:23,568 - INFO: Componente generado: ciberseguridad
+2025-03-03 20:31:23,570 - INFO: Componente generado: inglés
+2025-03-03 20:31:23,571 - INFO: Componente generado: ux-ui
+2025-03-03 20:31:23,575 - INFO: Componente generado: diseño-y-multimedia
+2025-03-03 20:31:23,577 - INFO: Componente generado: creación-de-contenidos
+2025-03-03 20:31:23,578 - INFO: Componente generado: desarrollo-móvil
+2025-03-03 20:31:23,580 - INFO: Componente generado: redes-y-electrónica
+2025-03-03 20:31:23,581 - INFO: Componente generado: análisis-y-ciencia-de-datos
+2025-03-03 20:31:23,583 - INFO: Componente generado: devops-y-cloud-computing
+2025-03-03 20:31:23,584 - INFO: Componente generado: planes-de-estudio-para-quenotedetengas
+2025-03-03 20:31:23,587 - INFO: Componente generado: plan-gratuito
+2025-03-03 20:31:23,588 - INFO: Componente generado: plan-premium
+2025-03-03 20:31:23,590 - INFO: Componente generado: plan-para-empresas
+2025-03-03 20:31:23,592 - INFO: Componente generado: plan-para-estudiantes
+2025-03-03 20:31:23,593 - INFO: Componente generado: tu-puedes-ser-la-próximahistoria-de-éxito
+2025-03-03 20:31:23,595 - INFO: Componente generado: no-postergues-más-tu-educación-tu-futuro-te-está-esperando
+2025-03-03 20:31:23,597 - INFO: Generación de frontend completada
+2025-03-03 20:31:23,597 - INFO: Generación de Frontend completada
+2025-03-03 20:31:23,597 - INFO: Ejecutando Pruebas de Frontend...
+2025-03-03 20:31:23,603 - ERROR: Error en suite de pruebas: [WinError 2] El sistema no puede encontrar el archivo especificado
+2025-03-03 20:31:23,604 - INFO: Pruebas de Frontend completadas
+2025-03-03 20:31:24,143 - INFO: Automatización completada exitosamente
+2025-03-03 20:31:27,391 - INFO: Iniciando Automatización de Clonación Web
+2025-03-03 20:31:27,391 - INFO: Iniciando Web Scraping...
+2025-03-03 20:31:28,012 - INFO: Scraping completado exitosamente
+2025-03-03 20:31:28,013 - INFO: Web Scraping completado exitosamente
+2025-03-03 20:31:28,013 - INFO: Generando Frontend...
+2025-03-03 20:31:28,015 - INFO: Componente generado: en-español-nadie-explica-mejorque-edteam
+2025-03-03 20:31:28,017 - INFO: Componente generado: hacking-ético-elevación-de-privilegios-en-linux
+2025-03-03 20:31:28,018 - INFO: Componente generado: inteligencia-artificial-para-todos
+2025-03-03 20:31:28,019 - INFO: Componente generado: procesamiento-de-datos-en-java-con-streams-y-lambdas
+2025-03-03 20:31:28,020 - INFO: Componente generado: creación-de-interfaces-con-swiftui
+2025-03-03 20:31:28,021 - INFO: Componente generado: escuela-de-emprendedores-2025
+2025-03-03 20:31:28,022 - INFO: Componente generado: hacking-ético-elevación-de-privilegios-en-linux
+2025-03-03 20:31:28,024 - INFO: Componente generado: inteligencia-artificial-para-todos
+2025-03-03 20:31:28,025 - INFO: Componente generado: escuelas-destacadas-de-edteam
+2025-03-03 20:31:28,026 - INFO: Componente generado: programación-y-desarrollo-web
+2025-03-03 20:31:28,027 - INFO: Componente generado: desarrollo-frontend
+2025-03-03 20:31:28,029 - INFO: Componente generado: desarrollo-backend
+2025-03-03 20:31:28,029 - INFO: Componente generado: inteligencia-artificial
+2025-03-03 20:31:28,031 - INFO: Componente generado: marketing-y-negocios
+2025-03-03 20:31:28,031 - INFO: Componente generado: explora-otras-escuelas-de-edteam
+2025-03-03 20:31:28,033 - INFO: Componente generado: desarrollo-móvil
+2025-03-03 20:31:28,033 - INFO: Componente generado: redes-y-electrónica
+2025-03-03 20:31:28,034 - INFO: Componente generado: análisis-y-ciencia-de-datos
+2025-03-03 20:31:28,036 - INFO: Componente generado: devops-y-cloud-computing
+2025-03-03 20:31:28,036 - INFO: Componente generado: ciberseguridad
+2025-03-03 20:31:28,039 - INFO: Componente generado: inglés
+2025-03-03 20:31:28,040 - INFO: Componente generado: ux-ui
+2025-03-03 20:31:28,041 - INFO: Componente generado: diseño-y-multimedia
+2025-03-03 20:31:28,042 - INFO: Componente generado: creación-de-contenidos
+2025-03-03 20:31:28,043 - INFO: Componente generado: desarrollo-móvil
+2025-03-03 20:31:28,046 - INFO: Componente generado: redes-y-electrónica
+2025-03-03 20:31:28,047 - INFO: Componente generado: análisis-y-ciencia-de-datos
+2025-03-03 20:31:28,049 - INFO: Componente generado: devops-y-cloud-computing
+2025-03-03 20:31:28,050 - INFO: Componente generado: planes-de-estudio-para-quenotedetengas
+2025-03-03 20:31:28,051 - INFO: Componente generado: plan-gratuito
+2025-03-03 20:31:28,052 - INFO: Componente generado: plan-premium
+2025-03-03 20:31:28,053 - INFO: Componente generado: plan-para-empresas
+2025-03-03 20:31:28,054 - INFO: Componente generado: plan-para-estudiantes
+2025-03-03 20:31:28,055 - INFO: Componente generado: tu-puedes-ser-la-próximahistoria-de-éxito
+2025-03-03 20:31:28,057 - INFO: Componente generado: no-postergues-más-tu-educación-tu-futuro-te-está-esperando
+2025-03-03 20:31:28,058 - INFO: Generación de frontend completada
+2025-03-03 20:31:28,058 - INFO: Generación de Frontend completada
+2025-03-03 20:31:28,058 - INFO: Ejecutando Pruebas de Frontend...
+2025-03-03 20:31:28,066 - ERROR: Error en suite de pruebas: [WinError 2] El sistema no puede encontrar el archivo especificado
+2025-03-03 20:31:28,066 - INFO: Pruebas de Frontend completadas
+2025-03-03 20:31:28,550 - INFO: Automatización completada exitosamente
+2025-03-03 20:32:43,300 - INFO: Iniciando Automatización de Clonación Web
+2025-03-03 20:32:43,302 - INFO: Iniciando Web Scraping...
+2025-03-03 20:32:44,181 - INFO: Scraping completado exitosamente
+2025-03-03 20:32:44,182 - INFO: Web Scraping completado exitosamente
+2025-03-03 20:32:44,183 - INFO: Generando Frontend...
+2025-03-03 20:32:44,186 - INFO: Componente generado: home
+2025-03-03 20:32:44,188 - INFO: Componente generado: cursos
+2025-03-03 20:32:44,190 - INFO: Componente generado: escuelas
+2025-03-03 20:32:44,194 - INFO: Componente generado: planes
+2025-03-03 20:32:44,198 - INFO: Componente generado: blog
+2025-03-03 20:32:44,201 - INFO: Componente generado: en-español-nadie-explica-mejorque-edteam
+2025-03-03 20:32:44,204 - INFO: Componente generado: hacking-ético-elevación-de-privilegios-en-linux
+2025-03-03 20:32:44,205 - INFO: Componente generado: inteligencia-artificial-para-todos
+2025-03-03 20:32:44,207 - INFO: Componente generado: procesamiento-de-datos-en-java-con-streams-y-lambdas
+2025-03-03 20:32:44,209 - INFO: Componente generado: creación-de-interfaces-con-swiftui
+2025-03-03 20:32:44,212 - INFO: Componente generado: escuela-de-emprendedores-2025
+2025-03-03 20:32:44,214 - INFO: Componente generado: escuelas-destacadas-de-edteam
+2025-03-03 20:32:44,217 - INFO: Componente generado: programación-y-desarrollo-web
+2025-03-03 20:32:44,219 - INFO: Componente generado: desarrollo-frontend
+2025-03-03 20:32:44,221 - INFO: Componente generado: desarrollo-backend
+2025-03-03 20:32:44,222 - INFO: Componente generado: inteligencia-artificial
+2025-03-03 20:32:44,225 - INFO: Componente generado: marketing-y-negocios
+2025-03-03 20:32:44,228 - INFO: Componente generado: explora-otras-escuelas-de-edteam
+2025-03-03 20:32:44,229 - INFO: Componente generado: desarrollo-móvil
+2025-03-03 20:32:44,231 - INFO: Componente generado: redes-y-electrónica
+2025-03-03 20:32:44,233 - INFO: Componente generado: análisis-y-ciencia-de-datos
+2025-03-03 20:32:44,236 - INFO: Componente generado: devops-y-cloud-computing
+2025-03-03 20:32:44,239 - INFO: Componente generado: ciberseguridad
+2025-03-03 20:32:44,242 - INFO: Componente generado: inglés
+2025-03-03 20:32:44,244 - INFO: Componente generado: ux-ui
+2025-03-03 20:32:44,246 - INFO: Componente generado: diseño-y-multimedia
+2025-03-03 20:32:44,249 - INFO: Componente generado: creación-de-contenidos
+2025-03-03 20:32:44,251 - INFO: Componente generado: planes-de-estudio-para-quenotedetengas
+2025-03-03 20:32:44,253 - INFO: Componente generado: plan-gratuito
+2025-03-03 20:32:44,255 - INFO: Componente generado: plan-premium
+2025-03-03 20:32:44,258 - INFO: Componente generado: plan-para-empresas
+2025-03-03 20:32:44,261 - INFO: Componente generado: plan-para-estudiantes
+2025-03-03 20:32:44,262 - INFO: Componente generado: tu-puedes-ser-la-próximahistoria-de-éxito
+2025-03-03 20:32:44,264 - INFO: Componente generado: no-postergues-más-tu-educación-tu-futuro-te-está-esperando
+2025-03-03 20:32:44,266 - INFO: Generación de frontend completada
+2025-03-03 20:32:44,266 - INFO: Generación de Frontend completada
+2025-03-03 20:32:44,266 - INFO: Ejecutando Pruebas de Frontend...
+2025-03-03 20:32:44,268 - INFO: Creado archivo de mock data en frontend/src/data/mock_data.json
+2025-03-03 20:32:44,269 - INFO: Pruebas de componentes completadas. Componentes: ['análisis-y-ciencia-de-datos', 'blog', 'ciberseguridad', 'creación-de-contenidos', 'creación-de-interfaces-con-swiftui', 'cursos', 'desarrollo-backend', 'desarrollo-frontend', 'desarrollo-móvil', 'devops-y-cloud-computing', 'diseño-y-multimedia', 'en-español,-nadie-explica-mejorque-edteam', 'en-español-nadie-explica-mejorque-edteam', 'escuela-de-emprendedores-2025', 'escuelas', 'escuelas-destacadas-de-edteam', 'explora-otras-escuelas-de-edteam', 'hacking-ético-elevación-de-privilegios-en-linux', 'home', 'inglés', 'inteligencia-artificial', 'inteligencia-artificial-para-todos', 'marketing-y-negocios', 'no-postergues-más-tu-educación-tu-futuro-te-está-esperando', 'plan-gratuito', 'plan-para-empresas', 'plan-para-estudiantes', 'plan-premium', 'planes', 'planes-de-estudio-para-quenotedetengas', 'procesamiento-de-datos-en-java-con-streams-y-lambdas', 'programación-y-desarrollo-web', 'redes-y-electrónica', 'tu-puedes-ser-la-próximahistoria-de-éxito', 'ux-ui']
+2025-03-03 20:32:44,270 - INFO: Informe de pruebas generado en frontend/test_report.json
+2025-03-03 20:32:44,284 - INFO: Pruebas de Frontend completadas
+2025-03-03 20:32:44,967 - INFO: Automatización completada exitosamente
+2025-03-03 20:36:37,444 - INFO: Iniciando Automatización de Clonación Web
+2025-03-03 20:36:37,444 - INFO: Iniciando Web Scraping...
+2025-03-03 20:36:38,098 - INFO: Scraping completado exitosamente
+2025-03-03 20:36:38,098 - INFO: Web Scraping completado exitosamente
+2025-03-03 20:36:38,099 - INFO: Generando Frontend...
+2025-03-03 20:36:38,101 - INFO: Componente generado: home
+2025-03-03 20:36:38,102 - INFO: Componente generado: cursos
+2025-03-03 20:36:38,104 - INFO: Componente generado: escuelas
+2025-03-03 20:36:38,105 - INFO: Componente generado: planes
+2025-03-03 20:36:38,106 - INFO: Componente generado: blog
+2025-03-03 20:36:38,107 - INFO: Componente generado: en-español-nadie-explica-mejorque-edteam
+2025-03-03 20:36:38,108 - INFO: Componente generado: hacking-ético-elevación-de-privilegios-en-linux
+2025-03-03 20:36:38,109 - INFO: Componente generado: inteligencia-artificial-para-todos
+2025-03-03 20:36:38,110 - INFO: Componente generado: procesamiento-de-datos-en-java-con-streams-y-lambdas
+2025-03-03 20:36:38,112 - INFO: Componente generado: creación-de-interfaces-con-swiftui
+2025-03-03 20:36:38,113 - INFO: Componente generado: escuela-de-emprendedores-2025
+2025-03-03 20:36:38,114 - INFO: Componente generado: escuelas-destacadas-de-edteam
+2025-03-03 20:36:38,116 - INFO: Componente generado: programación-y-desarrollo-web
+2025-03-03 20:36:38,118 - INFO: Componente generado: desarrollo-frontend
+2025-03-03 20:36:38,118 - INFO: Componente generado: desarrollo-backend
+2025-03-03 20:36:38,120 - INFO: Componente generado: inteligencia-artificial
+2025-03-03 20:36:38,121 - INFO: Componente generado: marketing-y-negocios
+2025-03-03 20:36:38,122 - INFO: Componente generado: explora-otras-escuelas-de-edteam
+2025-03-03 20:36:38,124 - INFO: Componente generado: desarrollo-móvil
+2025-03-03 20:36:38,125 - INFO: Componente generado: redes-y-electrónica
+2025-03-03 20:36:38,127 - INFO: Componente generado: análisis-y-ciencia-de-datos
+2025-03-03 20:36:38,128 - INFO: Componente generado: devops-y-cloud-computing
+2025-03-03 20:36:38,130 - INFO: Componente generado: ciberseguridad
+2025-03-03 20:36:38,131 - INFO: Componente generado: inglés
+2025-03-03 20:36:38,132 - INFO: Componente generado: ux-ui
+2025-03-03 20:36:38,133 - INFO: Componente generado: diseño-y-multimedia
+2025-03-03 20:36:38,134 - INFO: Componente generado: creación-de-contenidos
+2025-03-03 20:36:38,136 - INFO: Componente generado: planes-de-estudio-para-quenotedetengas
+2025-03-03 20:36:38,137 - INFO: Componente generado: plan-gratuito
+2025-03-03 20:36:38,139 - INFO: Componente generado: plan-premium
+2025-03-03 20:36:38,140 - INFO: Componente generado: plan-para-empresas
+2025-03-03 20:36:38,141 - INFO: Componente generado: plan-para-estudiantes
+2025-03-03 20:36:38,142 - INFO: Componente generado: tu-puedes-ser-la-próximahistoria-de-éxito
+2025-03-03 20:36:38,144 - INFO: Componente generado: no-postergues-más-tu-educación-tu-futuro-te-está-esperando
+2025-03-03 20:36:38,145 - INFO: Generación de frontend completada
+2025-03-03 20:36:38,145 - INFO: Generación de Frontend completada
+2025-03-03 20:36:38,145 - INFO: Validando Componentes de Frontend...
+2025-03-03 20:36:38,474 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\análisis-y-ciencia-de-datos\análisis-y-ciencia-de-datos.component.ts. Esperado: AnálisisYCienciaDeDatosComponent, Actual: AnálisisYCienciaDeDatosComponent
+2025-03-03 20:36:38,474 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\blog\blog.component.ts. Esperado: BlogComponent, Actual: BlogComponent
+2025-03-03 20:36:38,475 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\ciberseguridad\ciberseguridad.component.ts. Esperado: CiberseguridadComponent, Actual: CiberseguridadComponent
+2025-03-03 20:36:38,475 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\creación-de-contenidos\creación-de-contenidos.component.ts. Esperado: CreaciónDeContenidosComponent, Actual: CreaciónDeContenidosComponent
+2025-03-03 20:36:38,475 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\creación-de-interfaces-con-swiftui\creación-de-interfaces-con-swiftui.component.ts. Esperado: CreaciónDeInterfacesConSwiftuiComponent, Actual: CreaciónDeInterfacesConSwiftuiComponent
+2025-03-03 20:36:38,476 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\cursos\cursos.component.ts. Esperado: CursosComponent, Actual: CursosComponent
+2025-03-03 20:36:38,476 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\desarrollo-backend\desarrollo-backend.component.ts. Esperado: DesarrolloBackendComponent, Actual: DesarrolloBackendComponent
+2025-03-03 20:36:38,476 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\desarrollo-frontend\desarrollo-frontend.component.ts. Esperado: DesarrolloFrontendComponent, Actual: DesarrolloFrontendComponent
+2025-03-03 20:36:38,476 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\desarrollo-móvil\desarrollo-móvil.component.ts. Esperado: DesarrolloMóvilComponent, Actual: DesarrolloMóvilComponent
+2025-03-03 20:36:38,476 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\devops-y-cloud-computing\devops-y-cloud-computing.component.ts. Esperado: DevopsYCloudComputingComponent, Actual: DevopsYCloudComputingComponent
+2025-03-03 20:36:38,476 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\diseño-y-multimedia\diseño-y-multimedia.component.ts. Esperado: DiseñoYMultimediaComponent, Actual: DiseñoYMultimediaComponent
+2025-03-03 20:36:38,476 - ERROR: No se encontró definición de clase en frontend/src/app/modules/landing\en-español,-nadie-explica-mejorque-edteam\en-español,-nadie-explica-mejorque-edteam.component.ts
+2025-03-03 20:36:38,476 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\en-español-nadie-explica-mejorque-edteam\en-español-nadie-explica-mejorque-edteam.component.ts. Esperado: EnEspañolNadieExplicaMejorqueEdteamComponent, Actual: EnEspañolNadieExplicaMejorqueEdteamComponent
+2025-03-03 20:36:38,476 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\escuela-de-emprendedores-2025\escuela-de-emprendedores-2025.component.ts. Esperado: EscuelaDeEmprendedores2025Component, Actual: EscuelaDeEmprendedores2025Component
+2025-03-03 20:36:38,476 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\escuelas\escuelas.component.ts. Esperado: EscuelasComponent, Actual: EscuelasComponent
+2025-03-03 20:36:38,477 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\escuelas-destacadas-de-edteam\escuelas-destacadas-de-edteam.component.ts. Esperado: EscuelasDestacadasDeEdteamComponent, Actual: EscuelasDestacadasDeEdteamComponent
+2025-03-03 20:36:38,477 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\explora-otras-escuelas-de-edteam\explora-otras-escuelas-de-edteam.component.ts. Esperado: ExploraOtrasEscuelasDeEdteamComponent, Actual: ExploraOtrasEscuelasDeEdteamComponent
+2025-03-03 20:36:38,477 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\hacking-ético-elevación-de-privilegios-en-linux\hacking-ético-elevación-de-privilegios-en-linux.component.ts. Esperado: HackingÉticoElevaciónDePrivilegiosEnLinuxComponent, Actual: HackingÉticoElevaciónDePrivilegiosEnLinuxComponent
+2025-03-03 20:36:38,477 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\home\home.component.ts. Esperado: HomeComponent, Actual: HomeComponent
+2025-03-03 20:36:38,477 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\inglés\inglés.component.ts. Esperado: InglésComponent, Actual: InglésComponent
+2025-03-03 20:36:38,477 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\inteligencia-artificial\inteligencia-artificial.component.ts. Esperado: InteligenciaArtificialComponent, Actual: InteligenciaArtificialComponent
+2025-03-03 20:36:38,477 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\inteligencia-artificial-para-todos\inteligencia-artificial-para-todos.component.ts. Esperado: InteligenciaArtificialParaTodosComponent, Actual: InteligenciaArtificialParaTodosComponent
+2025-03-03 20:36:38,477 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\marketing-y-negocios\marketing-y-negocios.component.ts. Esperado: MarketingYNegociosComponent, Actual: MarketingYNegociosComponent
+2025-03-03 20:36:38,478 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\no-postergues-más-tu-educación-tu-futuro-te-está-esperando\no-postergues-más-tu-educación-tu-futuro-te-está-esperando.component.ts. Esperado: NoPosterguesMásTuEducaciónTuFuturoTeEstáEsperandoComponent, Actual: NoPosterguesMásTuEducaciónTuFuturoTeEstáEsperandoComponent
+2025-03-03 20:36:38,478 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\plan-gratuito\plan-gratuito.component.ts. Esperado: PlanGratuitoComponent, Actual: PlanGratuitoComponent
+2025-03-03 20:36:38,478 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\plan-para-empresas\plan-para-empresas.component.ts. Esperado: PlanParaEmpresasComponent, Actual: PlanParaEmpresasComponent
+2025-03-03 20:36:38,478 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\plan-para-estudiantes\plan-para-estudiantes.component.ts. Esperado: PlanParaEstudiantesComponent, Actual: PlanParaEstudiantesComponent
+2025-03-03 20:36:38,478 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\plan-premium\plan-premium.component.ts. Esperado: PlanPremiumComponent, Actual: PlanPremiumComponent
+2025-03-03 20:36:38,478 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\planes\planes.component.ts. Esperado: PlanesComponent, Actual: PlanesComponent
+2025-03-03 20:36:38,478 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\planes-de-estudio-para-quenotedetengas\planes-de-estudio-para-quenotedetengas.component.ts. Esperado: PlanesDeEstudioParaQuenotedetengasComponent, Actual: PlanesDeEstudioParaQuenotedetengasComponent
+2025-03-03 20:36:38,478 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\procesamiento-de-datos-en-java-con-streams-y-lambdas\procesamiento-de-datos-en-java-con-streams-y-lambdas.component.ts. Esperado: ProcesamientoDeDatosEnJavaConStreamsYLambdasComponent, Actual: ProcesamientoDeDatosEnJavaConStreamsYLambdasComponent
+2025-03-03 20:36:38,479 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\programación-y-desarrollo-web\programación-y-desarrollo-web.component.ts. Esperado: ProgramaciónYDesarrolloWebComponent, Actual: ProgramaciónYDesarrolloWebComponent
+2025-03-03 20:36:38,479 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\redes-y-electrónica\redes-y-electrónica.component.ts. Esperado: RedesYElectrónicaComponent, Actual: RedesYElectrónicaComponent
+2025-03-03 20:36:38,479 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\tu-puedes-ser-la-próximahistoria-de-éxito\tu-puedes-ser-la-próximahistoria-de-éxito.component.ts. Esperado: TuPuedesSerLaPróximahistoriaDeÉxitoComponent, Actual: TuPuedesSerLaPróximahistoriaDeÉxitoComponent
+2025-03-03 20:36:38,479 - ERROR: Nombre de clase incorrecto en frontend/src/app/modules/landing\ux-ui\ux-ui.component.ts. Esperado: UxUiComponent, Actual: UxUiComponent
+2025-03-03 20:36:38,479 - ERROR: Errores en validación de componentes
+2025-03-03 20:36:38,479 - ERROR: Proceso de automatización detenido
+2025-03-03 20:37:45,481 - INFO: Iniciando Automatización de Clonación Web
+2025-03-03 20:37:45,481 - INFO: Iniciando Web Scraping...
+2025-03-03 20:37:46,075 - INFO: Scraping completado exitosamente
+2025-03-03 20:37:46,075 - INFO: Web Scraping completado exitosamente
+2025-03-03 20:37:46,075 - INFO: Generando Frontend...
+2025-03-03 20:37:46,078 - INFO: Componente generado: home
+2025-03-03 20:37:46,079 - INFO: Componente generado: cursos
+2025-03-03 20:37:46,080 - INFO: Componente generado: escuelas
+2025-03-03 20:37:46,081 - INFO: Componente generado: planes
+2025-03-03 20:37:46,082 - INFO: Componente generado: blog
+2025-03-03 20:37:46,084 - INFO: Componente generado: en-español-nadie-explica-mejorque-edteam
+2025-03-03 20:37:46,086 - INFO: Componente generado: hacking-ético-elevación-de-privilegios-en-linux
+2025-03-03 20:37:46,087 - INFO: Componente generado: inteligencia-artificial-para-todos
+2025-03-03 20:37:46,088 - INFO: Componente generado: procesamiento-de-datos-en-java-con-streams-y-lambdas
+2025-03-03 20:37:46,089 - INFO: Componente generado: creación-de-interfaces-con-swiftui
+2025-03-03 20:37:46,090 - INFO: Componente generado: escuela-de-emprendedores-2025
+2025-03-03 20:37:46,092 - INFO: Componente generado: escuelas-destacadas-de-edteam
+2025-03-03 20:37:46,093 - INFO: Componente generado: programación-y-desarrollo-web
+2025-03-03 20:37:46,094 - INFO: Componente generado: desarrollo-frontend
+2025-03-03 20:37:46,095 - INFO: Componente generado: desarrollo-backend
+2025-03-03 20:37:46,096 - INFO: Componente generado: inteligencia-artificial
+2025-03-03 20:37:46,097 - INFO: Componente generado: marketing-y-negocios
+2025-03-03 20:37:46,098 - INFO: Componente generado: explora-otras-escuelas-de-edteam
+2025-03-03 20:37:46,099 - INFO: Componente generado: desarrollo-móvil
+2025-03-03 20:37:46,101 - INFO: Componente generado: redes-y-electrónica
+2025-03-03 20:37:46,103 - INFO: Componente generado: análisis-y-ciencia-de-datos
+2025-03-03 20:37:46,104 - INFO: Componente generado: devops-y-cloud-computing
+2025-03-03 20:37:46,105 - INFO: Componente generado: ciberseguridad
+2025-03-03 20:37:46,106 - INFO: Componente generado: inglés
+2025-03-03 20:37:46,108 - INFO: Componente generado: ux-ui
+2025-03-03 20:37:46,109 - INFO: Componente generado: diseño-y-multimedia
+2025-03-03 20:37:46,110 - INFO: Componente generado: creación-de-contenidos
+2025-03-03 20:37:46,111 - INFO: Componente generado: planes-de-estudio-para-quenotedetengas
+2025-03-03 20:37:46,113 - INFO: Componente generado: plan-gratuito
+2025-03-03 20:37:46,114 - INFO: Componente generado: plan-premium
+2025-03-03 20:37:46,118 - INFO: Componente generado: plan-para-empresas
+2025-03-03 20:37:46,119 - INFO: Componente generado: plan-para-estudiantes
+2025-03-03 20:37:46,120 - INFO: Componente generado: tu-puedes-ser-la-próximahistoria-de-éxito
+2025-03-03 20:37:46,122 - INFO: Componente generado: no-postergues-más-tu-educación-tu-futuro-te-está-esperando
+2025-03-03 20:37:46,122 - INFO: Generación de frontend completada
+2025-03-03 20:37:46,122 - INFO: Generación de Frontend completada
+2025-03-03 20:37:46,123 - INFO: Validando Componentes de Frontend...
+2025-03-03 20:37:46,125 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\análisis-y-ciencia-de-datos\análisis-y-ciencia-de-datos.component.ts: AnálisisYCienciaDeDatosComponent -> AnálisisYCienciaDeDatosComponent
+2025-03-03 20:37:46,126 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\blog\blog.component.ts: BlogComponent -> BlogComponent
+2025-03-03 20:37:46,129 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\ciberseguridad\ciberseguridad.component.ts: CiberseguridadComponent -> CiberseguridadComponent
+2025-03-03 20:37:46,130 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\creación-de-contenidos\creación-de-contenidos.component.ts: CreaciónDeContenidosComponent -> CreaciónDeContenidosComponent
+2025-03-03 20:37:46,132 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\creación-de-interfaces-con-swiftui\creación-de-interfaces-con-swiftui.component.ts: CreaciónDeInterfacesConSwiftuiComponent -> CreaciónDeInterfacesConSwiftuiComponent
+2025-03-03 20:37:46,135 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\cursos\cursos.component.ts: CursosComponent -> CursosComponent
+2025-03-03 20:37:46,137 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\desarrollo-backend\desarrollo-backend.component.ts: DesarrolloBackendComponent -> DesarrolloBackendComponent
+2025-03-03 20:37:46,139 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\desarrollo-frontend\desarrollo-frontend.component.ts: DesarrolloFrontendComponent -> DesarrolloFrontendComponent
+2025-03-03 20:37:46,141 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\desarrollo-móvil\desarrollo-móvil.component.ts: DesarrolloMóvilComponent -> DesarrolloMóvilComponent
+2025-03-03 20:37:46,143 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\devops-y-cloud-computing\devops-y-cloud-computing.component.ts: DevopsYCloudComputingComponent -> DevopsYCloudComputingComponent
+2025-03-03 20:37:46,146 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\diseño-y-multimedia\diseño-y-multimedia.component.ts: DiseñoYMultimediaComponent -> DiseñoYMultimediaComponent
+2025-03-03 20:37:46,148 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\en-español-nadie-explica-mejorque-edteam\en-español-nadie-explica-mejorque-edteam.component.ts: EnEspañolNadieExplicaMejorqueEdteamComponent -> EnEspañolNadieExplicaMejorqueEdteamComponent
+2025-03-03 20:37:46,149 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\escuela-de-emprendedores-2025\escuela-de-emprendedores-2025.component.ts: EscuelaDeEmprendedores2025Component -> EscuelaDeEmprendedores2025Component
+2025-03-03 20:37:46,151 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\escuelas\escuelas.component.ts: EscuelasComponent -> EscuelasComponent
+2025-03-03 20:37:46,154 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\escuelas-destacadas-de-edteam\escuelas-destacadas-de-edteam.component.ts: EscuelasDestacadasDeEdteamComponent -> EscuelasDestacadasDeEdteamComponent
+2025-03-03 20:37:46,156 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\explora-otras-escuelas-de-edteam\explora-otras-escuelas-de-edteam.component.ts: ExploraOtrasEscuelasDeEdteamComponent -> ExploraOtrasEscuelasDeEdteamComponent
+2025-03-03 20:37:46,158 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\hacking-ético-elevación-de-privilegios-en-linux\hacking-ético-elevación-de-privilegios-en-linux.component.ts: HackingÉticoElevaciónDePrivilegiosEnLinuxComponent -> HackingÉticoElevaciónDePrivilegiosEnLinuxComponent
+2025-03-03 20:37:46,160 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\home\home.component.ts: HomeComponent -> HomeComponent
+2025-03-03 20:37:46,162 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\inglés\inglés.component.ts: InglésComponent -> InglésComponent
+2025-03-03 20:37:46,163 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\inteligencia-artificial\inteligencia-artificial.component.ts: InteligenciaArtificialComponent -> InteligenciaArtificialComponent
+2025-03-03 20:37:46,165 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\inteligencia-artificial-para-todos\inteligencia-artificial-para-todos.component.ts: InteligenciaArtificialParaTodosComponent -> InteligenciaArtificialParaTodosComponent
+2025-03-03 20:37:46,168 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\marketing-y-negocios\marketing-y-negocios.component.ts: MarketingYNegociosComponent -> MarketingYNegociosComponent
+2025-03-03 20:37:46,170 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\no-postergues-más-tu-educación-tu-futuro-te-está-esperando\no-postergues-más-tu-educación-tu-futuro-te-está-esperando.component.ts: NoPosterguesMásTuEducaciónTuFuturoTeEstáEsperandoComponent -> NoPosterguesMásTuEducaciónTuFuturoTeEstáEsperandoComponent
+2025-03-03 20:37:46,172 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\plan-gratuito\plan-gratuito.component.ts: PlanGratuitoComponent -> PlanGratuitoComponent
+2025-03-03 20:37:46,175 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\plan-para-empresas\plan-para-empresas.component.ts: PlanParaEmpresasComponent -> PlanParaEmpresasComponent
+2025-03-03 20:37:46,176 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\plan-para-estudiantes\plan-para-estudiantes.component.ts: PlanParaEstudiantesComponent -> PlanParaEstudiantesComponent
+2025-03-03 20:37:46,179 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\plan-premium\plan-premium.component.ts: PlanPremiumComponent -> PlanPremiumComponent
+2025-03-03 20:37:46,181 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\planes\planes.component.ts: PlanesComponent -> PlanesComponent
+2025-03-03 20:37:46,183 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\planes-de-estudio-para-quenotedetengas\planes-de-estudio-para-quenotedetengas.component.ts: PlanesDeEstudioParaQuenotedetengasComponent -> PlanesDeEstudioParaQuenotedetengasComponent
+2025-03-03 20:37:46,185 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\procesamiento-de-datos-en-java-con-streams-y-lambdas\procesamiento-de-datos-en-java-con-streams-y-lambdas.component.ts: ProcesamientoDeDatosEnJavaConStreamsYLambdasComponent -> ProcesamientoDeDatosEnJavaConStreamsYLambdasComponent
+2025-03-03 20:37:46,187 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\programación-y-desarrollo-web\programación-y-desarrollo-web.component.ts: ProgramaciónYDesarrolloWebComponent -> ProgramaciónYDesarrolloWebComponent
+2025-03-03 20:37:46,189 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\redes-y-electrónica\redes-y-electrónica.component.ts: RedesYElectrónicaComponent -> RedesYElectrónicaComponent
+2025-03-03 20:37:46,192 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\tu-puedes-ser-la-próximahistoria-de-éxito\tu-puedes-ser-la-próximahistoria-de-éxito.component.ts: TuPuedesSerLaPróximahistoriaDeÉxitoComponent -> TuPuedesSerLaPróximahistoriaDeÉxitoComponent
+2025-03-03 20:37:46,194 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\ux-ui\ux-ui.component.ts: UxUiComponent -> UxUiComponent
+2025-03-03 20:37:46,196 - ERROR: No se encontró definición de clase en frontend/src/app/modules/landing\en-español,-nadie-explica-mejorque-edteam\en-español,-nadie-explica-mejorque-edteam.component.ts
+2025-03-03 20:37:46,196 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\análisis-y-ciencia-de-datos\\análisis-y-ciencia-de-datos.component.ts', 'nombre_anterior': 'AnálisisYCienciaDeDatos', 'nombre_corregido': 'AnálisisYCienciaDeDatosComponent'}
+2025-03-03 20:37:46,196 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\blog\\blog.component.ts', 'nombre_anterior': 'Blog', 'nombre_corregido': 'BlogComponent'}
+2025-03-03 20:37:46,196 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\ciberseguridad\\ciberseguridad.component.ts', 'nombre_anterior': 'Ciberseguridad', 'nombre_corregido': 'CiberseguridadComponent'}
+2025-03-03 20:37:46,196 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\creación-de-contenidos\\creación-de-contenidos.component.ts', 'nombre_anterior': 'CreaciónDeContenidos', 'nombre_corregido': 'CreaciónDeContenidosComponent'}
+2025-03-03 20:37:46,197 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\creación-de-interfaces-con-swiftui\\creación-de-interfaces-con-swiftui.component.ts', 'nombre_anterior': 'CreaciónDeInterfacesConSwiftui', 'nombre_corregido': 'CreaciónDeInterfacesConSwiftuiComponent'}
+2025-03-03 20:37:46,197 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\cursos\\cursos.component.ts', 'nombre_anterior': 'Cursos', 'nombre_corregido': 'CursosComponent'}
+2025-03-03 20:37:46,197 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\desarrollo-backend\\desarrollo-backend.component.ts', 'nombre_anterior': 'DesarrolloBackend', 'nombre_corregido': 'DesarrolloBackendComponent'}
+2025-03-03 20:37:46,197 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\desarrollo-frontend\\desarrollo-frontend.component.ts', 'nombre_anterior': 'DesarrolloFrontend', 'nombre_corregido': 'DesarrolloFrontendComponent'}
+2025-03-03 20:37:46,197 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\desarrollo-móvil\\desarrollo-móvil.component.ts', 'nombre_anterior': 'DesarrolloMóvil', 'nombre_corregido': 'DesarrolloMóvilComponent'}
+2025-03-03 20:37:46,197 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\devops-y-cloud-computing\\devops-y-cloud-computing.component.ts', 'nombre_anterior': 'DevopsYCloudComputing', 'nombre_corregido': 'DevopsYCloudComputingComponent'}
+2025-03-03 20:37:46,197 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\diseño-y-multimedia\\diseño-y-multimedia.component.ts', 'nombre_anterior': 'DiseñoYMultimedia', 'nombre_corregido': 'DiseñoYMultimediaComponent'}
+2025-03-03 20:37:46,197 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\en-español-nadie-explica-mejorque-edteam\\en-español-nadie-explica-mejorque-edteam.component.ts', 'nombre_anterior': 'EnEspañolNadieExplicaMejorqueEdteam', 'nombre_corregido': 'EnEspañolNadieExplicaMejorqueEdteamComponent'}
+2025-03-03 20:37:46,197 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\escuela-de-emprendedores-2025\\escuela-de-emprendedores-2025.component.ts', 'nombre_anterior': 'EscuelaDeEmprendedores2025', 'nombre_corregido': 'EscuelaDeEmprendedores2025Component'}
+2025-03-03 20:37:46,198 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\escuelas\\escuelas.component.ts', 'nombre_anterior': 'Escuelas', 'nombre_corregido': 'EscuelasComponent'}
+2025-03-03 20:37:46,198 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\escuelas-destacadas-de-edteam\\escuelas-destacadas-de-edteam.component.ts', 'nombre_anterior': 'EscuelasDestacadasDeEdteam', 'nombre_corregido': 'EscuelasDestacadasDeEdteamComponent'}
+2025-03-03 20:37:46,198 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\explora-otras-escuelas-de-edteam\\explora-otras-escuelas-de-edteam.component.ts', 'nombre_anterior': 'ExploraOtrasEscuelasDeEdteam', 'nombre_corregido': 'ExploraOtrasEscuelasDeEdteamComponent'}
+2025-03-03 20:37:46,198 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\hacking-ético-elevación-de-privilegios-en-linux\\hacking-ético-elevación-de-privilegios-en-linux.component.ts', 'nombre_anterior': 'HackingÉticoElevaciónDePrivilegiosEnLinux', 'nombre_corregido': 'HackingÉticoElevaciónDePrivilegiosEnLinuxComponent'}
+2025-03-03 20:37:46,199 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\home\\home.component.ts', 'nombre_anterior': 'Home', 'nombre_corregido': 'HomeComponent'}
+2025-03-03 20:37:46,199 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\inglés\\inglés.component.ts', 'nombre_anterior': 'Inglés', 'nombre_corregido': 'InglésComponent'}
+2025-03-03 20:37:46,199 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\inteligencia-artificial\\inteligencia-artificial.component.ts', 'nombre_anterior': 'InteligenciaArtificial', 'nombre_corregido': 'InteligenciaArtificialComponent'}
+2025-03-03 20:37:46,199 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\inteligencia-artificial-para-todos\\inteligencia-artificial-para-todos.component.ts', 'nombre_anterior': 'InteligenciaArtificialParaTodos', 'nombre_corregido': 'InteligenciaArtificialParaTodosComponent'}
+2025-03-03 20:37:46,199 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\marketing-y-negocios\\marketing-y-negocios.component.ts', 'nombre_anterior': 'MarketingYNegocios', 'nombre_corregido': 'MarketingYNegociosComponent'}
+2025-03-03 20:37:46,199 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\no-postergues-más-tu-educación-tu-futuro-te-está-esperando\\no-postergues-más-tu-educación-tu-futuro-te-está-esperando.component.ts', 'nombre_anterior': 'NoPosterguesMásTuEducaciónTuFuturoTeEstáEsperando', 'nombre_corregido': 'NoPosterguesMásTuEducaciónTuFuturoTeEstáEsperandoComponent'}
+2025-03-03 20:37:46,200 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\plan-gratuito\\plan-gratuito.component.ts', 'nombre_anterior': 'PlanGratuito', 'nombre_corregido': 'PlanGratuitoComponent'}
+2025-03-03 20:37:46,200 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\plan-para-empresas\\plan-para-empresas.component.ts', 'nombre_anterior': 'PlanParaEmpresas', 'nombre_corregido': 'PlanParaEmpresasComponent'}
+2025-03-03 20:37:46,200 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\plan-para-estudiantes\\plan-para-estudiantes.component.ts', 'nombre_anterior': 'PlanParaEstudiantes', 'nombre_corregido': 'PlanParaEstudiantesComponent'}
+2025-03-03 20:37:46,200 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\plan-premium\\plan-premium.component.ts', 'nombre_anterior': 'PlanPremium', 'nombre_corregido': 'PlanPremiumComponent'}
+2025-03-03 20:37:46,200 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\planes\\planes.component.ts', 'nombre_anterior': 'Planes', 'nombre_corregido': 'PlanesComponent'}
+2025-03-03 20:37:46,200 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\planes-de-estudio-para-quenotedetengas\\planes-de-estudio-para-quenotedetengas.component.ts', 'nombre_anterior': 'PlanesDeEstudioParaQuenotedetengas', 'nombre_corregido': 'PlanesDeEstudioParaQuenotedetengasComponent'}
+2025-03-03 20:37:46,200 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\procesamiento-de-datos-en-java-con-streams-y-lambdas\\procesamiento-de-datos-en-java-con-streams-y-lambdas.component.ts', 'nombre_anterior': 'ProcesamientoDeDatosEnJavaConStreamsYLambdas', 'nombre_corregido': 'ProcesamientoDeDatosEnJavaConStreamsYLambdasComponent'}
+2025-03-03 20:37:46,200 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\programación-y-desarrollo-web\\programación-y-desarrollo-web.component.ts', 'nombre_anterior': 'ProgramaciónYDesarrolloWeb', 'nombre_corregido': 'ProgramaciónYDesarrolloWebComponent'}
+2025-03-03 20:37:46,201 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\redes-y-electrónica\\redes-y-electrónica.component.ts', 'nombre_anterior': 'RedesYElectrónica', 'nombre_corregido': 'RedesYElectrónicaComponent'}
+2025-03-03 20:37:46,201 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\tu-puedes-ser-la-próximahistoria-de-éxito\\tu-puedes-ser-la-próximahistoria-de-éxito.component.ts', 'nombre_anterior': 'TuPuedesSerLaPróximahistoriaDeÉxito', 'nombre_corregido': 'TuPuedesSerLaPróximahistoriaDeÉxitoComponent'}
+2025-03-03 20:37:46,201 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\ux-ui\\ux-ui.component.ts', 'nombre_anterior': 'UxUi', 'nombre_corregido': 'UxUiComponent'}
+2025-03-03 20:37:46,201 - ERROR: Errores en validación de componentes
+2025-03-03 20:37:46,201 - ERROR: Proceso de automatización detenido
+2025-03-03 20:38:41,112 - INFO: Iniciando Automatización de Clonación Web
+2025-03-03 20:38:41,112 - INFO: Iniciando Web Scraping...
+2025-03-03 20:38:41,744 - INFO: Scraping completado exitosamente
+2025-03-03 20:38:41,746 - INFO: Web Scraping completado exitosamente
+2025-03-03 20:38:41,746 - INFO: Generando Frontend...
+2025-03-03 20:38:41,749 - INFO: Componente generado: home
+2025-03-03 20:38:41,750 - INFO: Componente generado: cursos
+2025-03-03 20:38:41,751 - INFO: Componente generado: escuelas
+2025-03-03 20:38:41,752 - INFO: Componente generado: planes
+2025-03-03 20:38:41,753 - INFO: Componente generado: blog
+2025-03-03 20:38:41,754 - INFO: Componente generado: en-español-nadie-explica-mejorque-edteam
+2025-03-03 20:38:41,755 - INFO: Componente generado: hacking-ético-elevación-de-privilegios-en-linux
+2025-03-03 20:38:41,756 - INFO: Componente generado: inteligencia-artificial-para-todos
+2025-03-03 20:38:41,757 - INFO: Componente generado: procesamiento-de-datos-en-java-con-streams-y-lambdas
+2025-03-03 20:38:41,759 - INFO: Componente generado: creación-de-interfaces-con-swiftui
+2025-03-03 20:38:41,760 - INFO: Componente generado: escuela-de-emprendedores-2025
+2025-03-03 20:38:41,761 - INFO: Componente generado: escuelas-destacadas-de-edteam
+2025-03-03 20:38:41,762 - INFO: Componente generado: programación-y-desarrollo-web
+2025-03-03 20:38:41,764 - INFO: Componente generado: desarrollo-frontend
+2025-03-03 20:38:41,764 - INFO: Componente generado: desarrollo-backend
+2025-03-03 20:38:41,766 - INFO: Componente generado: inteligencia-artificial
+2025-03-03 20:38:41,767 - INFO: Componente generado: marketing-y-negocios
+2025-03-03 20:38:41,768 - INFO: Componente generado: explora-otras-escuelas-de-edteam
+2025-03-03 20:38:41,768 - INFO: Componente generado: desarrollo-móvil
+2025-03-03 20:38:41,769 - INFO: Componente generado: redes-y-electrónica
+2025-03-03 20:38:41,771 - INFO: Componente generado: análisis-y-ciencia-de-datos
+2025-03-03 20:38:41,772 - INFO: Componente generado: devops-y-cloud-computing
+2025-03-03 20:38:41,773 - INFO: Componente generado: ciberseguridad
+2025-03-03 20:38:41,774 - INFO: Componente generado: inglés
+2025-03-03 20:38:41,775 - INFO: Componente generado: ux-ui
+2025-03-03 20:38:41,777 - INFO: Componente generado: diseño-y-multimedia
+2025-03-03 20:38:41,778 - INFO: Componente generado: creación-de-contenidos
+2025-03-03 20:38:41,780 - INFO: Componente generado: planes-de-estudio-para-quenotedetengas
+2025-03-03 20:38:41,781 - INFO: Componente generado: plan-gratuito
+2025-03-03 20:38:41,783 - INFO: Componente generado: plan-premium
+2025-03-03 20:38:41,783 - INFO: Componente generado: plan-para-empresas
+2025-03-03 20:38:41,785 - INFO: Componente generado: plan-para-estudiantes
+2025-03-03 20:38:41,786 - INFO: Componente generado: tu-puedes-ser-la-próximahistoria-de-éxito
+2025-03-03 20:38:41,788 - INFO: Componente generado: no-postergues-más-tu-educación-tu-futuro-te-está-esperando
+2025-03-03 20:38:41,790 - INFO: Generación de frontend completada
+2025-03-03 20:38:41,791 - INFO: Generación de Frontend completada
+2025-03-03 20:38:41,791 - INFO: Validando Componentes de Frontend...
+2025-03-03 20:38:41,793 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\análisis-y-ciencia-de-datos\análisis-y-ciencia-de-datos.component.ts: AnálisisYCienciaDeDatosComponent -> AnálisisYCienciaDeDatosComponent
+2025-03-03 20:38:41,795 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\blog\blog.component.ts: BlogComponent -> BlogComponent
+2025-03-03 20:38:41,798 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\ciberseguridad\ciberseguridad.component.ts: CiberseguridadComponent -> CiberseguridadComponent
+2025-03-03 20:38:41,801 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\creación-de-contenidos\creación-de-contenidos.component.ts: CreaciónDeContenidosComponent -> CreaciónDeContenidosComponent
+2025-03-03 20:38:41,804 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\creación-de-interfaces-con-swiftui\creación-de-interfaces-con-swiftui.component.ts: CreaciónDeInterfacesConSwiftuiComponent -> CreaciónDeInterfacesConSwiftuiComponent
+2025-03-03 20:38:41,806 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\cursos\cursos.component.ts: CursosComponent -> CursosComponent
+2025-03-03 20:38:41,810 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\desarrollo-backend\desarrollo-backend.component.ts: DesarrolloBackendComponent -> DesarrolloBackendComponent
+2025-03-03 20:38:41,812 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\desarrollo-frontend\desarrollo-frontend.component.ts: DesarrolloFrontendComponent -> DesarrolloFrontendComponent
+2025-03-03 20:38:41,814 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\desarrollo-móvil\desarrollo-móvil.component.ts: DesarrolloMóvilComponent -> DesarrolloMóvilComponent
+2025-03-03 20:38:41,816 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\devops-y-cloud-computing\devops-y-cloud-computing.component.ts: DevopsYCloudComputingComponent -> DevopsYCloudComputingComponent
+2025-03-03 20:38:41,819 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\diseño-y-multimedia\diseño-y-multimedia.component.ts: DiseñoYMultimediaComponent -> DiseñoYMultimediaComponent
+2025-03-03 20:38:41,822 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\en-español-nadie-explica-mejorque-edteam\en-español-nadie-explica-mejorque-edteam.component.ts: EnEspañolNadieExplicaMejorqueEdteamComponent -> EnEspañolNadieExplicaMejorqueEdteamComponent
+2025-03-03 20:38:41,823 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\escuela-de-emprendedores-2025\escuela-de-emprendedores-2025.component.ts: EscuelaDeEmprendedores2025Component -> EscuelaDeEmprendedores2025Component
+2025-03-03 20:38:41,826 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\escuelas\escuelas.component.ts: EscuelasComponent -> EscuelasComponent
+2025-03-03 20:38:41,829 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\escuelas-destacadas-de-edteam\escuelas-destacadas-de-edteam.component.ts: EscuelasDestacadasDeEdteamComponent -> EscuelasDestacadasDeEdteamComponent
+2025-03-03 20:38:41,831 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\explora-otras-escuelas-de-edteam\explora-otras-escuelas-de-edteam.component.ts: ExploraOtrasEscuelasDeEdteamComponent -> ExploraOtrasEscuelasDeEdteamComponent
+2025-03-03 20:38:41,833 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\hacking-ético-elevación-de-privilegios-en-linux\hacking-ético-elevación-de-privilegios-en-linux.component.ts: HackingÉticoElevaciónDePrivilegiosEnLinuxComponent -> HackingÉticoElevaciónDePrivilegiosEnLinuxComponent
+2025-03-03 20:38:41,836 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\home\home.component.ts: HomeComponent -> HomeComponent
+2025-03-03 20:38:41,838 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\inglés\inglés.component.ts: InglésComponent -> InglésComponent
+2025-03-03 20:38:41,841 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\inteligencia-artificial\inteligencia-artificial.component.ts: InteligenciaArtificialComponent -> InteligenciaArtificialComponent
+2025-03-03 20:38:41,843 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\inteligencia-artificial-para-todos\inteligencia-artificial-para-todos.component.ts: InteligenciaArtificialParaTodosComponent -> InteligenciaArtificialParaTodosComponent
+2025-03-03 20:38:41,844 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\marketing-y-negocios\marketing-y-negocios.component.ts: MarketingYNegociosComponent -> MarketingYNegociosComponent
+2025-03-03 20:38:41,846 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\no-postergues-más-tu-educación-tu-futuro-te-está-esperando\no-postergues-más-tu-educación-tu-futuro-te-está-esperando.component.ts: NoPosterguesMásTuEducaciónTuFuturoTeEstáEsperandoComponent -> NoPosterguesMásTuEducaciónTuFuturoTeEstáEsperandoComponent
+2025-03-03 20:38:41,848 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\plan-gratuito\plan-gratuito.component.ts: PlanGratuitoComponent -> PlanGratuitoComponent
+2025-03-03 20:38:41,851 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\plan-para-empresas\plan-para-empresas.component.ts: PlanParaEmpresasComponent -> PlanParaEmpresasComponent
+2025-03-03 20:38:41,852 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\plan-para-estudiantes\plan-para-estudiantes.component.ts: PlanParaEstudiantesComponent -> PlanParaEstudiantesComponent
+2025-03-03 20:38:41,854 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\plan-premium\plan-premium.component.ts: PlanPremiumComponent -> PlanPremiumComponent
+2025-03-03 20:38:41,857 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\planes\planes.component.ts: PlanesComponent -> PlanesComponent
+2025-03-03 20:38:41,859 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\planes-de-estudio-para-quenotedetengas\planes-de-estudio-para-quenotedetengas.component.ts: PlanesDeEstudioParaQuenotedetengasComponent -> PlanesDeEstudioParaQuenotedetengasComponent
+2025-03-03 20:38:41,861 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\procesamiento-de-datos-en-java-con-streams-y-lambdas\procesamiento-de-datos-en-java-con-streams-y-lambdas.component.ts: ProcesamientoDeDatosEnJavaConStreamsYLambdasComponent -> ProcesamientoDeDatosEnJavaConStreamsYLambdasComponent
+2025-03-03 20:38:41,863 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\programación-y-desarrollo-web\programación-y-desarrollo-web.component.ts: ProgramaciónYDesarrolloWebComponent -> ProgramaciónYDesarrolloWebComponent
+2025-03-03 20:38:41,866 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\redes-y-electrónica\redes-y-electrónica.component.ts: RedesYElectrónicaComponent -> RedesYElectrónicaComponent
+2025-03-03 20:38:41,868 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\tu-puedes-ser-la-próximahistoria-de-éxito\tu-puedes-ser-la-próximahistoria-de-éxito.component.ts: TuPuedesSerLaPróximahistoriaDeÉxitoComponent -> TuPuedesSerLaPróximahistoriaDeÉxitoComponent
+2025-03-03 20:38:41,870 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\ux-ui\ux-ui.component.ts: UxUiComponent -> UxUiComponent
+2025-03-03 20:38:41,870 - ERROR: No se encontró definición de clase en frontend/src/app/modules/landing\en-español,-nadie-explica-mejorque-edteam\en-español,-nadie-explica-mejorque-edteam.component.ts
+2025-03-03 20:38:41,871 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\análisis-y-ciencia-de-datos\\análisis-y-ciencia-de-datos.component.ts', 'nombre_anterior': 'AnálisisYCienciaDeDatos', 'nombre_corregido': 'AnálisisYCienciaDeDatosComponent'}
+2025-03-03 20:38:41,871 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\blog\\blog.component.ts', 'nombre_anterior': 'Blog', 'nombre_corregido': 'BlogComponent'}
+2025-03-03 20:38:41,871 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\ciberseguridad\\ciberseguridad.component.ts', 'nombre_anterior': 'Ciberseguridad', 'nombre_corregido': 'CiberseguridadComponent'}
+2025-03-03 20:38:41,871 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\creación-de-contenidos\\creación-de-contenidos.component.ts', 'nombre_anterior': 'CreaciónDeContenidos', 'nombre_corregido': 'CreaciónDeContenidosComponent'}
+2025-03-03 20:38:41,872 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\creación-de-interfaces-con-swiftui\\creación-de-interfaces-con-swiftui.component.ts', 'nombre_anterior': 'CreaciónDeInterfacesConSwiftui', 'nombre_corregido': 'CreaciónDeInterfacesConSwiftuiComponent'}
+2025-03-03 20:38:41,872 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\cursos\\cursos.component.ts', 'nombre_anterior': 'Cursos', 'nombre_corregido': 'CursosComponent'}
+2025-03-03 20:38:41,872 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\desarrollo-backend\\desarrollo-backend.component.ts', 'nombre_anterior': 'DesarrolloBackend', 'nombre_corregido': 'DesarrolloBackendComponent'}
+2025-03-03 20:38:41,872 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\desarrollo-frontend\\desarrollo-frontend.component.ts', 'nombre_anterior': 'DesarrolloFrontend', 'nombre_corregido': 'DesarrolloFrontendComponent'}
+2025-03-03 20:38:41,872 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\desarrollo-móvil\\desarrollo-móvil.component.ts', 'nombre_anterior': 'DesarrolloMóvil', 'nombre_corregido': 'DesarrolloMóvilComponent'}
+2025-03-03 20:38:41,872 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\devops-y-cloud-computing\\devops-y-cloud-computing.component.ts', 'nombre_anterior': 'DevopsYCloudComputing', 'nombre_corregido': 'DevopsYCloudComputingComponent'}
+2025-03-03 20:38:41,872 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\diseño-y-multimedia\\diseño-y-multimedia.component.ts', 'nombre_anterior': 'DiseñoYMultimedia', 'nombre_corregido': 'DiseñoYMultimediaComponent'}
+2025-03-03 20:38:41,872 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\en-español-nadie-explica-mejorque-edteam\\en-español-nadie-explica-mejorque-edteam.component.ts', 'nombre_anterior': 'EnEspañolNadieExplicaMejorqueEdteam', 'nombre_corregido': 'EnEspañolNadieExplicaMejorqueEdteamComponent'}
+2025-03-03 20:38:41,872 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\escuela-de-emprendedores-2025\\escuela-de-emprendedores-2025.component.ts', 'nombre_anterior': 'EscuelaDeEmprendedores2025', 'nombre_corregido': 'EscuelaDeEmprendedores2025Component'}
+2025-03-03 20:38:41,872 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\escuelas\\escuelas.component.ts', 'nombre_anterior': 'Escuelas', 'nombre_corregido': 'EscuelasComponent'}
+2025-03-03 20:38:41,872 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\escuelas-destacadas-de-edteam\\escuelas-destacadas-de-edteam.component.ts', 'nombre_anterior': 'EscuelasDestacadasDeEdteam', 'nombre_corregido': 'EscuelasDestacadasDeEdteamComponent'}
+2025-03-03 20:38:41,873 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\explora-otras-escuelas-de-edteam\\explora-otras-escuelas-de-edteam.component.ts', 'nombre_anterior': 'ExploraOtrasEscuelasDeEdteam', 'nombre_corregido': 'ExploraOtrasEscuelasDeEdteamComponent'}
+2025-03-03 20:38:41,873 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\hacking-ético-elevación-de-privilegios-en-linux\\hacking-ético-elevación-de-privilegios-en-linux.component.ts', 'nombre_anterior': 'HackingÉticoElevaciónDePrivilegiosEnLinux', 'nombre_corregido': 'HackingÉticoElevaciónDePrivilegiosEnLinuxComponent'}
+2025-03-03 20:38:41,873 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\home\\home.component.ts', 'nombre_anterior': 'Home', 'nombre_corregido': 'HomeComponent'}
+2025-03-03 20:38:41,873 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\inglés\\inglés.component.ts', 'nombre_anterior': 'Inglés', 'nombre_corregido': 'InglésComponent'}
+2025-03-03 20:38:41,873 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\inteligencia-artificial\\inteligencia-artificial.component.ts', 'nombre_anterior': 'InteligenciaArtificial', 'nombre_corregido': 'InteligenciaArtificialComponent'}
+2025-03-03 20:38:41,873 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\inteligencia-artificial-para-todos\\inteligencia-artificial-para-todos.component.ts', 'nombre_anterior': 'InteligenciaArtificialParaTodos', 'nombre_corregido': 'InteligenciaArtificialParaTodosComponent'}
+2025-03-03 20:38:41,873 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\marketing-y-negocios\\marketing-y-negocios.component.ts', 'nombre_anterior': 'MarketingYNegocios', 'nombre_corregido': 'MarketingYNegociosComponent'}
+2025-03-03 20:38:41,874 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\no-postergues-más-tu-educación-tu-futuro-te-está-esperando\\no-postergues-más-tu-educación-tu-futuro-te-está-esperando.component.ts', 'nombre_anterior': 'NoPosterguesMásTuEducaciónTuFuturoTeEstáEsperando', 'nombre_corregido': 'NoPosterguesMásTuEducaciónTuFuturoTeEstáEsperandoComponent'}
+2025-03-03 20:38:41,874 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\plan-gratuito\\plan-gratuito.component.ts', 'nombre_anterior': 'PlanGratuito', 'nombre_corregido': 'PlanGratuitoComponent'}
+2025-03-03 20:38:41,874 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\plan-para-empresas\\plan-para-empresas.component.ts', 'nombre_anterior': 'PlanParaEmpresas', 'nombre_corregido': 'PlanParaEmpresasComponent'}
+2025-03-03 20:38:41,874 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\plan-para-estudiantes\\plan-para-estudiantes.component.ts', 'nombre_anterior': 'PlanParaEstudiantes', 'nombre_corregido': 'PlanParaEstudiantesComponent'}
+2025-03-03 20:38:41,875 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\plan-premium\\plan-premium.component.ts', 'nombre_anterior': 'PlanPremium', 'nombre_corregido': 'PlanPremiumComponent'}
+2025-03-03 20:38:41,875 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\planes\\planes.component.ts', 'nombre_anterior': 'Planes', 'nombre_corregido': 'PlanesComponent'}
+2025-03-03 20:38:41,875 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\planes-de-estudio-para-quenotedetengas\\planes-de-estudio-para-quenotedetengas.component.ts', 'nombre_anterior': 'PlanesDeEstudioParaQuenotedetengas', 'nombre_corregido': 'PlanesDeEstudioParaQuenotedetengasComponent'}
+2025-03-03 20:38:41,875 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\procesamiento-de-datos-en-java-con-streams-y-lambdas\\procesamiento-de-datos-en-java-con-streams-y-lambdas.component.ts', 'nombre_anterior': 'ProcesamientoDeDatosEnJavaConStreamsYLambdas', 'nombre_corregido': 'ProcesamientoDeDatosEnJavaConStreamsYLambdasComponent'}
+2025-03-03 20:38:41,875 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\programación-y-desarrollo-web\\programación-y-desarrollo-web.component.ts', 'nombre_anterior': 'ProgramaciónYDesarrolloWeb', 'nombre_corregido': 'ProgramaciónYDesarrolloWebComponent'}
+2025-03-03 20:38:41,875 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\redes-y-electrónica\\redes-y-electrónica.component.ts', 'nombre_anterior': 'RedesYElectrónica', 'nombre_corregido': 'RedesYElectrónicaComponent'}
+2025-03-03 20:38:41,876 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\tu-puedes-ser-la-próximahistoria-de-éxito\\tu-puedes-ser-la-próximahistoria-de-éxito.component.ts', 'nombre_anterior': 'TuPuedesSerLaPróximahistoriaDeÉxito', 'nombre_corregido': 'TuPuedesSerLaPróximahistoriaDeÉxitoComponent'}
+2025-03-03 20:38:41,876 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\ux-ui\\ux-ui.component.ts', 'nombre_anterior': 'UxUi', 'nombre_corregido': 'UxUiComponent'}
+2025-03-03 20:38:41,876 - ERROR: Errores en validación de componentes
+2025-03-03 20:38:41,876 - ERROR: Proceso de automatización detenido
+2025-03-03 20:40:15,372 - INFO: Iniciando Automatización de Clonación Web
+2025-03-03 20:40:15,372 - INFO: Iniciando Web Scraping...
+2025-03-03 20:40:16,050 - INFO: Scraping completado exitosamente
+2025-03-03 20:40:16,050 - INFO: Web Scraping completado exitosamente
+2025-03-03 20:40:16,051 - INFO: Generando Frontend...
+2025-03-03 20:40:16,054 - INFO: Componente generado: home
+2025-03-03 20:40:16,056 - INFO: Componente generado: cursos
+2025-03-03 20:40:16,057 - INFO: Componente generado: escuelas
+2025-03-03 20:40:16,058 - INFO: Componente generado: planes
+2025-03-03 20:40:16,060 - INFO: Componente generado: blog
+2025-03-03 20:40:16,061 - INFO: Componente generado: en-español-nadie-explica-mejorque-edteam
+2025-03-03 20:40:16,062 - INFO: Componente generado: hacking-ético-elevación-de-privilegios-en-linux
+2025-03-03 20:40:16,063 - INFO: Componente generado: inteligencia-artificial-para-todos
+2025-03-03 20:40:16,065 - INFO: Componente generado: procesamiento-de-datos-en-java-con-streams-y-lambdas
+2025-03-03 20:40:16,066 - INFO: Componente generado: creación-de-interfaces-con-swiftui
+2025-03-03 20:40:16,067 - INFO: Componente generado: escuela-de-emprendedores-2025
+2025-03-03 20:40:16,069 - INFO: Componente generado: escuelas-destacadas-de-edteam
+2025-03-03 20:40:16,072 - INFO: Componente generado: programación-y-desarrollo-web
+2025-03-03 20:40:16,072 - INFO: Componente generado: desarrollo-frontend
+2025-03-03 20:40:16,073 - INFO: Componente generado: desarrollo-backend
+2025-03-03 20:40:16,075 - INFO: Componente generado: inteligencia-artificial
+2025-03-03 20:40:16,077 - INFO: Componente generado: marketing-y-negocios
+2025-03-03 20:40:16,078 - INFO: Componente generado: explora-otras-escuelas-de-edteam
+2025-03-03 20:40:16,079 - INFO: Componente generado: desarrollo-móvil
+2025-03-03 20:40:16,080 - INFO: Componente generado: redes-y-electrónica
+2025-03-03 20:40:16,081 - INFO: Componente generado: análisis-y-ciencia-de-datos
+2025-03-03 20:40:16,082 - INFO: Componente generado: devops-y-cloud-computing
+2025-03-03 20:40:16,085 - INFO: Componente generado: ciberseguridad
+2025-03-03 20:40:16,086 - INFO: Componente generado: inglés
+2025-03-03 20:40:16,087 - INFO: Componente generado: ux-ui
+2025-03-03 20:40:16,088 - INFO: Componente generado: diseño-y-multimedia
+2025-03-03 20:40:16,089 - INFO: Componente generado: creación-de-contenidos
+2025-03-03 20:40:16,091 - INFO: Componente generado: planes-de-estudio-para-quenotedetengas
+2025-03-03 20:40:16,091 - INFO: Componente generado: plan-gratuito
+2025-03-03 20:40:16,092 - INFO: Componente generado: plan-premium
+2025-03-03 20:40:16,094 - INFO: Componente generado: plan-para-empresas
+2025-03-03 20:40:16,095 - INFO: Componente generado: plan-para-estudiantes
+2025-03-03 20:40:16,097 - INFO: Componente generado: tu-puedes-ser-la-próximahistoria-de-éxito
+2025-03-03 20:40:16,098 - INFO: Componente generado: no-postergues-más-tu-educación-tu-futuro-te-está-esperando
+2025-03-03 20:40:16,099 - INFO: Generación de frontend completada
+2025-03-03 20:40:16,100 - INFO: Generación de Frontend completada
+2025-03-03 20:40:16,100 - INFO: Validando Componentes de Frontend...
+2025-03-03 20:40:16,102 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\análisis-y-ciencia-de-datos\análisis-y-ciencia-de-datos.component.ts: AnálisisYCienciaDeDatos -> AnálisisYCienciaDeDatosComponent
+2025-03-03 20:40:16,104 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\blog\blog.component.ts: Blog -> BlogComponent
+2025-03-03 20:40:16,106 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\ciberseguridad\ciberseguridad.component.ts: Ciberseguridad -> CiberseguridadComponent
+2025-03-03 20:40:16,108 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\creación-de-contenidos\creación-de-contenidos.component.ts: CreaciónDeContenidos -> CreaciónDeContenidosComponent
+2025-03-03 20:40:16,109 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\creación-de-interfaces-con-swiftui\creación-de-interfaces-con-swiftui.component.ts: CreaciónDeInterfacesConSwiftui -> CreaciónDeInterfacesConSwiftuiComponent
+2025-03-03 20:40:16,111 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\cursos\cursos.component.ts: Cursos -> CursosComponent
+2025-03-03 20:40:16,112 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\desarrollo-backend\desarrollo-backend.component.ts: DesarrolloBackend -> DesarrolloBackendComponent
+2025-03-03 20:40:16,115 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\desarrollo-frontend\desarrollo-frontend.component.ts: DesarrolloFrontend -> DesarrolloFrontendComponent
+2025-03-03 20:40:16,118 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\desarrollo-móvil\desarrollo-móvil.component.ts: DesarrolloMóvil -> DesarrolloMóvilComponent
+2025-03-03 20:40:16,120 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\devops-y-cloud-computing\devops-y-cloud-computing.component.ts: DevopsYCloudComputing -> DevopsYCloudComputingComponent
+2025-03-03 20:40:16,122 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\diseño-y-multimedia\diseño-y-multimedia.component.ts: DiseñoYMultimedia -> DiseñoYMultimediaComponent
+2025-03-03 20:40:16,124 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\en-español-nadie-explica-mejorque-edteam\en-español-nadie-explica-mejorque-edteam.component.ts: EnEspañolNadieExplicaMejorqueEdteam -> EnEspañolNadieExplicaMejorqueEdteamComponent
+2025-03-03 20:40:16,126 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\escuela-de-emprendedores-2025\escuela-de-emprendedores-2025.component.ts: EscuelaDeEmprendedores2025 -> EscuelaDeEmprendedores2025Component
+2025-03-03 20:40:16,127 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\escuelas\escuelas.component.ts: Escuelas -> EscuelasComponent
+2025-03-03 20:40:16,129 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\escuelas-destacadas-de-edteam\escuelas-destacadas-de-edteam.component.ts: EscuelasDestacadasDeEdteam -> EscuelasDestacadasDeEdteamComponent
+2025-03-03 20:40:16,131 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\explora-otras-escuelas-de-edteam\explora-otras-escuelas-de-edteam.component.ts: ExploraOtrasEscuelasDeEdteam -> ExploraOtrasEscuelasDeEdteamComponent
+2025-03-03 20:40:16,134 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\hacking-ético-elevación-de-privilegios-en-linux\hacking-ético-elevación-de-privilegios-en-linux.component.ts: HackingÉticoElevaciónDePrivilegiosEnLinux -> HackingÉticoElevaciónDePrivilegiosEnLinuxComponent
+2025-03-03 20:40:16,136 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\home\home.component.ts: Home -> HomeComponent
+2025-03-03 20:40:16,138 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\inglés\inglés.component.ts: Inglés -> InglésComponent
+2025-03-03 20:40:16,140 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\inteligencia-artificial\inteligencia-artificial.component.ts: InteligenciaArtificial -> InteligenciaArtificialComponent
+2025-03-03 20:40:16,142 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\inteligencia-artificial-para-todos\inteligencia-artificial-para-todos.component.ts: InteligenciaArtificialParaTodos -> InteligenciaArtificialParaTodosComponent
+2025-03-03 20:40:16,144 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\marketing-y-negocios\marketing-y-negocios.component.ts: MarketingYNegocios -> MarketingYNegociosComponent
+2025-03-03 20:40:16,145 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\no-postergues-más-tu-educación-tu-futuro-te-está-esperando\no-postergues-más-tu-educación-tu-futuro-te-está-esperando.component.ts: NoPosterguesMásTuEducaciónTuFuturoTeEstáEsperando -> NoPosterguesMásTuEducaciónTuFuturoTeEstáEsperandoComponent
+2025-03-03 20:40:16,147 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\plan-gratuito\plan-gratuito.component.ts: PlanGratuito -> PlanGratuitoComponent
+2025-03-03 20:40:16,149 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\plan-para-empresas\plan-para-empresas.component.ts: PlanParaEmpresas -> PlanParaEmpresasComponent
+2025-03-03 20:40:16,151 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\plan-para-estudiantes\plan-para-estudiantes.component.ts: PlanParaEstudiantes -> PlanParaEstudiantesComponent
+2025-03-03 20:40:16,152 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\plan-premium\plan-premium.component.ts: PlanPremium -> PlanPremiumComponent
+2025-03-03 20:40:16,154 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\planes\planes.component.ts: Planes -> PlanesComponent
+2025-03-03 20:40:16,156 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\planes-de-estudio-para-quenotedetengas\planes-de-estudio-para-quenotedetengas.component.ts: PlanesDeEstudioParaQuenotedetengas -> PlanesDeEstudioParaQuenotedetengasComponent
+2025-03-03 20:40:16,158 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\procesamiento-de-datos-en-java-con-streams-y-lambdas\procesamiento-de-datos-en-java-con-streams-y-lambdas.component.ts: ProcesamientoDeDatosEnJavaConStreamsYLambdas -> ProcesamientoDeDatosEnJavaConStreamsYLambdasComponent
+2025-03-03 20:40:16,160 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\programación-y-desarrollo-web\programación-y-desarrollo-web.component.ts: ProgramaciónYDesarrolloWeb -> ProgramaciónYDesarrolloWebComponent
+2025-03-03 20:40:16,163 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\redes-y-electrónica\redes-y-electrónica.component.ts: RedesYElectrónica -> RedesYElectrónicaComponent
+2025-03-03 20:40:16,165 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\tu-puedes-ser-la-próximahistoria-de-éxito\tu-puedes-ser-la-próximahistoria-de-éxito.component.ts: TuPuedesSerLaPróximahistoriaDeÉxito -> TuPuedesSerLaPróximahistoriaDeÉxitoComponent
+2025-03-03 20:40:16,167 - INFO: Corregido nombre de clase en frontend/src/app/modules/landing\ux-ui\ux-ui.component.ts: UxUi -> UxUiComponent
+2025-03-03 20:40:16,168 - ERROR: No se encontró definición de clase en frontend/src/app/modules/landing\en-español,-nadie-explica-mejorque-edteam\en-español,-nadie-explica-mejorque-edteam.component.ts
+2025-03-03 20:40:16,168 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\análisis-y-ciencia-de-datos\\análisis-y-ciencia-de-datos.component.ts', 'nombre_anterior': 'AnálisisYCienciaDeDatos', 'nombre_corregido': 'AnálisisYCienciaDeDatosComponent'}
+2025-03-03 20:40:16,168 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\blog\\blog.component.ts', 'nombre_anterior': 'Blog', 'nombre_corregido': 'BlogComponent'}
+2025-03-03 20:40:16,168 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\ciberseguridad\\ciberseguridad.component.ts', 'nombre_anterior': 'Ciberseguridad', 'nombre_corregido': 'CiberseguridadComponent'}
+2025-03-03 20:40:16,168 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\creación-de-contenidos\\creación-de-contenidos.component.ts', 'nombre_anterior': 'CreaciónDeContenidos', 'nombre_corregido': 'CreaciónDeContenidosComponent'}
+2025-03-03 20:40:16,169 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\creación-de-interfaces-con-swiftui\\creación-de-interfaces-con-swiftui.component.ts', 'nombre_anterior': 'CreaciónDeInterfacesConSwiftui', 'nombre_corregido': 'CreaciónDeInterfacesConSwiftuiComponent'}
+2025-03-03 20:40:16,169 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\cursos\\cursos.component.ts', 'nombre_anterior': 'Cursos', 'nombre_corregido': 'CursosComponent'}
+2025-03-03 20:40:16,169 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\desarrollo-backend\\desarrollo-backend.component.ts', 'nombre_anterior': 'DesarrolloBackend', 'nombre_corregido': 'DesarrolloBackendComponent'}
+2025-03-03 20:40:16,169 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\desarrollo-frontend\\desarrollo-frontend.component.ts', 'nombre_anterior': 'DesarrolloFrontend', 'nombre_corregido': 'DesarrolloFrontendComponent'}
+2025-03-03 20:40:16,169 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\desarrollo-móvil\\desarrollo-móvil.component.ts', 'nombre_anterior': 'DesarrolloMóvil', 'nombre_corregido': 'DesarrolloMóvilComponent'}
+2025-03-03 20:40:16,169 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\devops-y-cloud-computing\\devops-y-cloud-computing.component.ts', 'nombre_anterior': 'DevopsYCloudComputing', 'nombre_corregido': 'DevopsYCloudComputingComponent'}
+2025-03-03 20:40:16,170 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\diseño-y-multimedia\\diseño-y-multimedia.component.ts', 'nombre_anterior': 'DiseñoYMultimedia', 'nombre_corregido': 'DiseñoYMultimediaComponent'}
+2025-03-03 20:40:16,170 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\en-español-nadie-explica-mejorque-edteam\\en-español-nadie-explica-mejorque-edteam.component.ts', 'nombre_anterior': 'EnEspañolNadieExplicaMejorqueEdteam', 'nombre_corregido': 'EnEspañolNadieExplicaMejorqueEdteamComponent'}
+2025-03-03 20:40:16,170 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\escuela-de-emprendedores-2025\\escuela-de-emprendedores-2025.component.ts', 'nombre_anterior': 'EscuelaDeEmprendedores2025', 'nombre_corregido': 'EscuelaDeEmprendedores2025Component'}
+2025-03-03 20:40:16,170 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\escuelas\\escuelas.component.ts', 'nombre_anterior': 'Escuelas', 'nombre_corregido': 'EscuelasComponent'}
+2025-03-03 20:40:16,170 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\escuelas-destacadas-de-edteam\\escuelas-destacadas-de-edteam.component.ts', 'nombre_anterior': 'EscuelasDestacadasDeEdteam', 'nombre_corregido': 'EscuelasDestacadasDeEdteamComponent'}
+2025-03-03 20:40:16,170 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\explora-otras-escuelas-de-edteam\\explora-otras-escuelas-de-edteam.component.ts', 'nombre_anterior': 'ExploraOtrasEscuelasDeEdteam', 'nombre_corregido': 'ExploraOtrasEscuelasDeEdteamComponent'}
+2025-03-03 20:40:16,171 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\hacking-ético-elevación-de-privilegios-en-linux\\hacking-ético-elevación-de-privilegios-en-linux.component.ts', 'nombre_anterior': 'HackingÉticoElevaciónDePrivilegiosEnLinux', 'nombre_corregido': 'HackingÉticoElevaciónDePrivilegiosEnLinuxComponent'}
+2025-03-03 20:40:16,171 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\home\\home.component.ts', 'nombre_anterior': 'Home', 'nombre_corregido': 'HomeComponent'}
+2025-03-03 20:40:16,171 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\inglés\\inglés.component.ts', 'nombre_anterior': 'Inglés', 'nombre_corregido': 'InglésComponent'}
+2025-03-03 20:40:16,172 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\inteligencia-artificial\\inteligencia-artificial.component.ts', 'nombre_anterior': 'InteligenciaArtificial', 'nombre_corregido': 'InteligenciaArtificialComponent'}
+2025-03-03 20:40:16,172 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\inteligencia-artificial-para-todos\\inteligencia-artificial-para-todos.component.ts', 'nombre_anterior': 'InteligenciaArtificialParaTodos', 'nombre_corregido': 'InteligenciaArtificialParaTodosComponent'}
+2025-03-03 20:40:16,172 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\marketing-y-negocios\\marketing-y-negocios.component.ts', 'nombre_anterior': 'MarketingYNegocios', 'nombre_corregido': 'MarketingYNegociosComponent'}
+2025-03-03 20:40:16,172 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\no-postergues-más-tu-educación-tu-futuro-te-está-esperando\\no-postergues-más-tu-educación-tu-futuro-te-está-esperando.component.ts', 'nombre_anterior': 'NoPosterguesMásTuEducaciónTuFuturoTeEstáEsperando', 'nombre_corregido': 'NoPosterguesMásTuEducaciónTuFuturoTeEstáEsperandoComponent'}
+2025-03-03 20:40:16,172 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\plan-gratuito\\plan-gratuito.component.ts', 'nombre_anterior': 'PlanGratuito', 'nombre_corregido': 'PlanGratuitoComponent'}
+2025-03-03 20:40:16,173 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\plan-para-empresas\\plan-para-empresas.component.ts', 'nombre_anterior': 'PlanParaEmpresas', 'nombre_corregido': 'PlanParaEmpresasComponent'}
+2025-03-03 20:40:16,173 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\plan-para-estudiantes\\plan-para-estudiantes.component.ts', 'nombre_anterior': 'PlanParaEstudiantes', 'nombre_corregido': 'PlanParaEstudiantesComponent'}
+2025-03-03 20:40:16,174 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\plan-premium\\plan-premium.component.ts', 'nombre_anterior': 'PlanPremium', 'nombre_corregido': 'PlanPremiumComponent'}
+2025-03-03 20:40:16,174 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\planes\\planes.component.ts', 'nombre_anterior': 'Planes', 'nombre_corregido': 'PlanesComponent'}
+2025-03-03 20:40:16,174 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\planes-de-estudio-para-quenotedetengas\\planes-de-estudio-para-quenotedetengas.component.ts', 'nombre_anterior': 'PlanesDeEstudioParaQuenotedetengas', 'nombre_corregido': 'PlanesDeEstudioParaQuenotedetengasComponent'}
+2025-03-03 20:40:16,174 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\procesamiento-de-datos-en-java-con-streams-y-lambdas\\procesamiento-de-datos-en-java-con-streams-y-lambdas.component.ts', 'nombre_anterior': 'ProcesamientoDeDatosEnJavaConStreamsYLambdas', 'nombre_corregido': 'ProcesamientoDeDatosEnJavaConStreamsYLambdasComponent'}
+2025-03-03 20:40:16,174 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\programación-y-desarrollo-web\\programación-y-desarrollo-web.component.ts', 'nombre_anterior': 'ProgramaciónYDesarrolloWeb', 'nombre_corregido': 'ProgramaciónYDesarrolloWebComponent'}
+2025-03-03 20:40:16,174 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\redes-y-electrónica\\redes-y-electrónica.component.ts', 'nombre_anterior': 'RedesYElectrónica', 'nombre_corregido': 'RedesYElectrónicaComponent'}
+2025-03-03 20:40:16,174 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\tu-puedes-ser-la-próximahistoria-de-éxito\\tu-puedes-ser-la-próximahistoria-de-éxito.component.ts', 'nombre_anterior': 'TuPuedesSerLaPróximahistoriaDeÉxito', 'nombre_corregido': 'TuPuedesSerLaPróximahistoriaDeÉxitoComponent'}
+2025-03-03 20:40:16,175 - INFO: Corrección: {'archivo': 'frontend/src/app/modules/landing\\ux-ui\\ux-ui.component.ts', 'nombre_anterior': 'UxUi', 'nombre_corregido': 'UxUiComponent'}
+2025-03-03 20:40:16,175 - ERROR: Errores en validación de componentes
+2025-03-03 20:40:16,175 - ERROR: Proceso de automatización detenido

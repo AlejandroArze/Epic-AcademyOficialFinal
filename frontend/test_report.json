@@ -1,0 +1,51 @@
+{
+  "componentes": {
+    "exitoso": true,
+    "mensaje": "Componentes encontrados: 35",
+    "lista_componentes": [
+      "análisis-y-ciencia-de-datos",
+      "blog",
+      "ciberseguridad",
+      "creación-de-contenidos",
+      "creación-de-interfaces-con-swiftui",
+      "cursos",
+      "desarrollo-backend",
+      "desarrollo-frontend",
+      "desarrollo-móvil",
+      "devops-y-cloud-computing",
+      "diseño-y-multimedia",
+      "en-español,-nadie-explica-mejorque-edteam",
+      "en-español-nadie-explica-mejorque-edteam",
+      "escuela-de-emprendedores-2025",
+      "escuelas",
+      "escuelas-destacadas-de-edteam",
+      "explora-otras-escuelas-de-edteam",
+      "hacking-ético-elevación-de-privilegios-en-linux",
+      "home",
+      "inglés",
+      "inteligencia-artificial",
+      "inteligencia-artificial-para-todos",
+      "marketing-y-negocios",
+      "no-postergues-más-tu-educación-tu-futuro-te-está-esperando",
+      "plan-gratuito",
+      "plan-para-empresas",
+      "plan-para-estudiantes",
+      "plan-premium",
+      "planes",
+      "planes-de-estudio-para-quenotedetengas",
+      "procesamiento-de-datos-en-java-con-streams-y-lambdas",
+      "programación-y-desarrollo-web",
+      "redes-y-electrónica",
+      "tu-puedes-ser-la-próximahistoria-de-éxito",
+      "ux-ui"
+    ]
+  },
+  "cobertura": {
+    "porcentaje": 0,
+    "detalles": {}
+  },
+  "rendimiento": {
+    "tiempo_carga": null,
+    "recursos": []
+  }
+}

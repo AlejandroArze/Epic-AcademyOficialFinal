@@ -1,0 +1,21 @@
+{
+  "escuelas": [
+    {
+      "id": 1,
+      "nombre": "Programación",
+      "descripcion": "Aprende a programar desde cero"
+    },
+    {
+      "id": 2,
+      "nombre": "Desarrollo Web",
+      "descripcion": "Conviértete en desarrollador web"
+    }
+  ],
+  "cursos": [
+    {
+      "id": 1,
+      "titulo": "Introducción a Python",
+      "nivel": "Básico"
+    }
+  ]
+}

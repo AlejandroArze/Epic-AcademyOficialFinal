@@ -1,0 +1,13 @@
+{
+  "project_name": "Epic Academy",
+  "automation_stages": [
+    "web_scraping",
+    "frontend_generation", 
+    "frontend_testing"
+  ],
+  "tools": {
+    "scraping": ["beautifulsoup4", "requests"],
+    "frontend": ["react", "tailwindcss"],
+    "testing": ["jest", "cypress"]
+  }
+} 

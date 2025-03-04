@@ -1,0 +1,76 @@
+# Reglas de Automatización de Desarrollo Web
+
+## Objetivos Principales
+- Clonar sitio web de manera automática
+- Generar frontend y backend
+- Realizar pruebas automatizadas
+- Desplegar aplicación
+
+## Flujo de Trabajo Automatizado
+
+### Fase 1: Preparación
+[X] Configurar entorno de desarrollo
+[ ] Seleccionar herramientas de scraping
+[ ] Definir tecnologías frontend y backend
+
+### Fase 2: Web Scraping
+[ ] Capturar estructura HTML
+[ ] Extraer estilos CSS
+[ ] Identificar endpoints de API
+[ ] Generar capturas de pantalla
+
+### Fase 3: Generación de Frontend
+[ ] Convertir HTML a componentes React/Vue/Angular
+[ ] Replicar estilos con TailwindCSS
+[ ] Generar datos de prueba
+[ ] Crear pruebas con Cypress/Playwright
+
+### Fase 4: Generación de Backend
+[ ] Crear estructura de API
+[ ] Configurar base de datos
+[ ] Generar documentación Swagger
+[ ] Implementar endpoints
+
+### Fase 5: Pruebas e Integración
+[ ] Ejecutar pruebas frontend
+[ ] Ejecutar pruebas backend
+[ ] Integrar frontend con backend
+[ ] Validar funcionamiento
+
+### Fase 6: Despliegue
+[ ] Configurar despliegue en Vercel/Netlify
+[ ] Configurar backend en Heroku/VPS
+[ ] Automatizar proceso de deploy
+
+## Herramientas
+- Scraping: BeautifulSoup, Selenium
+- Frontend: React, TailwindCSS
+- Backend: Node.js/Express, FastAPI
+- Pruebas: Cypress, Jest, Pytest
+- Deploy: Vercel, Netlify, Heroku
+
+## Reglas de Desarrollo
+1. Usar entorno virtual Python
+2. Hacer commit después de cada cambio funcional
+3. Generar documentación automática
+4. Ejecutar pruebas antes de cada commit
+
+## Lecciones Aprendidas
+- Manejar diferentes encodings en scraping
+- Usar información de depuración
+- Mantener configuraciones de entorno actualizadas
+
+workflow:
+  - web_scraping:
+      script: tools/web_scraper.py
+      output: data/scraped
+  
+  - frontend_generation:
+      script: tools/generate_frontend.py
+      input: data/scraped/html_structure.json
+      output: frontend/src
+  
+  - frontend_testing:
+      script: tools/frontend_tests.py
+      input: frontend/src
+      output: test_reports

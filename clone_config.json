@@ -1,0 +1,8 @@
+{
+    "target_url": "https://ed.team/",
+    "clone_settings": {
+        "screenshot_mode": "full_page",
+        "test_coverage": 90,
+        "generate_backend": true
+    }
+} 

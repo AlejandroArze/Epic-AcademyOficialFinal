@@ -1,0 +1,20 @@
+{
+  "estructura_sitio": {
+    "completada": true,
+    "subtareas": {
+      "extraer_titulo": true,
+      "extraer_meta_tags": true,
+      "extraer_encabezados": true,
+      "extraer_enlaces": true,
+      "extraer_imagenes": true
+    }
+  },
+  "analisis_componentes": {
+    "completada": false,
+    "subtareas": {
+      "identificar_secciones_principales": false,
+      "clasificar_componentes_ui": false,
+      "mapear_interacciones": false
+    }
+  }
+}
