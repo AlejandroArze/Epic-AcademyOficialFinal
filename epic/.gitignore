@@ -1,0 +1,9 @@
+epic/venv/
+epic/env/
+epic/env.sh
+epic/env.csh
+epic/env.bat
+epic/env.ps1
+epic/env.ps1
+venv
+.venv
