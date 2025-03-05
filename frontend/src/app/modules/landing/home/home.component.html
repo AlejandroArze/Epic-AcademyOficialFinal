@@ -59,60 +59,80 @@
 
     <div class="flex flex-col min-h-screen">
         <!-- Main Hero Section -->
-        <div class="relative min-h-[600px] overflow-hidden">
-            <!-- Fondo con gradiente -->
-            <div class="absolute inset-0 bg-gradient-to-r from-blue-950 to-blue-600"></div>
-            
+        <div class="relative min-h-[600px] bg-gradient-to-r from-[#000B45] to-[#006C9E] overflow-hidden">
             <!-- Contenido principal -->
-            <div class="relative z-10 container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center">
+            <div class="relative z-10 container mx-auto px-4 py-24 flex flex-col lg:flex-row items-center justify-between">
                 <!-- Columna de texto -->
                 <div class="lg:w-1/2 text-white">
-                    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-6">
                         En español, nadie explica mejor
-                        <span class="block text-yellow-400 mt-2">que EPIC</span>
+                        <span class="block text-[#FFD15F] mt-2">que EPIC</span>
                     </h1>
-                    <p class="text-xl mb-8 text-blue-100">
+                    <p class="text-xl text-gray-300 mb-8">
                         Si piensas que la tecnología es difícil es porque no conoces EPIC,
                         <span class="block">
                             <span class="border-b-2 border-blue-400">9 años la plataforma más obsesionada</span> con la calidad de los cursos.
                         </span>
                     </p>
                     <button mat-flat-button 
-                            class="bg-yellow-400 text-blue-900 text-lg px-8 py-4 rounded-full hover:bg-yellow-300 transition-colors">
+                            class="bg-[#FFD15F] hover:bg-[#FFE08F] text-[#000B45] text-lg px-8 py-4 rounded-lg font-medium transition-colors">
                         Comienza a estudiar gratis
                     </button>
-                    <p class="mt-4 text-sm text-blue-200">*No necesitas tarjeta de crédito</p>
+                    <p class="mt-4 text-sm text-gray-400">*No necesitas tarjeta de crédito</p>
                 </div>
 
                 <!-- Columna de imagen -->
                 <div class="lg:w-1/2 mt-12 lg:mt-0 relative">
-                    <!-- Círculos flotantes -->
-                    <div class="absolute">
-                        <div class="absolute -top-20 right-10 w-12 h-12 rounded-full bg-blue-500/20 backdrop-blur-sm flex items-center justify-center">
-                            <mat-icon class="text-white">code</mat-icon>
+                    <!-- Círculos flotantes con iconos -->
+                    <div class="absolute inset-0">
+                        <div class="absolute top-10 right-20 w-12 h-12 rounded-full bg-[#FF4D4D]/20 backdrop-blur-sm flex items-center justify-center animate-float">
+                            <img src="assets/icons/go.svg" alt="Go" class="w-6 h-6 object-contain" 
+                                 onerror="this.onerror=null; this.outerHTML='<div class=\'w-6 h-6 text-red-500\'><svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'currentColor\'><path d=\'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z\'/></svg></div>'">
                         </div>
-                        <div class="absolute top-10 -right-10 w-12 h-12 rounded-full bg-green-500/20 backdrop-blur-sm flex items-center justify-center">
-                            <mat-icon class="text-white">terminal</mat-icon>
+                        <div class="absolute top-32 right-4 w-12 h-12 rounded-full bg-[#00BCD4]/20 backdrop-blur-sm flex items-center justify-center animate-float-delayed">
+                            <img src="assets/icons/react.svg" alt="React" class="w-6 h-6 object-contain" 
+                                 onerror="this.onerror=null; this.outerHTML='<div class=\'w-6 h-6 text-blue-500\'><svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'currentColor\'><path d=\'M12 10.11c1.03 0 1.87.84 1.87 1.87s-.84 1.87-1.87 1.87-1.87-.84-1.87-1.87.84-1.87 1.87-1.87M7.37 20c.63.38 2.01-.2 3.6-1.7-.52-1.21-1.15-2.48-1.85-3.89-1.42-.43-2.67-.82-3.57-1.18-1.26 2.69-1.35 4.53-.18 5.77m.71-5.74c.19.09.4.16.61.26.46-1.14.99-2.32 1.58-3.46.57-1.1 1.2-2.16 1.84-3.16-1.42-1.42-2.7-2.08-3.47-1.6-.77.47-.88 1.74-.32 3.57m10.35-2.18c-.63-.38-2.01.2-3.6 1.7.52 1.21 1.15 2.48 1.85 3.89 1.42.43 2.67.82 3.57 1.18 1.26-2.69 1.35-4.53.18-5.77m-.71 5.74c-.19-.09-.4-.16-.61-.26-.46 1.14-.99 2.32-1.58 3.46-.57 1.1-1.2 2.16-1.84 3.16 1.42 1.42 2.7 2.08 3.47 1.6.77-.47.88-1.74.32-3.57\'/></svg></div>'">
                         </div>
-                        <div class="absolute bottom-20 left-10 w-12 h-12 rounded-full bg-purple-500/20 backdrop-blur-sm flex items-center justify-center">
-                            <mat-icon class="text-white">memory</mat-icon>
+                        <div class="absolute bottom-20 left-10 w-12 h-12 rounded-full bg-[#FFD15F]/20 backdrop-blur-sm flex items-center justify-center animate-float">
+                            <img src="assets/icons/linux.svg" alt="Linux" class="w-6 h-6 object-contain" 
+                                 onerror="this.onerror=null; this.outerHTML='<div class=\'w-6 h-6 text-yellow-500\'><svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'currentColor\'><path d=\'M15.34 10.34L13 8h5c-.89-1.55-2.25-2.75-3.85-3.47l1.41-1.41c2.12 1.05 3.88 2.79 4.89 4.88h1.45l-2 2-2 2h-2.34l-1.66-1.66zM11 17v-2h2v2h-2zm-4-2v-2h2v2H7zm-2-2v-2h2v2H5zm6 0v-2h2v2h-2zm2 2v2h-2v-2h2zm2 0h2v2h-2v-2zm2-2h2v2h-2v-2z\'/></svg></div>'">
                         </div>
                     </div>
 
-                    <!-- Imagen principal con efecto de brillo -->
+                    <!-- Imagen principal con efectos -->
                     <div class="relative">
-                        <div class="absolute -bottom-10 w-full h-40 bg-blue-500/30 blur-3xl"></div>
+                        <!-- Efecto de resplandor circular -->
+                        <div class="absolute -bottom-20 w-full h-[400px] bg-[#006C9E]/30 rounded-full blur-3xl"></div>
+                        
+                        <!-- Imagen principal con efectos de hover y zoom -->
                         <img src="assets/images/hero-students.png" 
                              alt="Estudiantes EPIC" 
-                             class="relative z-10 max-w-xl mx-auto">
-                        <!-- Anillo de luz -->
-                        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[120%] h-4">
-                            <div class="w-full h-full bg-blue-400/30 blur-xl rounded-full"></div>
+                             class="relative z-10 max-w-xl mx-auto transition-transform duration-300 hover:scale-105 hover:rotate-1 hover:shadow-2xl"
+                             onerror="this.onerror=null; this.outerHTML='<div class=\'relative z-10 max-w-xl mx-auto flex items-center justify-center bg-[#006C9E]/10 p-8 rounded-lg\'><svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 600 400\' class=\'w-full h-auto text-blue-500/50\' fill=\'currentColor\'><path d=\'M300 50c-138.071 0-250 111.929-250 250s111.929 250 250 250 250-111.929 250-250S438.071 50 300 50zm0 450c-110.457 0-200-89.543-200-200S189.543 100 300 100s200 89.543 200 200-89.543 200-200 200z\'/><circle cx=\'300\' cy=\'250\' r=\'150\' opacity=\'0.3\'/><path d=\'M300 150c-55.228 0-100 44.772-100 100s44.772 100 100 100 100-44.772 100-100-44.772-100-100-100zm0 180c-44.183 0-80-35.817-80-80s35.817-80 80-80 80 35.817 80 80-35.817 80-80 80z\'/><path d=\'M300 200c-27.614 0-50 22.386-50 50s22.386 50 50 50 50-22.386 50-50-22.386-50-50-50zm0 80c-16.569 0-30-13.431-30-30s13.431-30 30-30 30 13.431 30 30-13.431 30-30 30z\'/></svg></div>'">
+
+                        <!-- Anillo de luz con animación -->
+                        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[120%] h-40 animate-pulse">
+                            <div class="w-full h-full bg-[#006C9E]/20 blur-2xl rounded-full"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Estilos adicionales para las animaciones -->
+        <style>
+            @keyframes float {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-10px); }
+            }
+            .animate-float {
+                animation: float 3s ease-in-out infinite;
+            }
+            .animate-float-delayed {
+                animation: float 3s ease-in-out infinite;
+                animation-delay: 1.5s;
+            }
+        </style>
 
         <!-- Sección de Escuelas Destacadas -->
         <div class="py-16 bg-[#011627] text-center">
@@ -130,7 +150,8 @@
                     <div class="relative bg-gradient-to-b from-[#011F3B] to-[#011627] rounded-lg p-6 transition-all duration-300 hover:-translate-y-2">
                         <div class="mb-4 relative">
                             <img src="assets/images/avatars/male-01.jpg" alt="Profesor de Programación" 
-                                 class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-500/30">
+                                 class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-500/30 object-cover"
+                                 onerror="this.onerror=null; this.outerHTML='<div class=\'w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-500/30 flex items-center justify-center bg-blue-100\'><svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'currentColor\' class=\'w-16 h-16 text-blue-500\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg></div>'">
                             <div class="absolute -bottom-2 left-0 right-0 mx-auto w-full">
                                 <div class="w-full h-1 bg-blue-500/50 rounded-full"></div>
                                 <div class="w-full h-1 bg-blue-400/30 rounded-full mt-1"></div>
@@ -150,7 +171,8 @@
                     <div class="relative bg-gradient-to-b from-[#0B3B2D] to-[#011627] rounded-lg p-6 transition-all duration-300 hover:-translate-y-2">
                         <div class="mb-4 relative">
                             <img src="assets/images/avatars/female-01.jpg" alt="Profesor de Frontend" 
-                                 class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-500/30">
+                                 class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-500/30 object-cover"
+                                 onerror="this.onerror=null; this.outerHTML='<div class=\'w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-500/30 flex items-center justify-center bg-green-100\'><svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'currentColor\' class=\'w-16 h-16 text-green-500\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg></div>'">
                             <div class="absolute -bottom-2 left-0 right-0 mx-auto w-full">
                                 <div class="w-full h-1 bg-green-500/50 rounded-full"></div>
                                 <div class="w-full h-1 bg-green-400/30 rounded-full mt-1"></div>
@@ -170,7 +192,8 @@
                     <div class="relative bg-gradient-to-b from-[#3B1F1F] to-[#011627] rounded-lg p-6 transition-all duration-300 hover:-translate-y-2">
                         <div class="mb-4 relative">
                             <img src="assets/images/avatars/male-02.jpg" alt="Profesor de Backend" 
-                                 class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-red-500/30">
+                                 class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-red-500/30 object-cover"
+                                 onerror="this.onerror=null; this.outerHTML='<div class=\'w-32 h-32 rounded-full mx-auto mb-4 border-4 border-red-500/30 flex items-center justify-center bg-red-100\'><svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'currentColor\' class=\'w-16 h-16 text-red-500\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg></div>'">
                             <div class="absolute -bottom-2 left-0 right-0 mx-auto w-full">
                                 <div class="w-full h-1 bg-red-500/50 rounded-full"></div>
                                 <div class="w-full h-1 bg-red-400/30 rounded-full mt-1"></div>
@@ -190,7 +213,8 @@
                     <div class="relative bg-gradient-to-b from-[#3B3B1F] to-[#011627] rounded-lg p-6 transition-all duration-300 hover:-translate-y-2">
                         <div class="mb-4 relative">
                             <img src="assets/images/avatars/female-02.jpg" alt="Profesor de IA" 
-                                 class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-yellow-500/30">
+                                 class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-yellow-500/30 object-cover"
+                                 onerror="this.onerror=null; this.outerHTML='<div class=\'w-32 h-32 rounded-full mx-auto mb-4 border-4 border-yellow-500/30 flex items-center justify-center bg-yellow-100\'><svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'currentColor\' class=\'w-16 h-16 text-yellow-500\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg></div>'">
                             <div class="absolute -bottom-2 left-0 right-0 mx-auto w-full">
                                 <div class="w-full h-1 bg-yellow-500/50 rounded-full"></div>
                                 <div class="w-full h-1 bg-yellow-400/30 rounded-full mt-1"></div>
@@ -210,7 +234,8 @@
                     <div class="relative bg-gradient-to-b from-[#2F1F3B] to-[#011627] rounded-lg p-6 transition-all duration-300 hover:-translate-y-2">
                         <div class="mb-4 relative">
                             <img src="assets/images/avatars/male-03.jpg" alt="Profesor de Marketing" 
-                                 class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-purple-500/30">
+                                 class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-purple-500/30 object-cover"
+                                 onerror="this.onerror=null; this.outerHTML='<div class=\'w-32 h-32 rounded-full mx-auto mb-4 border-4 border-purple-500/30 flex items-center justify-center bg-purple-100\'><svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'currentColor\' class=\'w-16 h-16 text-purple-500\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg></div>'">
                             <div class="absolute -bottom-2 left-0 right-0 mx-auto w-full">
                                 <div class="w-full h-1 bg-purple-500/50 rounded-full"></div>
                                 <div class="w-full h-1 bg-purple-400/30 rounded-full mt-1"></div>
@@ -388,7 +413,9 @@
                     <!-- Plan Gratuito -->
                     <div class="plan-card p-6 rounded-lg border-t-4 border-green-400">
                         <div class="flex justify-center mb-6">
-                            <img src="assets/icons/gift.svg" alt="Plan gratuito" class="w-16 h-16">
+                            <img src="assets/icons/gift.svg" alt="Plan gratuito" 
+                                 class="w-16 h-16 object-contain"
+                                 onerror="this.onerror=null; this.outerHTML='<div class=\'w-16 h-16 flex items-center justify-center text-green-500\'><svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'currentColor\'><path d=\'M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-1.5 1.5-1.5-1.5C9.96 2.54 9.05 2 8 2 6.34 2 5 3.34 5 5c0 .35.07.69.18 1H2v5h9V8h2v3h9V6h-3zm-4-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM8 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm12 7H4v10h16V11z\'/></svg></div>'">
                         </div>
                         <h3 class="text-xl font-bold text-white mb-4">Plan gratuito</h3>
                         <p class="text-gray-400 mb-6">
@@ -399,44 +426,116 @@
                         </button>
                     </div>
 
-                    <!-- Plan Premium -->
-                    <div class="plan-card p-6 rounded-lg border-t-4 border-yellow-400">
+                    <!-- Plan Premium con más detalles -->
+                    <div class="plan-card p-6 rounded-lg border-t-4 border-yellow-400 relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 bg-yellow-400 text-[#000B45] px-4 py-1 font-bold text-sm transform translate-x-1/2 -translate-y-1/2 rotate-45">
+                            MÁS POPULAR
+                        </div>
                         <div class="flex justify-center mb-6">
-                            <img src="assets/icons/trophy.svg" alt="Plan premium" class="w-16 h-16">
+                            <img src="assets/icons/trophy.svg" alt="Plan premium" 
+                                 class="w-16 h-16 object-contain"
+                                 onerror="this.onerror=null; this.outerHTML='<div class=\'w-16 h-16 flex items-center justify-center text-yellow-500\'><svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'currentColor\'><path d=\'M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-1.5 1.5-1.5-1.5C9.96 2.54 9.05 2 8 2 6.34 2 5 3.34 5 5c0 .35.07.69.18 1H2v5h9V8h2v3h9V6h-3zm-4-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM8 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm12 7H4v10h16V11z\'/></svg></div>'">
                         </div>
                         <h3 class="text-xl font-bold text-white mb-4">Plan Premium</h3>
                         <p class="text-gray-400 mb-6">
                             Acceso total a cientos de cursos, talleres y rutas de EPIC con un único pago.
                         </p>
-                        <button mat-flat-button class="w-full bg-yellow-400 text-blue-900">
+                        <ul class="text-gray-300 space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                Acceso ilimitado a todos los cursos
+                            </li>
+                            <li class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                Certificados de finalización
+                            </li>
+                            <li class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                Proyectos prácticos
+                            </li>
+                        </ul>
+                        <button mat-flat-button class="w-full bg-yellow-400 text-[#000B45] hover:bg-yellow-500 transition-colors">
                             ¡Sube a premium ahora!
                         </button>
                     </div>
 
-                    <!-- Plan para empresas -->
-                    <div class="plan-card p-6 rounded-lg border-t-4 border-red-400">
+                    <!-- Plan para empresas con más detalles -->
+                    <div class="plan-card p-6 rounded-lg border-t-4 border-red-400 relative overflow-hidden group">
                         <div class="flex justify-center mb-6">
-                            <img src="assets/icons/briefcase.svg" alt="Plan empresas" class="w-16 h-16">
+                            <img src="assets/icons/briefcase.svg" alt="Plan empresas" 
+                                 class="w-16 h-16 object-contain"
+                                 onerror="this.onerror=null; this.outerHTML='<div class=\'w-16 h-16 flex items-center justify-center text-red-500\'><svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'currentColor\'><path d=\'M20 7h-4V4c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v3H4c-1.103 0-2 .897-2 2v11c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2zm-6-3h-4v3h4V4z\'/></svg></div>'">
                         </div>
                         <h3 class="text-xl font-bold text-white mb-4">Plan para empresas</h3>
                         <p class="text-gray-400 mb-6">
                             Capacita a todo tu equipo desde un único lugar y supervisa sus objetivos de aprendizaje.
                         </p>
-                        <button mat-flat-button class="w-full bg-red-400 text-white">
+                        <ul class="text-gray-300 space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                Gestión de equipos
+                            </li>
+                            <li class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                Informes de progreso
+                            </li>
+                            <li class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                Personalización de rutas
+                            </li>
+                        </ul>
+                        <button mat-flat-button class="w-full bg-red-400 text-white hover:bg-red-500 transition-colors">
                             Más información
                         </button>
                     </div>
 
-                    <!-- Plan para estudiantes -->
-                    <div class="plan-card p-6 rounded-lg border-t-4 border-blue-400">
+                    <!-- Plan para estudiantes con más detalles -->
+                    <div class="plan-card p-6 rounded-lg border-t-4 border-blue-400 relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 bg-blue-400 text-white px-4 py-1 font-bold text-sm transform translate-x-1/2 -translate-y-1/2 rotate-45">
+                            50% OFF
+                        </div>
                         <div class="flex justify-center mb-6">
-                            <img src="assets/icons/backpack.svg" alt="Plan estudiantes" class="w-16 h-16">
+                            <img src="assets/icons/backpack.svg" alt="Plan estudiantes" 
+                                 class="w-16 h-16 object-contain"
+                                 onerror="this.onerror=null; this.outerHTML='<div class=\'w-16 h-16 flex items-center justify-center text-blue-500\'><svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'currentColor\'><path d=\'M21 6h-3V3a1 1 0 00-1-1H7a1 1 0 00-1 1v3H3a1 1 0 00-1 1v14a1 1 0 001 1h18a1 1 0 001-1V7a1 1 0 00-1-1zm-1 14H4V8h16v12zm-9-9h-2v2h2v-2zm4 0h-2v2h2v-2zm-8 0H5v2h2v-2z\'/></svg></div>'">
                         </div>
                         <h3 class="text-xl font-bold text-white mb-4">Plan para estudiantes</h3>
                         <p class="text-gray-400 mb-6">
                             Si estás en la universidad, colegio o instituto, obtén una beca del 50% por un año en EPIC.
                         </p>
-                        <button mat-flat-button class="w-full bg-blue-400 text-white">
+                        <ul class="text-gray-300 space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                50% de descuento
+                            </li>
+                            <li class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                Válido por un año
+                            </li>
+                            <li class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                Verificación académica
+                            </li>
+                        </ul>
+                        <button mat-flat-button class="w-full bg-blue-400 text-white hover:bg-blue-500 transition-colors">
                             Más información
                         </button>
                     </div>
@@ -475,7 +574,8 @@
                                 <div class="flex items-center mb-4">
                                     <img [src]="testimonios[(testimonioActual - 1 + testimonios.length) % testimonios.length].imagen" 
                                          [alt]="testimonios[(testimonioActual - 1 + testimonios.length) % testimonios.length].nombre" 
-                                         class="w-14 h-14 rounded-full mr-4 object-cover border-2 border-blue-500">
+                                         class="w-14 h-14 rounded-full mr-4 object-cover border-2 border-blue-500"
+                                         onerror="this.onerror=null; this.outerHTML='<div class=\'w-14 h-14 rounded-full mr-4 border-2 border-blue-500 flex items-center justify-center bg-blue-100\'><svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'currentColor\' class=\'w-10 h-10 text-blue-500\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg></div>'">
                                     <div>
                                         <h4 class="text-white text-lg font-medium">
                                             {{testimonios[(testimonioActual - 1 + testimonios.length) % testimonios.length].nombre}}
@@ -495,8 +595,9 @@
                                 <div class="flex items-center mb-6">
                                     <img [src]="testimonios[testimonioActual].imagen" 
                                          [alt]="testimonios[testimonioActual].nombre" 
-                                         class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-blue-500">
-        <div>
+                                         class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-blue-500"
+                                         onerror="this.onerror=null; this.outerHTML='<div class=\'w-16 h-16 rounded-full mr-4 border-2 border-blue-500 flex items-center justify-center bg-blue-100\'><svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'currentColor\' class=\'w-10 h-10 text-blue-500\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg></div>'">
+                                    <div>
                                         <h4 class="text-white text-xl font-medium flex items-center">
                                             {{testimonios[testimonioActual].nombre}}
                                             <span class="ml-2 text-2xl">{{testimonios[testimonioActual].pais}}</span>
@@ -519,7 +620,8 @@
                                 <div class="flex items-center mb-4">
                                     <img [src]="testimonios[(testimonioActual + 1) % testimonios.length].imagen" 
                                          [alt]="testimonios[(testimonioActual + 1) % testimonios.length].nombre" 
-                                         class="w-14 h-14 rounded-full mr-4 object-cover border-2 border-blue-500">
+                                         class="w-14 h-14 rounded-full mr-4 object-cover border-2 border-blue-500"
+                                         onerror="this.onerror=null; this.outerHTML='<div class=\'w-14 h-14 rounded-full mr-4 border-2 border-blue-500 flex items-center justify-center bg-blue-100\'><svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'currentColor\' class=\'w-10 h-10 text-blue-500\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg></div>'">
                                     <div>
                                         <h4 class="text-white text-lg font-medium">
                                             {{testimonios[(testimonioActual + 1) % testimonios.length].nombre}}
