@@ -40,6 +40,10 @@ export class LandingHomeComponent implements AfterViewInit, OnDestroy
     currentPosition = 0;
     private autoScrollInterval: any;
 
+    // Carrusel de próximos lanzamientos
+    currentSlide = 0;
+    private launchCarouselInterval: any;
+
     escuelas = [
         {
             titulo: 'PROGRAMACIÓN Y DESARROLLO WEB',
@@ -116,6 +120,39 @@ export class LandingHomeComponent implements AfterViewInit, OnDestroy
 
     testimonioActual = 0;
 
+    proximosLanzamientos = [
+        {
+            titulo: 'Escuela de Emprendedores 2025',
+            subtitulo: 'Próximo',
+            color: 'from-red-500 to-red-700',
+            instructor: {
+                nombre: 'Alvaro Felipe',
+                pais: 'Perú',
+                imagen: 'assets/images/avatars/alvaro-felipe.jpg'
+            }
+        },
+        {
+            titulo: 'Inteligencia Artificial para todos',
+            subtitulo: 'Nuevo',
+            color: 'from-purple-500 to-purple-700',
+            instructor: {
+                nombre: 'Alvaro Felipe',
+                pais: 'Perú',
+                imagen: 'assets/images/avatars/alvaro-felipe.jpg'
+            }
+        },
+        {
+            titulo: 'Creación de interfaces con SwiftUI',
+            subtitulo: 'Próximo',
+            color: 'from-blue-500 to-blue-700',
+            instructor: {
+                nombre: 'Kevin Morales',
+                pais: 'México',
+                imagen: 'assets/images/avatars/kevin-morales.jpg'
+            }
+        }
+    ];
+
     siguienteTestimonio() {
         this.testimonioActual = (this.testimonioActual + 1) % this.testimonios.length;
     }
@@ -141,6 +178,9 @@ export class LandingHomeComponent implements AfterViewInit, OnDestroy
 
         // Iniciar desplazamiento automático
         this.startAutoScroll();
+
+        // Iniciar carrusel de próximos lanzamientos
+        this.startLaunchCarousel();
     }
 
     updateCarouselPosition() {
@@ -195,9 +235,28 @@ export class LandingHomeComponent implements AfterViewInit, OnDestroy
         carousel.style.transform = `translateX(${moveAmount})`;
     }
 
+    startLaunchCarousel() {
+        this.launchCarouselInterval = setInterval(() => {
+            this.nextSlide();
+        }, 5000); // Cambiar cada 5 segundos
+    }
+
+    nextSlide() {
+        this.currentSlide = (this.currentSlide + 1) % this.proximosLanzamientos.length;
+    }
+
+    goToSlide(slideIndex: number) {
+        this.currentSlide = slideIndex;
+    }
+
     ngOnDestroy() {
         if (this.autoScrollInterval) {
             clearInterval(this.autoScrollInterval);
+        }
+
+        // Detener el carrusel de próximos lanzamientos
+        if (this.launchCarouselInterval) {
+            clearInterval(this.launchCarouselInterval);
         }
     }
 }
