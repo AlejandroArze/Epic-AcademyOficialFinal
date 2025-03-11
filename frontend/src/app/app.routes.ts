@@ -93,6 +93,8 @@ export const appRoutes: Route[] = [
                 {path: 'scrumboard', loadChildren: () => import('app/modules/admin/apps/scrumboard/scrumboard.routes')},
                 {path: 'tasks', loadChildren: () => import('app/modules/admin/apps/tasks/tasks.routes')},
                 {path: 'academy', loadChildren: () => import('app/modules/admin/apps/academy/academy.routes')},
+                {path: 'home-academy', loadChildren: () => import('app/modules/admin/apps/home-academy/home-academy.routes')},
+                {path: 'homeacademy', redirectTo: 'home-academy'}
             ]},
             
             // Pages

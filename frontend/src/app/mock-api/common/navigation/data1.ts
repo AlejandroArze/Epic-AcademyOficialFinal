@@ -12,6 +12,14 @@ export const defaultNavigation1: FuseNavigationItem[] = [
         children: [
             {
                 id   : 'pages.settings',
+                title: 'Inicio',
+                type : 'basic',
+                icon : 'heroicons_outline:cog-8-tooth',
+                link : '/apps/home-academy',
+                roles     : [1, 2],
+            },
+            {
+                id   : 'pages.settings',
                 title: 'Academia',
                 type : 'basic',
                 icon : 'heroicons_outline:cog-8-tooth',
