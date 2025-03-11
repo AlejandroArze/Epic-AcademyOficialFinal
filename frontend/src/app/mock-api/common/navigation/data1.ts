@@ -10,9 +10,15 @@ export const defaultNavigation1: FuseNavigationItem[] = [
         type    : 'group',
         icon    : 'heroicons_outline:home',
         children: [
-          
-            
-             {
+            {
+                id   : 'pages.settings',
+                title: 'Academia',
+                type : 'basic',
+                icon : 'heroicons_outline:cog-8-tooth',
+                link : '/apps/academy',
+                roles     : [1, 2],
+            },
+            {
                 id   : 'pages.settings',
                 title: 'Configuración',
                 type : 'basic',
@@ -20,6 +26,8 @@ export const defaultNavigation1: FuseNavigationItem[] = [
                 link : '/pages/settings',
                 roles     : [1, 2],
             },
+            
+             
            
         ]
     }

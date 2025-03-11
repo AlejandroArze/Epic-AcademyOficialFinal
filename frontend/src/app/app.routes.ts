@@ -84,9 +84,7 @@ export const appRoutes: Route[] = [
         children: [
             {path: 'example', loadChildren: () => import('app/modules/admin/example/example.routes')},
             {path: 'dashboards', children: [
-                
-            {path: 'finance', loadChildren: () => import('app/modules/admin/dashboards/finance/finance.routes')},
-                
+                {path: 'finance', loadChildren: () => import('app/modules/admin/dashboards/finance/finance.routes')},
             ]},
             // Apps
             {path: 'apps', children: [
@@ -94,15 +92,16 @@ export const appRoutes: Route[] = [
                 {path: 'help-center', loadChildren: () => import('app/modules/admin/apps/help-center/help-center.routes')},
                 {path: 'scrumboard', loadChildren: () => import('app/modules/admin/apps/scrumboard/scrumboard.routes')},
                 {path: 'tasks', loadChildren: () => import('app/modules/admin/apps/tasks/tasks.routes')},
-               
+                {path: 'academy', loadChildren: () => import('app/modules/admin/apps/academy/academy.routes')},
             ]},
             
             // Pages
             {path: 'pages', children: [               
                 // Settings
                 {path: 'settings', loadChildren: () => import('app/modules/admin/pages/settings/settings.routes')},
-                          
             ]},
+            // Ruta comodín para redirigir a una página predeterminada si la ruta no existe
+            {path: '**', redirectTo: 'apps/academy'}
         ]
     }
     
