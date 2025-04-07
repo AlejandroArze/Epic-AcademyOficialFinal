@@ -1,0 +1,25 @@
+// Estilos para el componente HomeAcademy
+
+home-academy {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    .continuar-viendo {
+        display: flex;
+        overflow-x: auto;
+        gap: 1rem;
+        padding: 1rem 0;
+
+        &__item {
+            flex: 0 0 auto;
+            width: 200px;
+            
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+        }
+    }
+} 

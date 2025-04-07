@@ -1,6 +1,6 @@
 export const environment = {
-    baseUrl: "http://localhost:3001/api/v1",
-    baseUrlAlt: "http://localhost:3001"
+    baseUrl: "http://localhost:3003/api/v1",
+    baseUrlAlt: "http://localhost:3003"
 };
  `$¨{baseUrl}/management`
 
