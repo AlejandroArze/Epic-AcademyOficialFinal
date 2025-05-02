@@ -1,0 +1,690 @@
+# Ingeniería Inversa de EDTeam (https://app.ed.team/)
+
+## 0. Información General
+- URL Base: https://app.ed.team/
+- Fecha de Análisis: [FECHA_ACTUAL]
+
+## 1. Análisis Estructural
+
+### 1.1 Secciones Principales Identificadas
+1. Página de Inicio
+2. Catálogo de Cursos
+3. Página de Curso Individual
+4. Comunidad
+5. Blog
+6. Área de Usuarios
+7. Planes (Gratuito/Premium)
+8. Página de Perfil
+9. Área de Configuración
+
+### 1.2 Herramientas y Metodología
+- Herramientas Utilizadas:
+  - MCP Puppeteer
+  - Chrome DevTools
+  - React/Vue DevTools
+  - Extensiones de análisis web
+
+## 2. Próximos Pasos
+- Captura de pantallas
+- Análisis estructural HTML
+- Documentación de estilos CSS
+- Análisis de interactividad JavaScript
+
+## 3. Análisis de Página de Inicio de Sesión
+
+### 3.1 Estructura Visual
+- Diseño: Tarjeta modal centrada
+- Fondo: Oscuro (dark mode)
+- Color primario: Azul claro
+- Logo: EDteam en la parte superior
+
+### 3.2 Componentes de Autenticación
+- Métodos de inicio de sesión:
+  1. Google
+  2. GitHub
+- Formulario de inicio de sesión tradicional
+  - Campo de correo electrónico
+  - Campo de contraseña
+  - Botón "Iniciar sesión"
+
+### 3.3 Elementos Adicionales
+- Enlace "Regístrate gratis"
+- Enlace "¿Olvidaste tu contraseña?"
+- Checkbox de Términos y Condiciones
+
+### 3.4 Análisis de Diseño
+- Paleta de colores:
+  - Fondo: Gris oscuro (#1A1A1A)
+  - Texto: Blanco
+  - Botón: Azul claro (#4A90E2)
+- Tipografía: Sans-serif
+- Estilo: Moderno, minimalista
+
+### 3.5 Consideraciones de Accesibilidad
+- Contraste de color adecuado
+- Campos de formulario etiquetados
+- Botones con estados hover/focus
+- Diseño responsive
+
+### 3.6 Análisis Técnico
+
+#### Tecnologías Detectadas
+- Framework: Next.js
+- Renderizado: Server-Side Rendering (SSR)
+- Estilo: Tailwind CSS
+- Lenguaje: TypeScript
+
+#### Metadatos
+- Título: "Iniciar sesión | EDteam"
+- Descripción: "Aprende programación, diseño y emprendimiento en español con profesores que aman enseñar. Invierte en tu conocimiento. Tu futuro te está esperando."
+
+#### Configuraciones Técnicas
+- Idioma: Español (es)
+- Tema: Dark mode por defecto
+- Responsive: Diseño adaptativo con breakpoints
+
+#### Integraciones
+- Autenticación Social:
+  - Google
+  - GitHub
+- Análisis y Tracking:
+  - Google Tag Manager
+  - TikTok Pixel
+  - Google Analytics
+- Soporte al Cliente: HelpScout Beacon
+
+#### Optimizaciones
+- Preload de fuentes personalizadas
+- Lazy loading de imágenes
+- Optimización de recursos CSS y JavaScript
+
+#### Seguridad
+- Protección contra bots
+- Términos y condiciones obligatorios
+- Campos de formulario con validación
+
+## 4. Estructura General de la Plataforma
+
+### 4.1 Arquitectura de Navegación
+
+#### Secciones Principales
+1. Inicio de Sesión
+2. Página Principal
+3. Catálogo de Cursos
+4. Comunidad
+5. Blog
+6. Área de Usuarios
+7. Planes y Suscripciones
+8. Perfil de Usuario
+9. Configuración
+
+### 4.2 Flujos de Navegación
+
+#### Flujo de Autenticación
+- Página de Inicio de Sesión
+  - Opciones de inicio de sesión:
+    * Correo electrónico
+    * Google
+    * GitHub
+  - Recuperación de contraseña
+  - Registro de nuevos usuarios
+
+#### Flujo de Cursos
+- Catálogo de Cursos
+  - Filtros y categorías
+  - Vista previa de cursos
+  - Detalles de curso
+  - Inscripción
+  - Progreso de aprendizaje
+
+#### Flujo de Comunidad
+- Sección de Comunidad
+  - Foros
+  - Grupos de discusión
+  - Interacción entre estudiantes
+  - Recursos compartidos
+
+### 4.3 Componentes Reutilizables
+
+#### Componentes de Interfaz
+- Barra de navegación
+- Tarjetas de curso
+- Módulos de progreso
+- Sistemas de calificación
+- Componentes de interacción social
+
+#### Componentes de Autenticación
+- Formularios de login/registro
+- Validación de campos
+- Manejo de sesiones
+- Recuperación de contraseña
+
+### 4.4 Diseño y Experiencia de Usuario
+
+#### Principios de Diseño
+- Diseño mobile-first
+- Tema oscuro por defecto
+- Interfaz minimalista
+- Énfasis en legibilidad
+- Transiciones suaves
+
+#### Paleta de Colores
+- Primario: Azul (#007BDF)
+- Fondo oscuro: Gris oscuro (#1A1A1A)
+- Texto: Blanco y tonos de gris
+- Estados interactivos:
+  * Hover: Variaciones de azul
+  * Focus: Resaltado con borde azul
+
+### 4.5 Tecnologías Frontend
+
+#### Stack Tecnológico
+- Framework: Next.js
+- Lenguaje: TypeScript
+- Estilos: Tailwind CSS
+- Renderizado: Server-Side Rendering (SSR)
+- Gestión de estado: Probablemente React Context o Redux
+
+#### Optimizaciones
+- Code splitting
+- Lazy loading
+- Preload de recursos críticos
+- Fuentes personalizadas optimizadas
+
+### 4.6 Integraciones y Servicios
+
+#### Servicios de Terceros
+- Autenticación:
+  * Google OAuth
+  * GitHub OAuth
+- Análisis:
+  * Google Analytics
+  * TikTok Pixel
+- Soporte:
+  * HelpScout Beacon
+- Geolocalización
+- Pixel de marketing
+
+### 4.7 Consideraciones de Accesibilidad
+
+#### Características de Accesibilidad
+- Contraste de color adecuado
+- Navegación por teclado
+- Etiquetas semánticas HTML
+- ARIA labels
+- Soporte para lectores de pantalla
+
+### 4.8 Estrategias de Monetización
+
+#### Modelo de Negocio
+- Cursos gratuitos
+- Suscripción premium
+- Planes individuales
+- Contenido exclusivo
+- Certificaciones
+
+### 4.9 Próximos Pasos de Análisis
+- Captura detallada de cada sección
+- Análisis de componentes individuales
+- Documentación de interacciones
+- Mapeo de flujos de usuario
+- Identificación de patrones de diseño
+
+## 5. Análisis Detallado de Componentes
+
+### 5.1 Componentes de Interfaz Principal
+
+#### Barra de Navegación
+- Estructura:
+  * Logo
+  * Menú principal
+  * Opciones de usuario
+  * Tema (dark/light)
+- Estados:
+  * Responsive
+  * Adaptable a dispositivos móviles
+  * Menú hamburguesa en pantallas pequeñas
+
+#### Tarjetas de Curso
+- Estructura:
+  * Imagen de portada
+  * Título del curso
+  * Instructor
+  * Nivel de dificultad
+  * Duración
+  * Progreso (si está inscrito)
+- Interacciones:
+  * Hover con información adicional
+  * Animaciones sutiles
+  * Botón de inscripción/continuar
+
+#### Módulos de Progreso
+- Componentes:
+  * Barra de progreso
+  * Lecciones completadas
+  * Tiempo restante
+  * Insignias y logros
+- Características:
+  * Seguimiento de aprendizaje
+  * Gamificación
+  * Motivación del estudiante
+
+### 5.2 Componentes de Autenticación
+
+#### Sistema de Login
+- Flujo de autenticación:
+  * Validación de credenciales
+  * Manejo de sesiones
+  * Recuperación de contraseña
+  * Registro de nuevos usuarios
+- Métodos de autenticación:
+  * Correo electrónico
+  * Google OAuth
+  * GitHub OAuth
+- Seguridad:
+  * Encriptación de contraseñas
+  * Protección contra ataques de fuerza bruta
+  * Verificación de correo electrónico
+
+### 5.3 Componentes de Comunidad
+
+#### Foros y Grupos
+- Estructura:
+  * Categorías de discusión
+  * Hilos de conversación
+  * Respuestas
+  * Likes/Reacciones
+- Funcionalidades:
+  * Creación de nuevos hilos
+  * Responder
+  * Mencionar usuarios
+  * Compartir recursos
+
+#### Sistema de Interacción Social
+- Características:
+  * Perfil de usuario
+  * Seguimiento de compañeros
+  * Compartir logros
+  * Mensajería interna
+
+### 5.4 Componentes de Aprendizaje
+
+#### Reproductor de Video
+- Características:
+  * Control de reproducción
+  * Subtítulos
+  * Velocidad de reproducción
+  * Modo Picture-in-Picture
+  * Descarga de recursos
+- Interactividad:
+  * Marcadores
+  * Notas
+  * Preguntas integradas
+
+#### Sistema de Evaluación
+- Componentes:
+  * Cuestionarios
+  * Ejercicios prácticos
+  * Retroalimentación inmediata
+  * Calificaciones
+- Seguimiento:
+  * Progreso por curso
+  * Estadísticas de aprendizaje
+  * Certificados de finalización
+
+### 5.5 Servicios Backend
+
+#### Gestión de Usuarios
+- Servicios:
+  * Registro
+  * Autenticación
+  * Gestión de perfil
+  * Historial de aprendizaje
+- Base de datos:
+  * Información personal
+  * Progreso de cursos
+  * Logros y certificaciones
+
+#### Sistema de Pagos
+- Integración:
+  * Pasarelas de pago
+  * Suscripciones
+  * Compra de cursos individuales
+- Características:
+  * Facturación
+  * Gestión de membresías
+  * Cupones y descuentos
+
+### 5.6 Servicios de Análisis y Mejora
+
+#### Análisis de Aprendizaje
+- Métricas:
+  * Tiempo de estudio
+  * Cursos completados
+  * Rendimiento
+  * Áreas de mejora
+- Recomendaciones:
+  * Cursos personalizados
+  * Rutas de aprendizaje
+
+#### Retroalimentación y Mejora
+- Sistemas:
+  * Encuestas de satisfacción
+  * Evaluación de instructores
+  * Sugerencias de mejora
+  * Análisis de contenido
+
+### 5.7 Infraestructura y Escalabilidad
+
+#### Arquitectura de Microservicios
+- Servicios:
+  * Autenticación
+  * Gestión de cursos
+  * Comunidad
+  * Pagos
+  * Análisis
+- Tecnologías:
+  * Contenedores Docker
+  * Kubernetes
+  * Serverless
+  * Balanceo de carga
+
+#### Estrategias de Rendimiento
+- Optimizaciones:
+  * Caché distribuido
+  * CDN para contenido estático
+  * Optimización de base de datos
+  * Escalamiento horizontal
+
+### 5.8 Consideraciones de Seguridad
+
+#### Protección de Datos
+- Medidas:
+  * Encriptación en reposo
+  * Transmisión segura (HTTPS)
+  * Cumplimiento GDPR
+  * Anonimización de datos
+- Autenticación:
+  * 2FA
+  * Detección de actividad sospechosa
+  * Registro de accesos
+
+### 5.9 Próximos Pasos
+- Documentación detallada de API
+- Diagramas de arquitectura
+- Análisis de rendimiento
+- Identificación de mejoras potenciales
+
+## 6. Diseño y Experiencia de Usuario (UX/UI)
+
+### 6.1 Principios de Diseño
+
+#### Filosofía de Diseño
+- Minimalismo funcional
+- Enfoque en legibilidad
+- Jerarquía visual clara
+- Consistencia en la interfaz
+- Diseño centrado en el usuario
+
+#### Principios de Diseño Visual
+- Simplicidad
+- Alto contraste
+- Espaciado adecuado
+- Tipografía legible
+- Transiciones suaves
+
+### 6.2 Sistema de Diseño
+
+#### Tokens de Diseño
+- Paleta de Colores:
+  * Primario: Azul (#007BDF)
+  * Secundario: Tonos de gris
+  * Acento: Variaciones de azul
+  * Fondos: Escalas de gris oscuro
+
+- Tipografía:
+  * Familia: Sans-serif
+  * Tamaños:
+    - Títulos: Grandes y bold
+    - Cuerpo: Medianos y legibles
+  * Interlineado optimizado
+  * Responsive
+
+- Espaciado:
+  * Sistema de cuadrícula
+  * Márgenes y padding consistentes
+  * Escalas de espaciado
+
+#### Componentes Reutilizables
+- Botones
+- Tarjetas
+- Formularios
+- Modales
+- Tooltips
+- Alertas
+
+### 6.3 Interacciones y Animaciones
+
+#### Principios de Interacción
+- Retroalimentación inmediata
+- Animaciones sutiles
+- Transiciones naturales
+- Feedback visual
+
+#### Tipos de Animaciones
+- Hover states
+- Transiciones de página
+- Carga de contenido
+- Interacciones de formulario
+- Progreso de aprendizaje
+
+### 6.4 Accesibilidad
+
+#### Consideraciones de Diseño
+- Contraste de color WCAG
+- Navegación por teclado
+- Soporte para lectores de pantalla
+- Tamaños de texto ajustables
+- Descripciones alternativas
+
+#### Características Inclusivas
+- Modo de alto contraste
+- Opciones de personalización
+- Soporte multilenguaje
+- Adaptación a diferentes capacidades
+
+### 6.5 Diseño Responsive
+
+#### Estrategias de Adaptación
+- Mobile-first
+- Breakpoints fluidos
+- Rejillas adaptativas
+- Contenido reordenado
+- Menús responsivos
+
+#### Optimización por Dispositivo
+- Móviles
+- Tablets
+- Escritorio
+- Smart TVs
+- Dispositivos variados
+
+### 6.6 Psicología del Usuario
+
+#### Principios de Engagement
+- Gamificación
+- Motivación intrínseca
+- Retroalimentación positiva
+- Sensación de logro
+- Personalización
+
+#### Elementos Motivacionales
+- Insignias
+- Niveles de progreso
+- Desafíos
+- Recompensas
+- Comparación social
+
+### 6.7 Navegación y Flujo de Usuario
+
+#### Arquitectura de Información
+- Menús claros
+- Rutas de navegación intuitivas
+- Jerarquía de información
+- Breadcrumbs
+- Búsqueda eficiente
+
+#### Flujos de Usuario
+- Onboarding
+- Selección de cursos
+- Proceso de aprendizaje
+- Comunidad
+- Configuración de perfil
+
+### 6.8 Personalización
+
+#### Experiencia Adaptativa
+- Recomendaciones personalizadas
+- Rutas de aprendizaje
+- Contenido dinámico
+- Preferencias de usuario
+- Historial de interacción
+
+### 6.9 Consideraciones Emocionales
+
+#### Diseño Empático
+- Lenguaje cercano
+- Mensajes motivadores
+- Celebración de logros
+- Soporte en momentos difíciles
+- Comunidad inclusiva
+
+### 6.10 Métricas de Éxito UX
+
+#### Indicadores
+- Tiempo en plataforma
+- Finalización de cursos
+- Retención de usuarios
+- Satisfacción (NPS)
+- Progreso de aprendizaje
+
+### 6.11 Próximos Pasos
+- Pruebas de usabilidad
+- Investigación de usuario
+- Iteración de diseño
+- Optimización continua
+
+## 7. Análisis de Página Principal
+
+### 7.1 Estructura de Contenido
+
+#### Sección Hero
+- Titular principal: "En español, nadie explica mejor que EDTeam"
+- Subtítulo: Mensaje sobre la dificultad de la tecnología
+- Llamado a la acción: "Comienza a estudiar gratis"
+- Destacado: 9 años de plataforma
+
+#### Secciones Principales
+1. Nuevos Lanzamientos
+   - Cursos destacados
+   - Próximos cursos
+   - Detalles de cada curso
+     * Nombre del curso
+     * Descripción breve
+     * Fecha de disponibilidad
+     * Nivel de dificultad
+
+2. Escuelas Destacadas
+   - 5 Escuelas principales:
+     * Programación y Desarrollo Web
+     * Desarrollo Frontend
+     * Desarrollo Backend
+     * Inteligencia Artificial
+     * Marketing y Negocios
+
+3. Planes de Estudio
+   - Plan Gratuito
+   - Plan Premium
+   - Plan para Empresas
+   - Plan para Estudiantes
+
+4. Historias de Éxito
+   - Testimonios de estudiantes
+   - Experiencias de aprendizaje
+   - Logros personales
+
+### 7.2 Elementos de Diseño
+
+#### Paleta de Colores
+- Predominio de azul (#007BDF)
+- Fondo oscuro
+- Elementos de llamado a la acción en azul claro
+
+#### Tipografía
+- Estilo sans-serif
+- Títulos grandes y bold
+- Subtítulos con peso medio
+
+#### Componentes Visuales
+- Iconos de programación
+- Efectos de brillo (sparkles)
+- Diseño moderno y minimalista
+
+### 7.3 Estrategias de Engagement
+
+#### Elementos Motivacionales
+- Cursos gratuitos
+- Certificados
+- Rutas de aprendizaje
+- Comunidad de estudiantes
+
+#### Propuesta de Valor
+- Educación de calidad
+- Enfoque en español
+- Contenido actualizado
+- Instructores expertos
+
+### 7.4 Secciones Adicionales
+
+#### Footer
+- Información de la empresa
+- Recursos
+- Conexiones sociales
+- Ubicaciones (Perú, Colombia, Bolivia)
+
+#### Navegación
+- Menú principal
+- Opciones de registro
+- Acceso a diferentes secciones
+
+### 7.5 Características Técnicas
+
+#### Renderizado
+- Diseño responsive
+- Carga dinámica de contenido
+- Optimización para dispositivos móviles
+
+#### Interactividad
+- Hover states
+- Transiciones suaves
+- Elementos animados
+
+### 7.6 Análisis de Contenido
+
+#### Enfoque de Comunicación
+- Lenguaje cercano
+- Tono motivacional
+- Énfasis en el crecimiento personal
+- Promesa de transformación profesional
+
+#### Mensajes Clave
+- Educación accesible
+- Sin barreras de entrada
+- Aprendizaje personalizado
+- Comunidad de apoyo
+
+### 7.7 Próximos Pasos
+- Documentación detallada de componentes
+- Análisis de flujos de usuario
+- Identificación de patrones de diseño
+- Estrategias de implementación

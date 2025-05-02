@@ -1,0 +1,66 @@
+---
+description: Commit , push de nueva feature
+globs: 
+alwaysApply: false
+---
+
+# Reglas de Git para Commits y Flujo de Trabajo
+
+Realizar todo con MCP de Git
+recuerda que para este proyecto este el el repositorio : Epic-AcademyOficialFinal
+
+## Tipos de Commits
+- `feat`: Para nuevas funcionalidades
+  - Ejemplo: `feat(backend Servicios): agregar autenticación con Google`
+- `fix`: Para corrección de errores o bugs
+  - Ejemplo: `fix(frontend Login): corregir error en vista de pagos`
+- `refactor`: Para mejoras de código sin cambiar funcionalidad
+  - Ejemplo: `refactor(backend apis servicios): optimizar estructura de código`
+- `chore`: Para tareas de mantenimiento
+  - Ejemplo: `chore(deps): actualizar dependencias del proyecto`
+- `docs`: Para cambios en documentación
+  - Ejemplo: `docs(readme): actualizar instrucciones de instalación`
+- `style`: Para cambios de formato (sin impacto en lógica)
+  - Ejemplo: `style(frontend login): corregir formato de código`
+
+## Flujo de Trabajo de Ramas con MCP de Git
+1. Rama `develop` como rama base de desarrollo
+2. Crear ramas de feature con el formato:
+   - `feature/[area Frontend o backend]/(descripcion-corta)`
+   - Ejemplos: 
+     - `feature/backend/autenticacion-google`
+     - `feature/frontend/vista-pagos`
+3. realizar comit en la nueva rama creada
+4. realizar push en la nueva rama creada
+5. pasar a develop y realizar pull
+6. pasar a la nueva rama creada y realizar rebase con develop
+7. realizar push ala nueva rama
+8. realizar un pull request para que develop tenga el contenido completo de la reama creada 
+9. Aprobar Pull Request yRealizar merge a develop y cambiar a develop para seguir trabajando, y realizar pull para traer de la nuebe develop
+
+## Reglas de Commits
+- Mensajes concisos y descriptivos
+- Usar imperativo: "Agregar" en lugar de "Agregado"
+- Límite de 72 caracteres por línea
+- Describir QUÉ y POR QUÉ, no CÓMO
+
+## Pull Request (PR)
+- Título descriptivo
+- Descripción detallada de cambios
+- Referenciar issues relacionados
+- Solicitar revisión de código
+
+## Buenas Prácticas
+- Commits pequeños y enfocados
+- Rebase antes de merge para mantener historia limpia
+- Resolver conflictos antes de merge
+- Usar conventional commits cuando sea posible
+
+## Herramientas Recomendadas
+- commitlint
+- husky (para validación de commits)
+- semantic-release
+
+## Excepciones
+- Consultar con el equipo para casos especiales
+- Documentar decisiones de arquitectura

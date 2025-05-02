@@ -1,51 +1,51 @@
 <div class="bg-black text-white min-h-screen">
     <!-- Hero Banner Carousel -->
-    <div class="relative h-[70vh] overflow-hidden">
+    <div class="relative w-full h-[50vh] md:h-[70vh] overflow-hidden">
         <div class="absolute inset-0 transition-transform duration-500 ease-in-out" 
              [style.transform]="'translateX(-' + (currentSlide * 100) + '%)'">
-            <!-- Primer Banner: Los Hechiceros -->
+            <!-- Banner 1: Desarrollo de Software -->
             <div class="absolute w-full h-full flex items-center" style="left: 0%; background: linear-gradient(to right, rgba(0,0,0,0.7), transparent);">
-                <img src="assets/images/hechiceros-banner.jpg" alt="Los Hechiceros" class="absolute inset-0 w-full h-full object-cover">
-                <div class="absolute bottom-10 left-10 text-white">
-                    <h1 class="text-4xl font-bold mb-4">Los Hechiceros de EPIC</h1>
-                    <p class="text-xl mb-6">Nuevos episodios ya disponibles</p>
-                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg">
-                        Ver más
+                <img src="assets/images/home-academy/banners/software_development.jpg" alt="Desarrollo de Software" class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute bottom-10 left-10 text-white px-4">
+                    <h1 class="text-2xl md:text-4xl font-bold mb-2 md:mb-4">Domina el Desarrollo de Software</h1>
+                    <p class="text-sm md:text-xl mb-4">Conviértete en un profesional de clase mundial</p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg text-sm md:text-base">
+                        Explorar Rutas
                     </button>
                 </div>
             </div>
 
-            <!-- Segundo Banner: Próximos Cursos -->
+            <!-- Banner 2: Inteligencia Artificial -->
             <div class="absolute w-full h-full flex items-center" style="left: 100%; background: linear-gradient(to right, rgba(0,0,0,0.7), transparent);">
-                <img src="assets/images/cursos-banner.jpg" alt="Próximos Cursos" class="absolute inset-0 w-full h-full object-cover">
-                <div class="absolute bottom-10 left-10 text-white">
-                    <h1 class="text-4xl font-bold mb-4">Próximos Lanzamientos</h1>
-                    <p class="text-xl mb-6">Descubre nuestros nuevos cursos</p>
-                    <button class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg">
-                        Explorar
+                <img src="assets/images/home-academy/banners/ai_technology.jpg" alt="Inteligencia Artificial" class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute bottom-10 left-10 text-white px-4">
+                    <h1 class="text-2xl md:text-4xl font-bold mb-2 md:mb-4">Revolución en IA</h1>
+                    <p class="text-sm md:text-xl mb-4">Aprende las tecnologías más demandadas</p>
+                    <button class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg text-sm md:text-base">
+                        Comenzar
                     </button>
                 </div>
             </div>
 
-            <!-- Tercer Banner: Comunidad EPIC -->
+            <!-- Banner 3: Comunidad de Aprendizaje -->
             <div class="absolute w-full h-full flex items-center" style="left: 200%; background: linear-gradient(to right, rgba(0,0,0,0.7), transparent);">
-                <img src="assets/images/comunidad-banner.jpg" alt="Comunidad EPIC" class="absolute inset-0 w-full h-full object-cover">
-                <div class="absolute bottom-10 left-10 text-white">
-                    <h1 class="text-4xl font-bold mb-4">Comunidad EPIC</h1>
-                    <p class="text-xl mb-6">Únete a nuestra comunidad de aprendizaje</p>
-                    <button class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg">
-                        Conectar
+                <img src="assets/images/home-academy/banners/learning_community.jpg" alt="Comunidad EPIC" class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute bottom-10 left-10 text-white px-4">
+                    <h1 class="text-2xl md:text-4xl font-bold mb-2 md:mb-4">Comunidad EPIC</h1>
+                    <p class="text-sm md:text-xl mb-4">Conecta, aprende y crece con nosotros</p>
+                    <button class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg text-sm md:text-base">
+                        Unirse
                     </button>
                 </div>
             </div>
         </div>
 
         <!-- Indicadores de navegación -->
-        <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
             <button 
                 *ngFor="let banner of [0, 1, 2]; let i = index" 
                 (click)="goToSlide(i)"
-                class="w-3 h-3 rounded-full transition-colors duration-300"
+                class="w-2 h-2 md:w-3 md:h-3 rounded-full transition-colors duration-300"
                 [ngClass]="{
                     'bg-white': currentSlide === i, 
                     'bg-gray-500': currentSlide !== i
@@ -54,122 +54,66 @@
         </div>
     </div>
 
-    <!-- Sección de categorías similar a los canales de Disney+ -->
-    <div class="px-10 py-6">
-        <h2 class="text-2xl font-bold mb-6">Categorías de Aprendizaje</h2>
-        <div class="grid grid-cols-8 gap-4">
-            <div class="bg-gray-800 rounded-lg p-2 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer">
-                <img src="assets/icons/programming.svg" alt="Programación" class="w-16 h-16">
-            </div>
-            <div class="bg-gray-800 rounded-lg p-2 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer">
-                <img src="assets/icons/design.svg" alt="Diseño" class="w-16 h-16">
-            </div>
-            <div class="bg-gray-800 rounded-lg p-2 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer">
-                <img src="assets/icons/ai.svg" alt="Inteligencia Artificial" class="w-16 h-16">
-            </div>
-            <div class="bg-gray-800 rounded-lg p-2 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer">
-                <img src="assets/icons/marketing.svg" alt="Marketing" class="w-16 h-16">
-            </div>
-            <div class="bg-gray-800 rounded-lg p-2 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer">
-                <img src="assets/icons/business.svg" alt="Negocios" class="w-16 h-16">
-            </div>
-            <div class="bg-gray-800 rounded-lg p-2 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer">
-                <img src="assets/icons/data-science.svg" alt="Ciencia de Datos" class="w-16 h-16">
-            </div>
-            <div class="bg-gray-800 rounded-lg p-2 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer">
-                <img src="assets/icons/cybersecurity.svg" alt="Ciberseguridad" class="w-16 h-16">
-            </div>
-            <div class="bg-gray-800 rounded-lg p-2 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer">
-                <img src="assets/icons/cloud.svg" alt="Cloud Computing" class="w-16 h-16">
+    <!-- Categorías de Aprendizaje -->
+    <div class="px-4 md:px-10 py-6 bg-gray-900">
+        <h2 class="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-white">Categorías de Aprendizaje</h2>
+        <div class="grid grid-cols-4 md:grid-cols-8 gap-2 md:gap-4">
+            <div 
+                *ngFor="let categoria of categoriasAprendizaje" 
+                class="bg-gray-800 rounded-lg p-2 md:p-4 flex flex-col items-center justify-center hover:scale-105 transition-transform cursor-pointer"
+            >
+                <img [src]="categoria.icono" [alt]="categoria.nombre" class="w-8 h-8 md:w-16 md:h-16 mb-1 md:mb-2">
+                <span class="text-xs md:text-sm text-white text-center">{{ categoria.nombre }}</span>
+                <span class="text-[10px] md:text-xs text-gray-400">{{ categoria.cursos }} cursos</span>
             </div>
         </div>
     </div>
 
-    <!-- Sección de Continuar Viendo -->
-    <div class="px-10 py-6">
-        <h2 class="text-2xl font-bold mb-6">Continuar viendo</h2>
-        <div class="relative group">
-            <div 
-                #continuarViendoContainer
-                class="flex space-x-4 overflow-hidden"
-            >
+    <!-- Continúa tu Aprendizaje -->
+    <div class="px-4 md:px-10 py-6 bg-black text-white">
+        <h2 class="text-xl md:text-2xl font-bold mb-4 md:mb-6">Continúa tu Aprendizaje</h2>
+        <div class="overflow-x-auto">
+            <div class="flex space-x-2 md:space-x-4">
                 <div 
-                    @slideInOut
-                    class="inline-block w-64 flex-shrink-0 cursor-pointer hover:scale-105 transition-transform" 
-                    *ngFor="let show of continuarViendo.slice(0, mostrarTarjetasAdicionales ? undefined : 5)"
+                    *ngFor="let curso of continuarViendo.slice(0, mostrarTarjetasAdicionales ? undefined : 5)"
+                    class="w-48 md:w-64 flex-shrink-0 cursor-pointer hover:scale-105 transition-transform"
                 >
                     <div class="bg-gray-800 rounded-lg overflow-hidden">
-                        <img [src]="show.imagen" [alt]="show.titulo" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg truncate">{{ show.titulo }}</h3>
-                            <div class="flex justify-between items-center mt-2">
-                                <span class="text-sm text-gray-400">{{ show.temporada }}</span>
-                                <span class="text-sm text-gray-400">{{ show.tiempoRestante }}</span>
+                        <img [src]="curso.imagen" [alt]="curso.titulo" class="w-full h-32 md:h-48 object-cover">
+                        <div class="p-2 md:p-4">
+                            <h3 class="font-bold text-sm md:text-lg truncate">{{ curso.titulo }}</h3>
+                            <div class="flex justify-between items-center mt-1 md:mt-2">
+                                <span class="text-xs md:text-sm text-gray-400">{{ curso.temporada }}</span>
+                                <span class="text-xs md:text-sm text-gray-400">{{ curso.tiempoRestantes }}</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- Botones de navegación con efecto hover -->
-            <button 
-                (click)="scrollContinuarViendo('left')" 
-                *ngIf="mostrarTarjetasAdicionales"
-                class="absolute left-0 top-1/2 transform -translate-y-1/2 
-                       bg-black/50 rounded-full p-2 hover:bg-black/70 
-                       opacity-0 group-hover:opacity-100 transition-all duration-300 
-                       scale-75 group-hover:scale-100">
-                <mat-icon class="text-white">chevron_left</mat-icon>
-            </button>
-            <button 
-                (click)="scrollContinuarViendo('right')" 
-                *ngIf="!mostrarTarjetasAdicionales"
-                class="absolute right-0 top-1/2 transform -translate-y-1/2 
-                       bg-black/50 rounded-full p-2 hover:bg-black/70 
-                       opacity-0 group-hover:opacity-100 transition-all duration-300
-                       scale-75 group-hover:scale-100">
-                <mat-icon class="text-white">chevron_right</mat-icon>
-            </button>
         </div>
     </div>
 
-    <!-- Sección de cursos destacados -->
-    <div class="px-10 py-6">
-        <h2 class="text-2xl font-bold mb-6">Cursos Destacados</h2>
-        <div class="grid grid-cols-5 gap-6">
-            <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
-                <img src="assets/images/courses/course1.jpg" alt="Curso 1" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="font-bold text-lg">Desarrollo Web Fullstack</h3>
-                    <p class="text-sm text-gray-400">Aprende desarrollo web desde cero</p>
-                </div>
-            </div>
-            <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
-                <img src="assets/images/courses/course2.jpg" alt="Curso 2" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="font-bold text-lg">Inteligencia Artificial</h3>
-                    <p class="text-sm text-gray-400">Domina IA y Machine Learning</p>
-                </div>
-            </div>
-            <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
-                <img src="assets/images/courses/course3.jpg" alt="Curso 3" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="font-bold text-lg">UX/UI Design</h3>
-                    <p class="text-sm text-gray-400">Diseña interfaces increíbles</p>
-                </div>
-            </div>
-            <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
-                <img src="assets/images/courses/course4.jpg" alt="Curso 4" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="font-bold text-lg">Marketing Digital</h3>
-                    <p class="text-sm text-gray-400">Estrategias de marketing online</p>
-                </div>
-            </div>
-            <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
-                <img src="assets/images/courses/course5.jpg" alt="Curso 5" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="font-bold text-lg">Ciberseguridad</h3>
-                    <p class="text-sm text-gray-400">Protege sistemas y redes</p>
+    <!-- Cursos Destacados -->
+    <div class="px-4 md:px-10 py-6 bg-gray-900 text-white">
+        <h2 class="text-xl md:text-2xl font-bold mb-4 md:mb-6">Cursos Destacados</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+            <div 
+                *ngFor="let curso of cursosDestacados" 
+                class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer"
+            >
+                <img [src]="curso.imagen" [alt]="curso.titulo" class="w-full h-48 md:h-64 object-cover">
+                <div class="p-3 md:p-4">
+                    <h3 class="font-bold text-base md:text-xl mb-2">{{ curso.titulo }}</h3>
+                    <p class="text-xs md:text-sm text-gray-400 mb-2 md:mb-4">{{ curso.descripcion }}</p>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-xs md:text-sm text-gray-300">Instructor: {{ curso.instructor }}</span>
+                            <span class="block text-xs md:text-sm text-gray-500">{{ curso.duracion }} | {{ curso.nivel }}</span>
+                        </div>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 md:px-4 md:py-2 rounded-lg text-xs md:text-sm">
+                            Inscribirse
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

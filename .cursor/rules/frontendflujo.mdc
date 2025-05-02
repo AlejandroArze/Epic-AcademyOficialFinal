@@ -1,0 +1,356 @@
+---
+description: flujo de trabajo al trabajar en frontend
+globs: 
+alwaysApply: false
+---
+# Reglas de Flujo de Trabajo Frontend
+recuerda que siempre se ejecuta en el puerto 4205, no es necesario reinciar la ejecución, automaicamente se cargará con los cambios.Al comprobar los cambios solo es necesario recargar la página en el navegador con puppeter o browser-tool los mcp encargados de validar que  se implemento corectamente, y si hay errores volver a intentar.
+
+## Proceso de Desarrollo
+
+### 1. Recepción de Requerimiento
+- Analizar solicitud detalladamente
+- Identificar alcance y impacto
+- Validar viabilidad técnica
+
+### 2. Desarrollo de Característica
+
+#### Principios Fundamentales
+- Mínima Invasión: Modificar lo estrictamente necesario
+- Preservar Funcionalidad Existente
+- Seguir Principios SOLID
+- Mantener Consistencia de Código
+
+#### Pasos de Implementación
+1. Crear rama de feature
+2. Implementar cambios
+3. Realizar pruebas locales iniciales
+4. Documentar cambios
+
+### 3. Verificación Automatizada
+
+#### Herramientas de Testing
+```javascript
+// Herramientas principales
+const herramientas = [
+  'Puppeteer',  // Testing automatizado
+  'Browser Tools', // Verificación de errores
+  'Console Logs',  // Captura de errores
+  'Network Logs',  // Monitoreo de red
+  'Performance Audit' // Rendimiento
+]
+```
+
+#### Proceso de Verificación
+1. Ejecutar Auditorías Automatizadas
+```bash
+# Comandos de verificación
+npx browser-tools audit
+npx puppeteer-test
+```
+
+2. Revisión Exhaustiva
+- Verificar Consola de Errores
+- Analizar Logs de Red
+- Comprobar Rendimiento
+- Validar Accesibilidad
+
+#### Tipos de Pruebas
+- Pruebas Funcionales
+- Pruebas de Integración
+- Pruebas de Regresión
+- Pruebas de Rendimiento
+
+### 4. Validación de Errores
+
+#### Estrategia de Captura de Errores
+```javascript
+async function validarCaracteristica() {
+  try {
+    // Ejecutar pruebas
+    const browserLogs = await getBrowserLogs();
+    const consoleErrors = await getConsoleErrors();
+    const networkErrors = await getNetworkErrors();
+
+    // Análisis de errores
+    if (browserLogs.length > 0 || 
+        consoleErrors.length > 0 || 
+        networkErrors.length > 0) {
+      throw new Error('Errores detectados');
+    }
+
+    // Validaciones adicionales
+    await runAccessibilityAudit();
+    await runPerformanceAudit();
+  } catch (error) {
+    // Manejo de errores
+    console.error('Errores en la implementación:', error);
+    // Revertir cambios si es necesario
+  }
+}
+```
+
+### 5. Reportes y Documentación
+
+#### Formato de Reporte
+```markdown
+## Reporte de Implementación de Característica
+
+### Descripción
+- **Característica**: [Nombre]
+- **Impacto**: [Alcance]
+
+### Verificaciones
+- [x] Pruebas Funcionales
+- [x] Pruebas de Rendimiento
+- [x] Verificación de Errores
+- [x] Auditoría de Accesibilidad
+
+### Errores Detectados
+- Lista de errores (si aplica)
+
+### Observaciones
+- Notas adicionales
+```
+
+### 6. Buenas Prácticas
+
+#### Consideraciones Importantes
+- No modificar componentes no relacionados
+- Mantener retrocompatibilidad
+- Documentar cambios significativos
+- Realizar commits atómicos y descriptivos
+
+### 7. Herramientas Recomendadas
+
+#### Testing y Verificación
+- Puppeteer
+- Jest
+- React Testing Library
+- Chrome DevTools
+- Lighthouse
+- WebPageTest
+
+### 8. Flujo de Aprobación
+
+1. Implementación
+2. Pruebas Automatizadas
+3. Revisión de Errores
+4. Documentación
+5. Aprobación Automática
+6. Preparación para Merge
+
+## Excepciones y Consideraciones
+
+- Consultar con equipo para cambios complejos
+- Documentar decisiones de arquitectura
+- Mantener comunicación constante
+
+## Política de Rollback
+
+- Revertir cambios si:
+  1. Errores críticos detectados
+  2. Impacto en funcionalidades existentes
+  3. Problemas de rendimiento significativos
+
+## Mejora Continua
+
+- Retroalimentación constante
+- Actualización de herramientas
+- Capacitación continua
+
+
+
+# Reglas de Flujo de Trabajo Frontend
+
+## Proceso de Desarrollo Continuo
+
+### Estrategia de Validación Integral
+
+```javascript
+async function validacionCompletaCaracteristica() {
+  // Almacén de errores y resultados
+  const reporteValidacion = {
+    errores: [],
+    capturas: [],
+    logs: {
+      browser: [],
+      consola: [],
+      red: []
+    },
+    funcionamientoCompleto: true
+  };
+
+  try {
+    // 1. Captura de Logs y Errores (Sin Detener)
+    try {
+      reporteValidacion.logs.browser = await getBrowserLogs();
+      reporteValidacion.logs.consola = await getConsoleErrors();
+      reporteValidacion.logs.red = await getNetworkErrors();
+    } catch (logError) {
+      reporteValidacion.errores.push({
+        tipo: 'Error de Logging',
+        detalle: logError.message
+      });
+    }
+
+    // 2. Auditorías Múltiples (Continuar si falla)
+    const auditorias = [
+      { nombre: 'Accesibilidad', funcion: runAccessibilityAudit },
+      { nombre: 'Rendimiento', funcion: runPerformanceAudit },
+      { nombre: 'SEO', funcion: runSEOAudit }
+    ];
+
+    for (const auditoria of auditorias) {
+      try {
+        await auditoria.funcion();
+      } catch (errorAuditoria) {
+        reporteValidacion.errores.push({
+          tipo: `Fallo en Auditoría de ${auditoria.nombre}`,
+          detalle: errorAuditoria.message
+        });
+        // Continúa con la siguiente auditoría
+      }
+    }
+
+    // 3. Capturas de Pantalla Múltiples
+    const escenariosCapturas = [
+      { nombre: 'Vista Principal', selector: '#main-view' },
+      { nombre: 'Componente Nuevo', selector: '.new-feature' }
+    ];
+
+    for (const escenario of escenariosCapturas) {
+      try {
+        const captura = await takeScreenshot(escenario.selector);
+        reporteValidacion.capturas.push({
+          nombre: escenario.nombre,
+          ruta: captura
+        });
+      } catch (errorCaptura) {
+        reporteValidacion.errores.push({
+          tipo: `Error en Captura de ${escenario.nombre}`,
+          detalle: errorCaptura.message
+        });
+        // Continúa con la siguiente captura
+      }
+    }
+
+    // 4. Validación de Funcionalidad
+    try {
+      const resultadoFuncionalidad = await validarFuncionalidadEspecifica();
+      reporteValidacion.funcionamientoCompleto = resultadoFuncionalidad.exito;
+      
+      if (!resultadoFuncionalidad.exito) {
+        reporteValidacion.errores.push({
+          tipo: 'Fallo de Funcionalidad',
+          detalle: resultadoFuncionalidad.mensaje
+        });
+      }
+    } catch (errorFuncionalidad) {
+      reporteValidacion.funcionamientoCompleto = false;
+      reporteValidacion.errores.push({
+        tipo: 'Error en Validación de Funcionalidad',
+        detalle: errorFuncionalidad.message
+      });
+    }
+
+  } catch (errorGeneral) {
+    // Captura errores no manejados
+    reporteValidacion.errores.push({
+      tipo: 'Error General',
+      detalle: errorGeneral.message
+    });
+  }
+
+  // 5. Generación de Reporte Detallado
+  await generarReporteDetallado(reporteValidacion);
+
+  // 6. Corrección Automática de Errores
+  if (reporteValidacion.errores.length > 0) {
+    await corregirErroresDetectados(reporteValidacion.errores);
+  }
+
+  return reporteValidacion;
+}
+
+// Función de Corrección Automática
+async function corregirErroresDetectados(errores) {
+  for (const error of errores) {
+    try {
+      switch (error.tipo) {
+        case 'Fallo en Auditoría de Accesibilidad':
+          await corregirProblemasAccesibilidad();
+          break;
+        case 'Fallo de Funcionalidad':
+          await reintentarFuncionalidad();
+          break;
+        // Agregar más casos de corrección
+        default:
+          console.warn(`Corrección no implementada para: ${error.tipo}`);
+      }
+    } catch (errorCorreccion) {
+      console.error(`Error al corregir ${error.tipo}:`, errorCorreccion);
+    }
+  }
+}
+
+// Función de Generación de Reporte
+async function generarReporteDetallado(reporte) {
+  const reporteMarkdown = `
+## Reporte de Validación
+
+### Resumen
+- **Errores Detectados**: ${reporte.errores.length}
+- **Funcionamiento Completo**: ${reporte.funcionamientoCompleto}
+
+### Detalles de Errores
+${reporte.errores.map(error => `
+- **Tipo**: ${error.tipo}
+- **Detalle**: ${error.detalle}
+`).join('\n')}
+
+### Capturas de Pantalla
+${reporte.capturas.map(captura => `
+- **${captura.nombre}**: ${captura.ruta}
+`).join('\n')}
+
+### Logs
+- **Logs de Navegador**: ${reporte.logs.browser.length}
+- **Logs de Consola**: ${reporte.logs.consola.length}
+- **Logs de Red**: ${reporte.logs.red.length}
+  `;
+
+  await guardarReporte(reporteMarkdown);
+}
+```
+
+## Principios Clave
+
+### Filosofía de Validación Continua
+- **No Detener**: Continuar proceso incluso con errores
+- **Registro Completo**: Documentar todos los problemas
+- **Corrección Automática**: Intentar resolver errores
+- **Transparencia**: Generar reportes detallados
+
+### Estrategias de Manejo de Errores
+1. Capturar sin interrumpir
+2. Registrar todos los detalles
+3. Intentar correcciones automáticas
+4. Reportar para revisión manual
+
+### Herramientas de Soporte
+- Puppeteer para testing
+- Browser Tools para verificación
+- Generación automática de reportes
+- Mecanismos de corrección integrados
+
+
+## Flujo de Trabajo Detallado
+1. Implementar característica
+2. Ejecutar validación completa
+3. Capturar cualquier error
+4. Intentar correcciones
+5. Generar reporte
+6. Notificar al desarrollador si requiere intervención manual
+
+

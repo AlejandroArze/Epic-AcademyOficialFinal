@@ -1,25 +1,149 @@
 // Estilos para el componente HomeAcademy
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 home-academy {
     display: block;
     width: 100%;
     height: 100%;
+    background-color: #000;
+    color: #fff;
 
-    .continuar-viendo {
-        display: flex;
-        overflow-x: auto;
-        gap: 1rem;
-        padding: 1rem 0;
+    // Estilos base responsivos
+    @screen sm {
+        font-size: 14px;
+    }
 
-        &__item {
-            flex: 0 0 auto;
-            width: 200px;
-            
-            img {
-                width: 100%;
-                height: auto;
-                border-radius: 8px;
-            }
+    @screen md {
+        font-size: 16px;
+    }
+
+    @screen lg {
+        font-size: 18px;
+    }
+
+    // Estilos para secciones
+    .section {
+        @apply px-4 md:px-10 py-6;
+
+        &__title {
+            @apply text-xl md:text-2xl font-bold mb-4 md:mb-6 text-white;
+        }
+
+        &__grid {
+            @apply grid grid-cols-4 md:grid-cols-8 gap-2 md:gap-4;
+        }
+    }
+
+    // Efectos de hover y transición
+    .hover-effect {
+        @apply hover:scale-105 transition-transform cursor-pointer;
+    }
+
+    // Carrusel de banners
+    .banner-carousel {
+        @apply relative w-full h-[50vh] md:h-[70vh] overflow-hidden;
+
+        &__slide {
+            @apply absolute w-full h-full flex items-center;
+        }
+
+        &__content {
+            @apply absolute bottom-10 left-10 text-white px-4;
+        }
+
+        &__title {
+            @apply text-2xl md:text-4xl font-bold mb-2 md:mb-4;
+        }
+
+        &__description {
+            @apply text-sm md:text-xl mb-4;
+        }
+
+        &__button {
+            @apply px-4 py-2 md:px-6 md:py-3 rounded-lg text-sm md:text-base;
+        }
+    }
+
+    // Tarjetas de categorías
+    .category-card {
+        @apply bg-gray-800 rounded-lg p-2 md:p-4 flex flex-col items-center justify-center hover-effect;
+
+        &__icon {
+            @apply w-8 h-8 md:w-16 md:h-16 mb-1 md:mb-2;
+        }
+
+        &__name {
+            @apply text-xs md:text-sm text-white text-center;
+        }
+
+        &__count {
+            @apply text-[10px] md:text-xs text-gray-400;
+        }
+    }
+
+    // Tarjetas de cursos
+    .course-card {
+        @apply bg-gray-800 rounded-lg overflow-hidden hover-effect;
+
+        &__image {
+            @apply w-full h-32 md:h-48 object-cover;
+        }
+
+        &__content {
+            @apply p-2 md:p-4;
+        }
+
+        &__title {
+            @apply font-bold text-sm md:text-lg truncate;
+        }
+
+        &__details {
+            @apply flex justify-between items-center mt-1 md:mt-2;
+        }
+
+        &__meta {
+            @apply text-xs md:text-sm text-gray-400;
+        }
+    }
+
+    // Sección de cursos destacados
+    .featured-courses {
+        &__grid {
+            @apply grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6;
+        }
+
+        &__card {
+            @apply bg-gray-800 rounded-lg overflow-hidden hover-effect;
+        }
+
+        &__image {
+            @apply w-full h-48 md:h-64 object-cover;
+        }
+
+        &__content {
+            @apply p-3 md:p-4;
+        }
+
+        &__title {
+            @apply font-bold text-base md:text-xl mb-2;
+        }
+
+        &__description {
+            @apply text-xs md:text-sm text-gray-400 mb-2 md:mb-4;
+        }
+
+        &__instructor {
+            @apply text-xs md:text-sm text-gray-300;
+        }
+
+        &__meta {
+            @apply block text-xs md:text-sm text-gray-500;
+        }
+
+        &__button {
+            @apply bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 md:px-4 md:py-2 rounded-lg text-xs md:text-sm;
         }
     }
 } 

@@ -27,3 +27,10 @@ export interface Course
         completed?: number;
     };
 }
+
+export interface VideoInfo {
+    url?: string;  // Puede ser URL de video local o de YouTube
+    subtitlesUrl?: string;
+    poster?: string;
+    type?: 'local' | 'youtube';  // Tipo opcional para mayor claridad
+}

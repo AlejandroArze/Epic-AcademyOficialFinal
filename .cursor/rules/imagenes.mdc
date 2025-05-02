@@ -1,0 +1,94 @@
+---
+description: Cuando se requiera imagenes para el proyecto 
+globs: 
+alwaysApply: false
+---
+# Reglas para Gestión de Recursos de Imágenes
+
+## Fuentes de Imágenes
+- Sitios web recomendados:
+  - https://www.freepik.es/
+  - https://unsplash.com/
+  - https://pixabay.com/
+  - https://www.pexels.com/
+  - Google Images (con consideraciones de derechos de autor)
+
+## Criterios de Selección de Imágenes
+1. Relevancia para el proyecto
+2. Calidad y resolución
+3. Licencia de uso
+4. Estilo coherente con el diseño
+
+## Estructura de Directorios
+```
+frontend/
+└──  src/
+│   └── assets/
+│       └── images/│           
+│           │   ├── logo/
+│           │   │   ├── logo_principal.svg
+│           │   │   ├── logo_alternativo.png
+│           │   │   └── favicon.ico       
+│           ├── components/
+│           │   ├── buttons/
+│           │   │   ├── button_primary.png
+│           │   │   └── button_secondary.png
+│           │   ├── icons/
+│           │   │   ├── icon_user.svg
+│           │   │   ├── icon_settings.svg
+│           │   │   └── icon_notification.svg
+│           │   └── backgrounds/
+│           │       ├── background_login.jpg
+│           │       └── background_dashboard.jpg
+```
+
+## Proceso de Descarga y Organización
+
+### Pasos para Descargar Imágenes
+1. Buscar imagen en fuentes recomendadas
+2. Descargar con nombre descriptivo
+3. Optimizar imagen (reducir peso)
+4. Guardar en directorio correspondiente
+
+### Nomenclatura de Archivos
+- Formato: `[categoria]_[descripcion]_[fecha].extension`
+- Ejemplos:
+  - `frontend_icono_usuario_2023.png`
+  - `marketing_banner_principal_2023.jpg`
+
+
+
+## Herramientas Recomendadas
+- ImageOptim (optimización)
+- TinyPNG (compresión)
+- Figma (edición básica)
+
+## Buenas Prácticas
+- Mantener un registro de imágenes utilizadas
+- Documentar fuente 
+- Evitar imágenes repetitivas
+- Priorizar originalidad
+
+## Flujo de Trabajo
+1. Identificar necesidad de imagen
+2. Buscar en fuentes recomendadas
+3. Descargar y optimizar
+4. Nombrar según convención
+5. Guardar en directorio correcto
+6. Documentar origen y licencia
+
+## Excepciones
+- Consultar con diseñador/líder de proyecto para casos especiales
+- Justificar uso de imágenes no estándar
+
+## Herramientas de IA (Opcional)
+- DALL-E
+- Midjourney
+- Stable Diffusion
+- Verificar políticas de uso de la empresa
+
+## Consideraciones Finales
+- Mantener consistencia visual
+- Respetar identidad de marca
+- Priorizar calidad sobre cantidad
+
