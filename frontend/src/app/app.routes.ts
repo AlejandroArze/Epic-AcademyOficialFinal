@@ -94,7 +94,12 @@ export const appRoutes: Route[] = [
                 {path: 'tasks', loadChildren: () => import('app/modules/admin/apps/tasks/tasks.routes')},
                 {path: 'academy', loadChildren: () => import('app/modules/admin/apps/academy/academy.routes')},
                 {path: 'home-academy', loadChildren: () => import('app/modules/admin/apps/home-academy/home-academy.routes')},
-                {path: 'homeacademy', redirectTo: 'home-academy'}
+                {path: 'homeacademy', redirectTo: 'home-academy'},
+                {path: 'administrar-cursos', loadChildren: () => import('app/modules/admin/apps/administarCursos/administar-cursos.module').then(m => m.AdministrarCursosModule)},
+                {path: 'problemas-programacion', loadChildren: () => import('./modules/admin/apps/problemasProgramacion/problemasProgramacion.module').then(m => m.ProblemasProgramacionModule)},
+                {path: 'administrar-problemas-programacion', loadChildren: () => import('./modules/admin/apps/administrarProblemasProgramacion/administrar-problemas-programacion.module').then(m => m.AdministrarProblemasProgramacionModule)},
+                {path: 'competencias', loadChildren: () => import('./modules/admin/apps/Competencias/competencias.module').then(m => m.CompetenciasModule)},
+                {path: 'administrar-competencias', loadChildren: () => import('./modules/admin/apps/AdministrarCompetencias/administrar-competencias.module').then(m => m.AdministrarCompetenciasModule)}
             ]},
             
             // Pages

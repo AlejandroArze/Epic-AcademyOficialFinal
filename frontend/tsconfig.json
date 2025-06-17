@@ -18,9 +18,19 @@
             "ES2022",
             "dom"
         ],
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "paths": {
+            "app/*": ["app/*"]
+        }
     },
     "angularCompilerOptions": {
         "enableI18nLegacyMessageIdFormat": false
-    }
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/app/modules/admin/apps/problemasProgramacion/**/*.ts",
+        "src/app/modules/admin/apps/administrarProblemasProgramacion/**/*.ts",
+        "src/app/modules/admin/apps/Competencias/**/*.ts",
+        "src/app/modules/admin/apps/AdministrarCompetencias/**/*.ts"
+    ]
 }
